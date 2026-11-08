@@ -1,1741 +1,22 @@
 {
-  "collection": "button-atlas-strict-20261108",
-  "authority": "variant_debate_strict_20261108.md",
+  "collection": "button-atlas-unanimous15-v3-20261108",
+  "authority": "variant_debate_v3_20261108.md",
   "variants": [
-    {
-      "id": "c01",
-      "name": "ソリッド・ラウンド",
-      "axes": {
-        "fill": "solid",
-        "shape": "rounded",
-        "content": "text"
-      },
-      "effect": "flat",
-      "verdict": "3者一致採用",
-      "reason": "角丸ソリッドを比較の基準に。",
-      "votes": "ADOPT/ADOPT/ADOPT",
-      "sources": [
-        {
-          "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
-          "tags": [
-            "ds:HIG",
-            "evidence:guideline",
-            "family:glass",
-            "family:solid",
-            "family:elevated",
-            "content:text",
-            "content:icon+text",
-            "content:icon-only",
-            "content:loading",
-            "match:c01",
-            "match:c05"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://www.radix-ui.com/themes/docs/components/button",
-          "tags": [
-            "ds:Radix",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:tint",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "shape:sharp",
-            "shape:rounded",
-            "shape:pill",
-            "match:c01",
-            "match:c02",
-            "match:c03",
-            "match:c04",
-            "match:c05",
-            "match:c07",
-            "match:c08"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://ui.shadcn.com/docs/components/button",
-          "tags": [
-            "ds:shadcn",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "family:tint",
-            "shape:rounded",
-            "shape:pill",
-            "match:c01",
-            "match:c04",
-            "match:c06",
-            "match:c07",
-            "match:c09"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://vercel.com/geist/button",
-          "tags": [
-            "ds:Geist",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "shape:rounded",
-            "shape:pill",
-            "content:loading",
-            "match:c01",
-            "match:c04",
-            "match:c05",
-            "match:c07"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://shopify.dev/docs/api/app-home/latest/web-components/actions/button",
-          "tags": [
-            "ds:Polaris",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "shape:rounded",
-            "content:loading",
-            "match:c01",
-            "match:c04",
-            "match:c05",
-            "match:c07",
-            "match:c09"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://vercel.com/",
-          "tags": [
-            "saas:vercel.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:solid/rounded/text",
-            "tuple:ghost/sharp/icon+text",
-            "tuple:solid/pill/text",
-            "match:c01",
-            "match:c04",
-            "match:t02"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://notion.com/",
-          "tags": [
-            "saas:notion.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:ghost/sharp/icon+text",
-            "tuple:solid/rounded/text",
-            "tuple:tint/pill/icon+text",
-            "match:c01",
-            "match:c04"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://figma.com/",
-          "tags": [
-            "saas:figma.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:ghost/sharp/text",
-            "tuple:solid/rounded/text",
-            "tuple:ghost/sharp/icon-only",
-            "tuple:ghost/sharp/icon+text",
-            "match:c01",
-            "match:c04",
-            "match:c08"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://supabase.com/",
-          "tags": [
-            "saas:supabase.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:solid/rounded/text",
-            "tuple:ghost/rounded/icon+text",
-            "tuple:gradient/rounded/text",
-            "match:c01",
-            "match:c04"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://clerk.com/",
-          "tags": [
-            "saas:clerk.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:solid/rounded/text",
-            "tuple:ghost/rounded/text",
-            "tuple:solid/sharp/icon+text",
-            "tuple:ghost/pill/icon+text",
-            "tuple:solid/pill/icon+text",
-            "match:c01",
-            "match:c04",
-            "match:c08",
-            "match:t01"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://airtable.com/",
-          "tags": [
-            "saas:airtable.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:outline/rounded/text",
-            "tuple:solid/rounded/text",
-            "tuple:solid/pill/icon-only",
-            "match:c01",
-            "match:c07"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://clickup.com/",
-          "tags": [
-            "saas:clickup.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:ghost/rounded/icon+text",
-            "tuple:ghost/rounded/text",
-            "tuple:solid/rounded/text",
-            "tuple:solid/pill/icon+text",
-            "match:c01",
-            "match:c04",
-            "match:c08",
-            "match:t01"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://miro.com/",
-          "tags": [
-            "saas:miro.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:solid/rounded/text",
-            "tuple:ghost/rounded/icon+text",
-            "tuple:outline/rounded/text",
-            "tuple:gradient/rounded/text",
-            "tuple:ghost/rounded/text",
-            "match:c01",
-            "match:c04",
-            "match:c07",
-            "match:c08"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://dropbox.com/",
-          "tags": [
-            "saas:dropbox.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:solid/sharp/text",
-            "tuple:ghost/sharp/icon+text",
-            "tuple:ghost/sharp/icon-only",
-            "tuple:solid/rounded/text",
-            "tuple:solid/rounded/icon+text",
-            "match:c01",
-            "match:c04",
-            "match:t03"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://webflow.com/",
-          "tags": [
-            "saas:webflow.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:solid/sharp/text",
-            "tuple:solid/rounded/text",
-            "tuple:ghost/sharp/text",
-            "tuple:solid/sharp/icon+text",
-            "tuple:ghost/sharp/icon-only",
-            "match:c01",
-            "match:c08",
-            "match:t03"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://sentry.io/",
-          "tags": [
-            "saas:sentry.io",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:ghost/rounded/icon+text",
-            "tuple:gradient/rounded/text",
-            "tuple:tint/rounded/text",
-            "tuple:solid/pill/icon-only",
-            "tuple:solid/rounded/text",
-            "match:c01",
-            "match:c04"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://posthog.com/",
-          "tags": [
-            "saas:posthog.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:ghost/sharp/text",
-            "tuple:solid/rounded/text",
-            "tuple:ghost/sharp/icon-only",
-            "tuple:ghost/pill/icon-only",
-            "tuple:ghost/rounded/text",
-            "tuple:tint/sharp/icon-only",
-            "tuple:solid/pill/icon-only",
-            "match:c01",
-            "match:c08"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://railway.com/",
-          "tags": [
-            "saas:railway.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:solid/pill/icon+text",
-            "tuple:ghost/rounded/icon+text",
-            "tuple:ghost/rounded/text",
-            "tuple:solid/rounded/text",
-            "tuple:tint/rounded/text",
-            "match:c01",
-            "match:c04",
-            "match:c08",
-            "match:t01"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://fly.io/",
-          "tags": [
-            "saas:fly.io",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:ghost/sharp/text",
-            "tuple:tint/pill/text",
-            "tuple:solid/rounded/text",
-            "tuple:solid/pill/icon+text",
-            "tuple:ghost/rounded/icon+text",
-            "match:c01",
-            "match:c03",
-            "match:c04",
-            "match:c08",
-            "match:t01"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://algolia.com/",
-          "tags": [
-            "saas:algolia.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:ghost/rounded/icon+text",
-            "tuple:ghost/sharp/text",
-            "tuple:outline/pill/icon+text",
-            "tuple:outline/rounded/text",
-            "tuple:gradient/rounded/text",
-            "tuple:solid/pill/text",
-            "tuple:ghost/rounded/text",
-            "tuple:solid/rounded/text",
-            "tuple:ghost/sharp/icon+text",
-            "tuple:solid/sharp/text",
-            "tuple:gradient/sharp/icon-only",
-            "match:c01",
-            "match:c04",
-            "match:c07",
-            "match:c08",
-            "match:t02",
-            "match:t03"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://hubspot.com/",
-          "tags": [
-            "saas:hubspot.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:solid/rounded/text",
-            "tuple:ghost/rounded/text",
-            "tuple:solid/sharp/icon+text",
-            "tuple:tint/pill/text",
-            "tuple:solid/pill/icon-only",
-            "tuple:ghost/pill/icon+text",
-            "match:c01",
-            "match:c03",
-            "match:c04",
-            "match:c08"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://cal.com/",
-          "tags": [
-            "saas:cal.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:ghost/rounded/icon+text",
-            "tuple:solid/rounded/text",
-            "tuple:solid/pill/text",
-            "tuple:solid/rounded/icon+text",
-            "match:c01",
-            "match:c04",
-            "match:t02"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://attio.com/",
-          "tags": [
-            "saas:attio.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:ghost/rounded/icon-only",
-            "tuple:ghost/rounded/icon+text",
-            "tuple:solid/rounded/text",
-            "tuple:gradient/rounded/text",
-            "tuple:outline/rounded/icon+text",
-            "tuple:solid/sharp/icon-only",
-            "match:c01",
-            "match:c04"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://tally.so/",
-          "tags": [
-            "saas:tally.so",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:solid/rounded/text",
-            "tuple:solid/rounded/icon+text",
-            "match:c01"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://typeform.com/",
-          "tags": [
-            "saas:typeform.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:ghost/sharp/icon-only",
-            "tuple:ghost/sharp/icon+text",
-            "tuple:solid/rounded/text",
-            "match:c01",
-            "match:c04"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://m3.material.io/components/buttons/overview",
-          "tags": [
-            "ds:M3",
-            "render:incomplete",
-            "family:solid",
-            "family:tint",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://carbondesignsystem.com/components/button/usage/",
-          "tags": [
-            "ds:Carbon",
-            "evidence:guideline",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "shape:sharp",
-            "match:c02",
-            "match:c08",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://fluent2.microsoft.design/components/web/react/core/button/usage",
-          "tags": [
-            "ds:Fluent",
-            "evidence:guideline",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "shape:sharp",
-            "content:split",
-            "match:c02",
-            "match:c08",
-            "match:c10",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://github.com/material-components/material-components-android/blob/master/docs/components/CommonButton.md",
-          "tags": [
-            "ds:M3",
-            "evidence:guideline",
-            "family:solid",
-            "family:tint",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "shape:pill",
-            "match:c03",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://www.radix-ui.com/themes/docs/components/icon-button",
-          "tags": [
-            "ds:Radix",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:tint",
-            "family:outline",
-            "family:ghost",
-            "shape:circle",
-            "match:c06",
-            "match:c09",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        }
-      ],
-      "merged": [
-        "c03",
-        "t01",
-        "t02",
-        "t03",
-        "n01",
-        "n05",
-        "n11"
-      ]
-    },
-    {
-      "id": "c06",
-      "name": "ソリッド・サークル",
-      "axes": {
-        "fill": "solid",
-        "shape": "circle",
-        "content": "icon-only"
-      },
-      "effect": "flat",
-      "verdict": "3者一致採用",
-      "reason": "濃色の円形でコンパクトな操作を表現。",
-      "votes": "ADOPT/ADOPT/ADOPT",
-      "sources": [
-        {
-          "url": "https://ui.shadcn.com/docs/components/button",
-          "tags": [
-            "ds:shadcn",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "family:tint",
-            "shape:rounded",
-            "shape:pill",
-            "match:c01",
-            "match:c04",
-            "match:c06",
-            "match:c07",
-            "match:c09"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://www.radix-ui.com/themes/docs/components/icon-button",
-          "tags": [
-            "ds:Radix",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:tint",
-            "family:outline",
-            "family:ghost",
-            "shape:circle",
-            "match:c06",
-            "match:c09"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://m3.material.io/components/buttons/overview",
-          "tags": [
-            "ds:M3",
-            "render:incomplete",
-            "family:solid",
-            "family:tint",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
-          "tags": [
-            "ds:HIG",
-            "evidence:guideline",
-            "family:glass",
-            "family:solid",
-            "family:elevated",
-            "content:text",
-            "content:icon+text",
-            "content:icon-only",
-            "content:loading",
-            "match:c01",
-            "match:c05",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://www.radix-ui.com/themes/docs/components/button",
-          "tags": [
-            "ds:Radix",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:tint",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "shape:sharp",
-            "shape:rounded",
-            "shape:pill",
-            "match:c01",
-            "match:c02",
-            "match:c03",
-            "match:c04",
-            "match:c05",
-            "match:c07",
-            "match:c08",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://vercel.com/geist/button",
-          "tags": [
-            "ds:Geist",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "shape:rounded",
-            "shape:pill",
-            "content:loading",
-            "match:c01",
-            "match:c04",
-            "match:c05",
-            "match:c07",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://carbondesignsystem.com/components/button/usage/",
-          "tags": [
-            "ds:Carbon",
-            "evidence:guideline",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "shape:sharp",
-            "match:c02",
-            "match:c08",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://shopify.dev/docs/api/app-home/latest/web-components/actions/button",
-          "tags": [
-            "ds:Polaris",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "shape:rounded",
-            "content:loading",
-            "match:c01",
-            "match:c04",
-            "match:c05",
-            "match:c07",
-            "match:c09",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://fluent2.microsoft.design/components/web/react/core/button/usage",
-          "tags": [
-            "ds:Fluent",
-            "evidence:guideline",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "shape:sharp",
-            "content:split",
-            "match:c02",
-            "match:c08",
-            "match:c10",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://github.com/material-components/material-components-android/blob/master/docs/components/CommonButton.md",
-          "tags": [
-            "ds:M3",
-            "evidence:guideline",
-            "family:solid",
-            "family:tint",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "shape:pill",
-            "match:c03",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        }
-      ],
-      "merged": [
-        "c09",
-        "n04",
-        "n12"
-      ]
-    },
-    {
-      "id": "c07",
-      "name": "ラウンド・アウトライン",
-      "axes": {
-        "fill": "outline",
-        "shape": "rounded",
-        "content": "text"
-      },
-      "effect": "hairline frame",
-      "verdict": "3者一致採用",
-      "reason": "柔らかな角丸の細枠で副次操作を表現。",
-      "votes": "ADOPT/ADOPT/ADOPT",
-      "sources": [
-        {
-          "url": "https://www.radix-ui.com/themes/docs/components/button",
-          "tags": [
-            "ds:Radix",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:tint",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "shape:sharp",
-            "shape:rounded",
-            "shape:pill",
-            "match:c01",
-            "match:c02",
-            "match:c03",
-            "match:c04",
-            "match:c05",
-            "match:c07",
-            "match:c08"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://ui.shadcn.com/docs/components/button",
-          "tags": [
-            "ds:shadcn",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "family:tint",
-            "shape:rounded",
-            "shape:pill",
-            "match:c01",
-            "match:c04",
-            "match:c06",
-            "match:c07",
-            "match:c09"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://vercel.com/geist/button",
-          "tags": [
-            "ds:Geist",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "shape:rounded",
-            "shape:pill",
-            "content:loading",
-            "match:c01",
-            "match:c04",
-            "match:c05",
-            "match:c07"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://shopify.dev/docs/api/app-home/latest/web-components/actions/button",
-          "tags": [
-            "ds:Polaris",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "shape:rounded",
-            "content:loading",
-            "match:c01",
-            "match:c04",
-            "match:c05",
-            "match:c07",
-            "match:c09"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://airtable.com/",
-          "tags": [
-            "saas:airtable.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:outline/rounded/text",
-            "tuple:solid/rounded/text",
-            "tuple:solid/pill/icon-only",
-            "match:c01",
-            "match:c07"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://miro.com/",
-          "tags": [
-            "saas:miro.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:solid/rounded/text",
-            "tuple:ghost/rounded/icon+text",
-            "tuple:outline/rounded/text",
-            "tuple:gradient/rounded/text",
-            "tuple:ghost/rounded/text",
-            "match:c01",
-            "match:c04",
-            "match:c07",
-            "match:c08"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://algolia.com/",
-          "tags": [
-            "saas:algolia.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:ghost/rounded/icon+text",
-            "tuple:ghost/sharp/text",
-            "tuple:outline/pill/icon+text",
-            "tuple:outline/rounded/text",
-            "tuple:gradient/rounded/text",
-            "tuple:solid/pill/text",
-            "tuple:ghost/rounded/text",
-            "tuple:solid/rounded/text",
-            "tuple:ghost/sharp/icon+text",
-            "tuple:solid/sharp/text",
-            "tuple:gradient/sharp/icon-only",
-            "match:c01",
-            "match:c04",
-            "match:c07",
-            "match:c08",
-            "match:t02",
-            "match:t03"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://m3.material.io/components/buttons/overview",
-          "tags": [
-            "ds:M3",
-            "render:incomplete",
-            "family:solid",
-            "family:tint",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://carbondesignsystem.com/components/button/usage/",
-          "tags": [
-            "ds:Carbon",
-            "evidence:guideline",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "shape:sharp",
-            "match:c02",
-            "match:c08",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://fluent2.microsoft.design/components/web/react/core/button/usage",
-          "tags": [
-            "ds:Fluent",
-            "evidence:guideline",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "shape:sharp",
-            "content:split",
-            "match:c02",
-            "match:c08",
-            "match:c10",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://github.com/material-components/material-components-android/blob/master/docs/components/CommonButton.md",
-          "tags": [
-            "ds:M3",
-            "evidence:guideline",
-            "family:solid",
-            "family:tint",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "shape:pill",
-            "match:c03",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://www.radix-ui.com/themes/docs/components/icon-button",
-          "tags": [
-            "ds:Radix",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:tint",
-            "family:outline",
-            "family:ghost",
-            "shape:circle",
-            "match:c06",
-            "match:c09",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        }
-      ],
-      "merged": [
-        "c02",
-        "j03"
-      ]
-    },
-    {
-      "id": "c08",
-      "name": "プレーン・テキスト",
-      "axes": {
-        "fill": "ghost",
-        "shape": "rounded",
-        "content": "text"
-      },
-      "effect": "no resting frame",
-      "verdict": "3者一致採用",
-      "reason": "装飾を省いた文字だけの基準形。",
-      "votes": "ADOPT/ADOPT/ADOPT",
-      "sources": [
-        {
-          "url": "https://www.radix-ui.com/themes/docs/components/button",
-          "tags": [
-            "ds:Radix",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:tint",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "shape:sharp",
-            "shape:rounded",
-            "shape:pill",
-            "match:c01",
-            "match:c02",
-            "match:c03",
-            "match:c04",
-            "match:c05",
-            "match:c07",
-            "match:c08"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://carbondesignsystem.com/components/button/usage/",
-          "tags": [
-            "ds:Carbon",
-            "evidence:guideline",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "shape:sharp",
-            "match:c02",
-            "match:c08"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://fluent2.microsoft.design/components/web/react/core/button/usage",
-          "tags": [
-            "ds:Fluent",
-            "evidence:guideline",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "shape:sharp",
-            "content:split",
-            "match:c02",
-            "match:c08",
-            "match:c10"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://linear.app/",
-          "tags": [
-            "saas:linear.app",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:solid/sharp/text",
-            "tuple:ghost/pill/text",
-            "tuple:solid/pill/text",
-            "tuple:ghost/rounded/icon+text",
-            "tuple:ghost/pill/icon-only",
-            "tuple:tint/pill/icon-only",
-            "tuple:tint/rounded/icon+text",
-            "tuple:ghost/sharp/icon-only",
-            "tuple:outline/pill/text",
-            "match:c04",
-            "match:c08",
-            "match:t02",
-            "match:t03"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://figma.com/",
-          "tags": [
-            "saas:figma.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:ghost/sharp/text",
-            "tuple:solid/rounded/text",
-            "tuple:ghost/sharp/icon-only",
-            "tuple:ghost/sharp/icon+text",
-            "match:c01",
-            "match:c04",
-            "match:c08"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://clerk.com/",
-          "tags": [
-            "saas:clerk.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:solid/rounded/text",
-            "tuple:ghost/rounded/text",
-            "tuple:solid/sharp/icon+text",
-            "tuple:ghost/pill/icon+text",
-            "tuple:solid/pill/icon+text",
-            "match:c01",
-            "match:c04",
-            "match:c08",
-            "match:t01"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://slack.com/",
-          "tags": [
-            "saas:slack.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:solid/sharp/text",
-            "tuple:ghost/sharp/icon+text",
-            "tuple:ghost/sharp/text",
-            "match:c04",
-            "match:c08",
-            "match:t03"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://clickup.com/",
-          "tags": [
-            "saas:clickup.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:ghost/rounded/icon+text",
-            "tuple:ghost/rounded/text",
-            "tuple:solid/rounded/text",
-            "tuple:solid/pill/icon+text",
-            "match:c01",
-            "match:c04",
-            "match:c08",
-            "match:t01"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://miro.com/",
-          "tags": [
-            "saas:miro.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:solid/rounded/text",
-            "tuple:ghost/rounded/icon+text",
-            "tuple:outline/rounded/text",
-            "tuple:gradient/rounded/text",
-            "tuple:ghost/rounded/text",
-            "match:c01",
-            "match:c04",
-            "match:c07",
-            "match:c08"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://loom.com/",
-          "tags": [
-            "saas:loom.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:ghost/rounded/icon-only",
-            "tuple:ghost/pill/text",
-            "tuple:solid/pill/text",
-            "tuple:solid/pill/icon+text",
-            "tuple:solid/sharp/text",
-            "tuple:gradient/sharp/icon-only",
-            "match:c08",
-            "match:t01",
-            "match:t02",
-            "match:t03"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://box.com/",
-          "tags": [
-            "saas:box.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:tint/pill/text",
-            "tuple:ghost/sharp/text",
-            "tuple:solid/pill/text",
-            "tuple:gradient/pill/text",
-            "match:c03",
-            "match:c08",
-            "match:t02"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://canva.com/",
-          "tags": [
-            "saas:canva.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:ghost/rounded/text",
-            "tuple:tint/rounded/text",
-            "tuple:gradient/pill/text",
-            "tuple:ghost/pill/text",
-            "tuple:ghost/sharp/icon-only",
-            "tuple:gradient/pill/icon-only",
-            "match:c08"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://webflow.com/",
-          "tags": [
-            "saas:webflow.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:solid/sharp/text",
-            "tuple:solid/rounded/text",
-            "tuple:ghost/sharp/text",
-            "tuple:solid/sharp/icon+text",
-            "tuple:ghost/sharp/icon-only",
-            "match:c01",
-            "match:c08",
-            "match:t03"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://retool.com/",
-          "tags": [
-            "saas:retool.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:ghost/sharp/text",
-            "tuple:ghost/sharp/icon+text",
-            "tuple:outline/pill/text",
-            "tuple:solid/pill/text",
-            "tuple:outline/pill/icon-only",
-            "tuple:tint/rounded/icon+text",
-            "tuple:solid/pill/icon-only",
-            "tuple:solid/rounded/icon+text",
-            "tuple:tint/pill/icon+text",
-            "match:c04",
-            "match:c08",
-            "match:t02"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://posthog.com/",
-          "tags": [
-            "saas:posthog.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:ghost/sharp/text",
-            "tuple:solid/rounded/text",
-            "tuple:ghost/sharp/icon-only",
-            "tuple:ghost/pill/icon-only",
-            "tuple:ghost/rounded/text",
-            "tuple:tint/sharp/icon-only",
-            "tuple:solid/pill/icon-only",
-            "match:c01",
-            "match:c08"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://planetscale.com/",
-          "tags": [
-            "saas:planetscale.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:outline/sharp/text",
-            "tuple:solid/sharp/text",
-            "tuple:ghost/sharp/text",
-            "tuple:outline/sharp/icon+text",
-            "match:c02",
-            "match:c08",
-            "match:t03"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://railway.com/",
-          "tags": [
-            "saas:railway.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:solid/pill/icon+text",
-            "tuple:ghost/rounded/icon+text",
-            "tuple:ghost/rounded/text",
-            "tuple:solid/rounded/text",
-            "tuple:tint/rounded/text",
-            "match:c01",
-            "match:c04",
-            "match:c08",
-            "match:t01"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://fly.io/",
-          "tags": [
-            "saas:fly.io",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:ghost/sharp/text",
-            "tuple:tint/pill/text",
-            "tuple:solid/rounded/text",
-            "tuple:solid/pill/icon+text",
-            "tuple:ghost/rounded/icon+text",
-            "match:c01",
-            "match:c03",
-            "match:c04",
-            "match:c08",
-            "match:t01"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://algolia.com/",
-          "tags": [
-            "saas:algolia.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:ghost/rounded/icon+text",
-            "tuple:ghost/sharp/text",
-            "tuple:outline/pill/icon+text",
-            "tuple:outline/rounded/text",
-            "tuple:gradient/rounded/text",
-            "tuple:solid/pill/text",
-            "tuple:ghost/rounded/text",
-            "tuple:solid/rounded/text",
-            "tuple:ghost/sharp/icon+text",
-            "tuple:solid/sharp/text",
-            "tuple:gradient/sharp/icon-only",
-            "match:c01",
-            "match:c04",
-            "match:c07",
-            "match:c08",
-            "match:t02",
-            "match:t03"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://hubspot.com/",
-          "tags": [
-            "saas:hubspot.com",
-            "method:chromium-computed-style",
-            "render:checked",
-            "tuple:solid/rounded/text",
-            "tuple:ghost/rounded/text",
-            "tuple:solid/sharp/icon+text",
-            "tuple:tint/pill/text",
-            "tuple:solid/pill/icon-only",
-            "tuple:ghost/pill/icon+text",
-            "match:c01",
-            "match:c03",
-            "match:c04",
-            "match:c08"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://m3.material.io/components/buttons/overview",
-          "tags": [
-            "ds:M3",
-            "render:incomplete",
-            "family:solid",
-            "family:tint",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://ui.shadcn.com/docs/components/button",
-          "tags": [
-            "ds:shadcn",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "family:tint",
-            "shape:rounded",
-            "shape:pill",
-            "match:c01",
-            "match:c04",
-            "match:c06",
-            "match:c07",
-            "match:c09",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://vercel.com/geist/button",
-          "tags": [
-            "ds:Geist",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "shape:rounded",
-            "shape:pill",
-            "content:loading",
-            "match:c01",
-            "match:c04",
-            "match:c05",
-            "match:c07",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://shopify.dev/docs/api/app-home/latest/web-components/actions/button",
-          "tags": [
-            "ds:Polaris",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "shape:rounded",
-            "content:loading",
-            "match:c01",
-            "match:c04",
-            "match:c05",
-            "match:c07",
-            "match:c09",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://github.com/material-components/material-components-android/blob/master/docs/components/CommonButton.md",
-          "tags": [
-            "ds:M3",
-            "evidence:guideline",
-            "family:solid",
-            "family:tint",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "shape:pill",
-            "match:c03",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://www.radix-ui.com/themes/docs/components/icon-button",
-          "tags": [
-            "ds:Radix",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:tint",
-            "family:outline",
-            "family:ghost",
-            "shape:circle",
-            "match:c06",
-            "match:c09",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        }
-      ],
-      "merged": [
-        "c04"
-      ]
-    },
-    {
-      "id": "c10",
-      "name": "構造的なスプリット",
-      "axes": {
-        "fill": "solid",
-        "shape": "sharp",
-        "content": "split"
-      },
-      "effect": "divider + chevron",
-      "verdict": "3者一致採用",
-      "reason": "直角の分割面で実行とメニューを分離。",
-      "votes": "ADOPT/ADOPT/ADOPT",
-      "sources": [
-        {
-          "url": "https://fluent2.microsoft.design/components/web/react/core/button/usage",
-          "tags": [
-            "ds:Fluent",
-            "evidence:guideline",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "shape:sharp",
-            "content:split",
-            "match:c02",
-            "match:c08",
-            "match:c10"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://m3.material.io/components/buttons/overview",
-          "tags": [
-            "ds:M3",
-            "render:incomplete",
-            "family:solid",
-            "family:tint",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
-          "tags": [
-            "ds:HIG",
-            "evidence:guideline",
-            "family:glass",
-            "family:solid",
-            "family:elevated",
-            "content:text",
-            "content:icon+text",
-            "content:icon-only",
-            "content:loading",
-            "match:c01",
-            "match:c05",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://www.radix-ui.com/themes/docs/components/button",
-          "tags": [
-            "ds:Radix",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:tint",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "shape:sharp",
-            "shape:rounded",
-            "shape:pill",
-            "match:c01",
-            "match:c02",
-            "match:c03",
-            "match:c04",
-            "match:c05",
-            "match:c07",
-            "match:c08",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://ui.shadcn.com/docs/components/button",
-          "tags": [
-            "ds:shadcn",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "family:tint",
-            "shape:rounded",
-            "shape:pill",
-            "match:c01",
-            "match:c04",
-            "match:c06",
-            "match:c07",
-            "match:c09",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://vercel.com/geist/button",
-          "tags": [
-            "ds:Geist",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "shape:rounded",
-            "shape:pill",
-            "content:loading",
-            "match:c01",
-            "match:c04",
-            "match:c05",
-            "match:c07",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://carbondesignsystem.com/components/button/usage/",
-          "tags": [
-            "ds:Carbon",
-            "evidence:guideline",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "shape:sharp",
-            "match:c02",
-            "match:c08",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://shopify.dev/docs/api/app-home/latest/web-components/actions/button",
-          "tags": [
-            "ds:Polaris",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "shape:rounded",
-            "content:loading",
-            "match:c01",
-            "match:c04",
-            "match:c05",
-            "match:c07",
-            "match:c09",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://github.com/material-components/material-components-android/blob/master/docs/components/CommonButton.md",
-          "tags": [
-            "ds:M3",
-            "evidence:guideline",
-            "family:solid",
-            "family:tint",
-            "family:outline",
-            "family:ghost",
-            "family:elevated",
-            "shape:pill",
-            "match:c03",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        },
-        {
-          "url": "https://www.radix-ui.com/themes/docs/components/icon-button",
-          "tags": [
-            "ds:Radix",
-            "evidence:documented-configuration",
-            "family:solid",
-            "family:tint",
-            "family:outline",
-            "family:ghost",
-            "shape:circle",
-            "match:c06",
-            "match:c09",
-            "relation:family-only"
-          ],
-          "observed": "2026-11-08"
-        }
-      ],
-      "merged": [
-        "e04",
-        "n15",
-        "n20",
-        "j05"
-      ]
-    },
-    {
-      "id": "e01",
-      "name": "グラス・カプセル",
-      "axes": {
-        "fill": "glass",
-        "shape": "pill",
-        "content": "icon+text"
-      },
-      "effect": "backdrop blur + rim",
-      "verdict": "3者一致採用",
-      "reason": "曇りガラスと光の縁で透過素材を表現。",
-      "votes": "ADOPT/ADOPT/ADOPT",
-      "sources": [],
-      "merged": [
-        "n03"
-      ]
-    },
-    {
-      "id": "e02",
-      "name": "スペクトラム・ピル",
-      "axes": {
-        "fill": "spectrum",
-        "shape": "pill",
-        "content": "text"
-      },
-      "effect": "multicolor fill",
-      "verdict": "3者一致採用",
-      "reason": "全面の多色グラデーションが明確な個性。",
-      "votes": "ADOPT/ADOPT/ADOPT",
-      "sources": [],
-      "merged": [
-        "n17",
-        "n18"
-      ]
-    },
-    {
-      "id": "e03",
-      "name": "ハードシャドー・アロー",
-      "axes": {
-        "fill": "neo-brutal",
-        "shape": "sharp",
-        "content": "icon+text"
-      },
-      "effect": "thick stroke + offset shadow",
-      "verdict": "3者一致採用",
-      "reason": "太い枠と硬いずれ影でグラフィカルに。",
-      "votes": "ADOPT/ADOPT/ADOPT",
-      "sources": [],
-      "merged": [
-        "n07",
-        "n16"
-      ]
-    },
-    {
-      "id": "e05",
-      "name": "タクタイル・オーブ",
-      "axes": {
-        "fill": "tactile",
-        "shape": "circle",
-        "content": "icon-only"
-      },
-      "effect": "domeshaped shading",
-      "verdict": "3者一致採用",
-      "reason": "凸面の陰影で平らな円との差を表現。",
-      "votes": "ADOPT/ADOPT/ADOPT",
-      "sources": [],
-      "merged": [
-        "n08"
-      ]
-    },
     {
       "id": "j02",
       "name": "縦書き・コンタクトタブ",
       "axes": {
         "fill": "solid",
         "shape": "tall edge-tab",
-        "content": "vertical Japanese text"
+        "content": "vertical Japanese text+optional icon"
       },
-      "effect": "fixed viewport-edge placement",
+      "description": "solid/tall edge-tab/vertical Japanese text+optional icon/fixed viewport-edge placement",
+      "reason": "縦書きの「お問い合わせ」が視線を縦に導く端タブ。赤茶の細長い面で、横組みのボタンとは異なる入口をつくる。",
+      "verdict": "3者一致採用",
+      "votes": "ADOPT/ADOPT/ADOPT",
+      "merged": [
+        "k17"
+      ],
       "sources": [
         {
           "url": "https://www.ueshima-coffee-ten.jp/",
@@ -1780,106 +61,1246 @@
           "observed": "2026-11-08"
         }
       ],
-      "reason": "画面端に寄り添う細長い縦書きタブ。国内サイト3件の観測に由来。",
       "origin": "JP",
+      "jpRefCount": 3
+    },
+    {
+      "id": "j03",
+      "name": "細枠・矢印ピル",
+      "axes": {
+        "fill": "outline",
+        "shape": "pill",
+        "content": "text+trailing arrow"
+      },
+      "description": "outline/pill/text+trailing arrow/thin continuous rim",
+      "reason": "細い青の一周枠が軽さを生むピル。余白を挟んだ末尾の矢印が、「はじめる」から次の画面へ視線をつなぐ。",
+      "verdict": "3者一致採用",
+      "votes": "ADOPT/ADOPT/ADOPT",
+      "merged": [
+        "c02",
+        "c07",
+        "k04",
+        "k05",
+        "k06",
+        "k10"
+      ],
+      "sources": [
+        {
+          "url": "https://mizota-ks.com/",
+          "gallery_url": "https://io3000.com/bm/mizota-ks/",
+          "tags": [
+            "gallery:io",
+            "posted:2025-12-26",
+            "locale:ja",
+            "method:chromium-desktop-visual",
+            "inspection:rendered-two-scroll-positions",
+            "candidate:j03",
+            "button:outline-capsule-with-arrow"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://coffee.ajca.or.jp/",
+          "gallery_url": "https://io3000.com/bm/ajca/",
+          "tags": [
+            "gallery:io",
+            "posted:2025-12-24",
+            "locale:ja",
+            "method:chromium-desktop-visual",
+            "inspection:rendered-two-scroll-positions",
+            "candidate:j03",
+            "button:outline-capsule-with-arrow"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://recruit.toyox.co.jp/",
+          "gallery_url": "https://muuuuu.org/industry/company/25190.html",
+          "tags": [
+            "gallery:muuu",
+            "posted:2026-11-05",
+            "locale:ja",
+            "method:chromium-desktop-visual",
+            "inspection:rendered-two-scroll-positions",
+            "candidate:j03",
+            "button:outline-capsule-with-arrow",
+            "candidate:j05",
+            "button:capsule-with-inset-arrow-lozenge"
+          ],
+          "observed": "2026-11-08"
+        }
+      ],
+      "origin": "JP",
+      "jpRefCount": 3
+    },
+    {
+      "id": "j04",
+      "name": "罫線・アクション行",
+      "axes": {
+        "fill": "none",
+        "shape": "wide row",
+        "content": "text+end arrow"
+      },
+      "description": "none/wide row/text+end arrow/horizontal rules with distant end marker",
+      "reason": "上下二本の罫線が横長のアクション行を区切る。離れた右端の矢印まで広がる余白が、誌面のようなリズムをつくる。",
+      "verdict": "3者一致採用",
+      "votes": "ADOPT/ADOPT/ADOPT",
+      "merged": [
+        "n09",
+        "k12",
+        "k19"
+      ],
+      "sources": [
+        {
+          "url": "https://www.mitsue.co.jp/",
+          "gallery_url": "https://io3000.com/bm/mitsue/",
+          "tags": [
+            "gallery:io",
+            "posted:2023-12-29",
+            "locale:ja",
+            "method:chromium-desktop-visual",
+            "inspection:rendered-two-scroll-positions",
+            "candidate:j01",
+            "button:arrow-circle-with-unboxed-label",
+            "candidate:j04",
+            "button:ruled-action-row-with-end-arrow"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.ritsumei.ac.jp/mot/",
+          "gallery_url": "https://io3000.com/bm/ritsumei-mot/",
+          "tags": [
+            "gallery:io",
+            "posted:2024-12-31",
+            "locale:ja",
+            "method:chromium-desktop-visual",
+            "inspection:rendered-two-scroll-positions",
+            "candidate:j04",
+            "button:ruled-action-row-with-end-arrow"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://evidencecare.jp/",
+          "gallery_url": "https://muuuuu.org/industry/hospital/25183.html",
+          "tags": [
+            "gallery:muuu",
+            "posted:2026-11-02",
+            "locale:ja",
+            "method:chromium-desktop-visual",
+            "inspection:rendered-two-scroll-positions",
+            "candidate:j04",
+            "button:ruled-action-row-with-end-arrow"
+          ],
+          "observed": "2026-11-08"
+        }
+      ],
+      "origin": "JP",
+      "jpRefCount": 3
+    },
+    {
+      "id": "k03",
+      "name": "ソリッド・ピル",
+      "axes": {
+        "fill": "solid",
+        "shape": "pill",
+        "content": "text"
+      },
+      "description": "solid/pill/text/flat face",
+      "reason": "深緑のベタ面と半円の両端で、文字だけの入口を明快に示す。中央の「はじめる」を囲む均等な余白が落ち着きを支える。",
+      "verdict": "3者一致採用",
+      "votes": "ADOPT/ADOPT/ADOPT",
+      "merged": [
+        "c01",
+        "t01",
+        "t02",
+        "t03",
+        "k01",
+        "k02",
+        "k07",
+        "k08",
+        "k09",
+        "k15",
+        "k16",
+        "k18",
+        "k22",
+        "n01",
+        "n05",
+        "n06"
+      ],
+      "sources": [
+        {
+          "url": "https://www.essnet.co.jp/",
+          "gallery_url": "https://io3000.com/bm/essnet/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2025-12-25",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03",
+            "candidate:k08",
+            "candidate:k14",
+            "candidate:k16"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://coffee.ajca.or.jp/",
+          "gallery_url": "https://io3000.com/bm/ajca/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2025-12-24",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k02",
+            "candidate:k03",
+            "candidate:k06"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.mitsue.co.jp/",
+          "gallery_url": "https://io3000.com/bm/mitsue/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2023-12-29",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.jeol.co.jp/",
+          "gallery_url": "https://io3000.com/bm/jeol/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2023-12-28",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03",
+            "candidate:k11"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://jinji.shogakukan.co.jp/",
+          "gallery_url": "https://io3000.com/bm/shogakukan-career/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2023-12-26",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k01",
+            "candidate:k03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.ritsumei.ac.jp/mot/",
+          "gallery_url": "https://io3000.com/bm/ritsumei-mot/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2024-12-31",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.chibune-hsp.jp/nijikujira/",
+          "gallery_url": "https://io3000.com/bm/nijikujira/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2024-12-30",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k02",
+            "candidate:k03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.kkokita.com/",
+          "gallery_url": "https://io3000.com/bm/kkokita/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2023-12-27",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03",
+            "candidate:k06",
+            "candidate:k08",
+            "candidate:k14",
+            "candidate:k16",
+            "candidate:k17",
+            "candidate:k22"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://shinsei-hospital.jp/",
+          "gallery_url": "https://io3000.com/bm/shinsei-hospital/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2024-12-26",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k02",
+            "candidate:k03",
+            "candidate:k05",
+            "candidate:k16",
+            "candidate:k19"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://altertokyo.com/2026/",
+          "gallery_url": "https://81-web.com/category/art-design/",
+          "tags": [
+            "record:site",
+            "gallery:81-web.com",
+            "posted:2026.10.9",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03",
+            "candidate:k21"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://moguta-mob.jp/",
+          "gallery_url": "https://io3000.com/bm/moguta/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2026-11-05",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03",
+            "candidate:k04",
+            "candidate:k14",
+            "candidate:k15",
+            "candidate:k18"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://reshape-local.com/",
+          "gallery_url": "https://sankoudesign.com/web/reshape/",
+          "tags": [
+            "record:site",
+            "gallery:sankoudesign.com",
+            "posted:2026/11/03",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k01",
+            "candidate:k03",
+            "candidate:k09",
+            "candidate:k21"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://and.crecia.co.jp/",
+          "gallery_url": "https://io3000.com/bm/and-crecia/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2026-11-04",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://2nd-rtl.com/",
+          "gallery_url": "https://sankoudesign.com/web/2ndretailing/",
+          "tags": [
+            "record:site",
+            "gallery:sankoudesign.com",
+            "posted:2026/11/03",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03",
+            "candidate:k11"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.yamadafoods.co.jp/",
+          "gallery_url": "https://io3000.com/bm/yamadafoods/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2026-11-02",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k02",
+            "candidate:k03",
+            "candidate:k19"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://iwakura-medi.com/",
+          "gallery_url": "https://io3000.com/bm/iwakura-clinic/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2026-10-28",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k01",
+            "candidate:k03",
+            "candidate:k06",
+            "candidate:k21"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.sb-oai.co.jp/",
+          "gallery_url": "https://muuuuu.org/industry/technology/25142.html",
+          "tags": [
+            "record:site",
+            "gallery:muuuuu.org",
+            "posted:2026-10-25",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://mtd-inc.co.jp/recruit/",
+          "gallery_url": "https://webdesignclip.com/mtd-inc-recruit/",
+          "tags": [
+            "record:site",
+            "gallery:webdesignclip.com",
+            "posted:2026-08-27",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03",
+            "candidate:k18"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.dorokogyo.co.jp/recruitment/",
+          "gallery_url": "https://webdesignclip.com/dorokogyo-recruitment/",
+          "tags": [
+            "record:site",
+            "gallery:webdesignclip.com",
+            "posted:2026-08-25",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k01",
+            "candidate:k02",
+            "candidate:k03",
+            "candidate:k16",
+            "candidate:k22"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://solve-net.com/tuningelement/5minutereliefpatch/",
+          "gallery_url": "https://webdesignclip.com/5minutereliefpatch/",
+          "tags": [
+            "record:site",
+            "gallery:webdesignclip.com",
+            "posted:2026-08-20",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k02",
+            "candidate:k03",
+            "candidate:k15",
+            "candidate:k16",
+            "candidate:k18"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.sankyu.co.jp/recruit/",
+          "gallery_url": "https://io3000.com/bm/sankyu-recruit/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2026-10-20",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03",
+            "candidate:k16"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://games.toei.co.jp/",
+          "gallery_url": "https://io3000.com/bm/toei-games/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2026-10-15",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03",
+            "candidate:k09",
+            "candidate:k11"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://fukufuku.nara.jp/",
+          "gallery_url": "https://webdesignclip.com/fukufuku-nara/",
+          "tags": [
+            "record:site",
+            "gallery:webdesignclip.com",
+            "posted:2026-08-18",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03",
+            "candidate:k09",
+            "candidate:k11"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://youga-shihou.com/",
+          "gallery_url": "https://webdesignclip.com/youga-shihou/",
+          "tags": [
+            "record:site",
+            "gallery:webdesignclip.com",
+            "posted:2026-08-17",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03",
+            "candidate:k11",
+            "candidate:k12",
+            "candidate:k13",
+            "candidate:k16",
+            "candidate:k20",
+            "candidate:k22"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://upforward.co.jp/",
+          "gallery_url": "https://muuuuu.org/color/white/25060.html",
+          "tags": [
+            "record:site",
+            "gallery:muuuuu.org",
+            "posted:2026-10-11",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k02",
+            "candidate:k03",
+            "candidate:k09"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://ogano-machi.jp/",
+          "gallery_url": "https://io3000.com/bm/ogano-machi/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2026-10-13",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03",
+            "candidate:k09"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://corp.aniera.jp/",
+          "gallery_url": "https://io3000.com/bm/aniera-corp/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2026-10-06",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03",
+            "candidate:k06",
+            "candidate:k09",
+            "candidate:k10"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://freshers.sanwakoutsu.co.jp/",
+          "gallery_url": "https://sankoudesign.com/web/sanwakoutsufreshers/",
+          "tags": [
+            "record:site",
+            "gallery:sankoudesign.com",
+            "posted:2026/10/25",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k01",
+            "candidate:k03",
+            "candidate:k15",
+            "candidate:k16"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://bestie-sports.co.jp/",
+          "gallery_url": "https://io3000.com/bm/bestie-sports/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2026-10-01",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://moshimo-project.jp/",
+          "gallery_url": "https://rdlp.jp/archives/otherdesign/lp/229550",
+          "tags": [
+            "record:site",
+            "gallery:rdlp.jp",
+            "posted:2026-11-04",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03",
+            "candidate:k19"
+          ],
+          "observed": "2026-11-08"
+        }
+      ],
+      "origin": "JP",
+      "jpRefCount": 30
+    },
+    {
+      "id": "k13",
+      "name": "フラット・アイコン円盤",
+      "axes": {
+        "fill": "solid",
+        "shape": "circle",
+        "content": "icon-only"
+      },
+      "description": "solid/circle/icon-only/flat disc",
+      "reason": "円盤の中央に矢印ひとつを据えたコンパクトな誘導。文字を使わず、丸い輪郭と進行方向の記号で操作を伝える。",
+      "verdict": "3者一致採用",
+      "votes": "ADOPT/ADOPT/ADOPT",
+      "merged": [
+        "c06",
+        "e05",
+        "n08"
+      ],
+      "sources": [
+        {
+          "url": "https://tsukuru-jp.com/",
+          "gallery_url": "https://muuuuu.org/taglist/topjs/25150.html",
+          "tags": [
+            "record:site",
+            "gallery:muuuuu.org",
+            "posted:2026-10-26",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k09",
+            "candidate:k11",
+            "candidate:k13"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.kettle.co.jp/",
+          "gallery_url": "https://muuuuu.org/color/white/25121.html",
+          "tags": [
+            "record:site",
+            "gallery:muuuuu.org",
+            "posted:2026-10-21",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k06",
+            "candidate:k09",
+            "candidate:k13",
+            "candidate:k16",
+            "candidate:k20"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://hirayasumi-anime.jp/",
+          "gallery_url": "https://sankoudesign.com/web/hirayasumi/",
+          "tags": [
+            "record:site",
+            "gallery:sankoudesign.com",
+            "posted:2026/11/03",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k01",
+            "candidate:k02",
+            "candidate:k13",
+            "candidate:k16",
+            "candidate:k22"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://wis-works.jp/",
+          "gallery_url": "https://io3000.com/bm/wis-works/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2026-10-19",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k09",
+            "candidate:k13"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://youga-shihou.com/",
+          "gallery_url": "https://webdesignclip.com/youga-shihou/",
+          "tags": [
+            "record:site",
+            "gallery:webdesignclip.com",
+            "posted:2026-08-17",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03",
+            "candidate:k11",
+            "candidate:k12",
+            "candidate:k13",
+            "candidate:k16",
+            "candidate:k20",
+            "candidate:k22"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.marketing-week.jp/hub/ja-jp/lp/visit/osaka/spex.html",
+          "gallery_url": "https://rdlp.jp/archives/otherdesign/lp/229569",
+          "tags": [
+            "record:site",
+            "gallery:rdlp.jp",
+            "posted:2026-11-05",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k02",
+            "candidate:k13"
+          ],
+          "observed": "2026-11-08"
+        }
+      ],
+      "origin": "JP",
+      "jpRefCount": 6
+    },
+    {
+      "id": "k14",
+      "name": "グラデーション・フェイス",
+      "axes": {
+        "fill": "gradient",
+        "shape": "varied",
+        "content": "text with optional glyph"
+      },
+      "description": "gradient/varied/text with optional glyph/gradient across face",
+      "reason": "色がなめらかに移るグラデーションが面の主役。「はじめる」と矢印を両側に配し、柔らかな色の流れに進行方向を重ねる。",
+      "verdict": "3者一致採用",
+      "votes": "ADOPT/ADOPT/ADOPT",
+      "merged": [
+        "e02",
+        "e04",
+        "c10"
+      ],
+      "sources": [
+        {
+          "url": "https://www.essnet.co.jp/",
+          "gallery_url": "https://io3000.com/bm/essnet/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2025-12-25",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03",
+            "candidate:k08",
+            "candidate:k14",
+            "candidate:k16"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.kkokita.com/",
+          "gallery_url": "https://io3000.com/bm/kkokita/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2023-12-27",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03",
+            "candidate:k06",
+            "candidate:k08",
+            "candidate:k14",
+            "candidate:k16",
+            "candidate:k17",
+            "candidate:k22"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://recruit.toyox.co.jp/",
+          "gallery_url": "https://muuuuu.org/industry/company/25190.html",
+          "tags": [
+            "record:site",
+            "gallery:muuuuu.org",
+            "posted:2026-11-05",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k09",
+            "candidate:k14"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://moguta-mob.jp/",
+          "gallery_url": "https://io3000.com/bm/moguta/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2026-11-05",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03",
+            "candidate:k04",
+            "candidate:k14",
+            "candidate:k15",
+            "candidate:k18"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://umi.design/",
+          "gallery_url": "https://webdesignclip.com/umi-design/",
+          "tags": [
+            "record:site",
+            "gallery:webdesignclip.com",
+            "posted:2026-09-03",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k14"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.xserver.co.jp/recruit/",
+          "gallery_url": "https://io3000.com/bm/xserver-recruit/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2026-10-23",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k09",
+            "candidate:k14",
+            "candidate:k15",
+            "candidate:k16",
+            "candidate:k21",
+            "candidate:k23"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://meglia-recruit.com/",
+          "gallery_url": "https://webdesignclip.com/meglia-recruit/",
+          "tags": [
+            "record:site",
+            "gallery:webdesignclip.com",
+            "posted:2026-08-14",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k09",
+            "candidate:k11",
+            "candidate:k14",
+            "candidate:k15",
+            "candidate:k16",
+            "candidate:k18",
+            "candidate:k20"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.ujiyamada.com/lp/rec/dh/",
+          "gallery_url": "https://rdlp.jp/archives/otherdesign/lp/229563",
+          "tags": [
+            "record:site",
+            "gallery:rdlp.jp",
+            "posted:2026-11-05",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k14",
+            "candidate:k16"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://wad-no-wad.com/otaku-x/",
+          "gallery_url": "https://rdlp.jp/archives/otherdesign/lp/229548",
+          "tags": [
+            "record:site",
+            "gallery:rdlp.jp",
+            "posted:2026-11-04",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k14",
+            "candidate:k15",
+            "candidate:k20"
+          ],
+          "observed": "2026-11-08"
+        }
+      ],
+      "origin": "JP",
+      "jpRefCount": 9
+    },
+    {
+      "id": "k21",
+      "name": "半透明・レイヤー",
+      "axes": {
+        "fill": "translucent",
+        "shape": "pill",
+        "content": "text"
+      },
+      "description": "translucent/pill/text/frosted backdrop",
+      "reason": "背景の斜線をぼかして透かす、すりガラスのピル。乳白色の膜と明るい縁が奥行きを生み、「はじめる」だけを中央に浮かべる。",
+      "verdict": "3者一致採用",
+      "votes": "ADOPT/ADOPT/ADOPT",
+      "merged": [
+        "e01",
+        "n03",
+        "n18",
+        "k23"
+      ],
+      "sources": [
+        {
+          "url": "https://altertokyo.com/2026/",
+          "gallery_url": "https://81-web.com/category/art-design/",
+          "tags": [
+            "record:site",
+            "gallery:81-web.com",
+            "posted:2026.10.9",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k03",
+            "candidate:k21"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://reshape-local.com/",
+          "gallery_url": "https://sankoudesign.com/web/reshape/",
+          "tags": [
+            "record:site",
+            "gallery:sankoudesign.com",
+            "posted:2026/11/03",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k01",
+            "candidate:k03",
+            "candidate:k09",
+            "candidate:k21"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://iwakura-medi.com/",
+          "gallery_url": "https://io3000.com/bm/iwakura-clinic/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2026-10-28",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k01",
+            "candidate:k03",
+            "candidate:k06",
+            "candidate:k21"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.xserver.co.jp/recruit/",
+          "gallery_url": "https://io3000.com/bm/xserver-recruit/",
+          "tags": [
+            "record:site",
+            "gallery:io3000.com",
+            "posted:2026-10-23",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k09",
+            "candidate:k14",
+            "candidate:k15",
+            "candidate:k16",
+            "candidate:k21",
+            "candidate:k23"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://rosso-tokyo.co.jp/",
+          "gallery_url": "https://muuuuu.org/industry/technology/25048.html",
+          "tags": [
+            "record:site",
+            "gallery:muuuuu.org",
+            "posted:2026-10-08",
+            "locale:ja",
+            "method:playwright-chrome-computed",
+            "viewport:1440x1000",
+            "inspection:three-scroll-positions",
+            "candidate:k02",
+            "candidate:k11",
+            "candidate:k21"
+          ],
+          "observed": "2026-11-08"
+        }
+      ],
+      "origin": "JP",
+      "jpRefCount": 5
+    },
+    {
+      "id": "n04",
+      "name": "花形・モーフ",
+      "axes": {
+        "fill": "solid",
+        "shape": "scalloped-to-squircle",
+        "content": "icon-only"
+      },
+      "description": "solid/scalloped-to-squircle/icon-only/spring shape morph",
+      "reason": "押すと花形から四角い輪郭へ変わるモーフが特徴。黄緑の面に載せたプラスを保ちながら、形の変化で手応えを返す。",
       "verdict": "3者一致採用",
       "votes": "ADOPT/ADOPT/ADOPT",
       "merged": [],
-      "option": "縦書きタブのラベルは、共通の「Get started」に代えて「お問い合わせ」を表示。"
-    },
-    {
-      "id": "n06",
-      "name": "カットコーナー",
-      "axes": {
-        "fill": "solid",
-        "shape": "chamfered",
-        "content": "icon+text"
-      },
-      "effect": "double corner ticks",
-      "verdict": "3者一致採用",
-      "reason": "面取りと位置合わせ線でテクニカルに。",
-      "votes": "ADOPT/ADOPT/ADOPT",
-      "sources": [],
-      "merged": []
+      "sources": []
     },
     {
       "id": "n10",
-      "name": "コネクテッド・セグメント",
+      "name": "連結・セグメント",
       "axes": {
         "fill": "tonal",
         "shape": "joined capsule",
         "content": "icon+text group"
       },
-      "effect": "solid selected segment",
+      "description": "tonal/joined capsule/icon+text group/solid selected segment",
+      "reason": "選択面が日・週・月の間を滑る連結セグメント。三つの等幅領域を一つのカプセルに収め、期間の切り替えを示す。",
       "verdict": "3者一致採用",
-      "reason": "等幅の三つの選択肢でメニュー分割と区別。",
       "votes": "ADOPT/ADOPT/ADOPT",
-      "sources": [],
-      "merged": []
+      "merged": [],
+      "sources": []
+    },
+    {
+      "id": "n12",
+      "name": "ラージ・FAB",
+      "axes": {
+        "fill": "elevated",
+        "shape": "large rounded-square",
+        "content": "icon-only"
+      },
+      "description": "elevated/large rounded-square/pencil icon/two-layer shadow",
+      "reason": "二層の影による浮き上がりを強調したラージFAB。ラベンダーの大きな面と鉛筆アイコンで、新しく書き始める入口を示す。",
+      "verdict": "3者一致採用",
+      "votes": "ADOPT/ADOPT/ADOPT",
+      "merged": [
+        "c09",
+        "n13"
+      ],
+      "sources": []
     },
     {
       "id": "n14",
-      "name": "ネオン・ヘイロー",
+      "name": "ネオン・ハロー",
       "axes": {
         "fill": "dark",
         "shape": "pill",
         "content": "text"
       },
-      "effect": "bright stroke + diffuse outer glow",
+      "description": "dark/pill/text/bright stroke + diffuse outer glow",
+      "reason": "暗い背景へ緑の光がにじむネオンのピル。ホバーで広がる光彩が、細い輪郭と英字ラベルを鮮やかに際立たせる。",
       "verdict": "3者一致採用",
-      "reason": "広く静かな光のにじみで細い光の縁と区別。",
       "votes": "ADOPT/ADOPT/ADOPT",
-      "sources": [],
       "merged": [
         "n02"
-      ]
+      ],
+      "sources": []
+    },
+    {
+      "id": "n16",
+      "name": "ピクセル・アーケード",
+      "axes": {
+        "fill": "solid",
+        "shape": "stepped rectangle",
+        "content": "pixel text"
+      },
+      "description": "solid/stepped rectangle/pixel text/hard stepped extrusion",
+      "reason": "ビットマップの英字と階段状の縁が呼応するピクセルボタン。黄色い面の下に厚い段差を設け、ゲームのキーのような手触りを表す。",
+      "verdict": "3者一致採用",
+      "votes": "ADOPT/ADOPT/ADOPT",
+      "merged": [
+        "e03",
+        "n07",
+        "n22"
+      ],
+      "sources": []
+    },
+    {
+      "id": "n17",
+      "name": "クローム・ピル",
+      "axes": {
+        "fill": "metallic",
+        "shape": "pill",
+        "content": "text"
+      },
+      "description": "metallic/pill/text/mirrored light-dark bands",
+      "reason": "金属の反射帯を幾重にも走らせたクローム仕上げ。明るいラベルプレートが英字の読みやすさを支え、外周の陰影が硬さを伝える。",
+      "verdict": "3者一致採用",
+      "votes": "ADOPT/ADOPT/ADOPT",
+      "merged": [],
+      "sources": []
     },
     {
       "id": "n19",
-      "name": "ダッシュ・タイル",
+      "name": "破線・追加タイル",
       "axes": {
         "fill": "none",
         "shape": "rounded",
         "content": "plus+text"
       },
-      "effect": "dashed perimeter",
+      "description": "none/rounded/plus+text/dashed perimeter",
+      "reason": "破線の囲みが追加スロットを思わせる軽い入口。プラスと英字ラベルを横に並べ、控えめな枠でも開始操作を見つけやすくする。",
       "verdict": "3者一致採用",
-      "reason": "破線とプラスで追加できる空き枠を表現。",
       "votes": "ADOPT/ADOPT/ADOPT",
-      "sources": [],
-      "merged": []
+      "merged": [],
+      "sources": []
     },
     {
-      "id": "n21",
-      "name": "アロー・サテライト",
+      "id": "n20",
+      "name": "進捗・フィル",
       "axes": {
-        "fill": "solid",
+        "fill": "tonal",
         "shape": "pill",
-        "content": "text+separate circular arrow"
+        "content": "text"
       },
-      "effect": "detached end disc",
+      "description": "tonal/pill/text/solid horizontal progress sweep",
+      "reason": "クリックすると左から進むスイープが処理の進行を表す。待機時は空のピルに英字を置き、操作後に青い面が全幅へ伸びる。",
       "verdict": "3者一致採用",
-      "reason": "離れた矢印の円で二つに分かれた輪郭。",
       "votes": "ADOPT/ADOPT/ADOPT",
-      "sources": [],
-      "merged": [
-        "j01"
-      ]
-    },
-    {
-      "id": "n22",
-      "name": "ドット・マトリクス",
-      "axes": {
-        "fill": "dark",
-        "shape": "sharp",
-        "content": "dot-matrix text"
-      },
-      "effect": "illuminated LED dots",
-      "verdict": "3者一致採用",
-      "reason": "発光する丸い点でブロック状の文字と区別。",
-      "votes": "ADOPT/ADOPT/ADOPT",
-      "sources": [],
-      "merged": []
+      "merged": [],
+      "sources": []
     }
   ]
 }

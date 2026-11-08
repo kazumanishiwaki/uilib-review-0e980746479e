@@ -45,3 +45,11 @@
 /* Strict collection: upright contact tab and insertion slot. */
 .specimen[data-id=j02]{--btn-bg:#883e2f;--btn-fg:#fff8e8;--btn-radius:8px 0 0 8px;--tab-field:#efe6d8}
 .specimen[data-id=n19]{--slot-field:#edf3f0}
+/* v3: distinct stage/material tokens for the final fifteen. */
+:root{--stage-tab:#efe6d8;--stage-outline:#eaf1ff;--stage-rule:#faf0de;--stage-solid:#e1eee6;--stage-disc:#ffe4dc;--stage-gradient:#eee5fa;--stage-pane-a:#dfb6c9;--stage-pane-b:#926585;--stage-morph:#273c26;--stage-segments:#f3e9e1;--stage-fab:#f1eaff;--stage-neon:#092c25;--stage-pixel:#3c2648;--stage-chrome:#d7e1eb;--stage-slot:#edf3f0;--stage-progress:#e1f3fa}
+.specimen[data-id=j03]{--btn-bg:transparent;--btn-fg:#244f8e;--btn-border:#244f8e;--btn-radius:999px;--btn-shadow:none}
+.specimen[data-id=j04]{--btn-bg:transparent;--btn-fg:#725127;--btn-border:transparent;--btn-radius:0;--btn-shadow:none}
+.specimen[data-id=k03]{--btn-bg:#224b46;--btn-fg:#fffdf5;--btn-border:transparent;--btn-radius:999px;--btn-shadow:none}
+.specimen[data-id=k13]{--btn-bg:#bc432d;--btn-fg:#fff;--btn-border:transparent;--btn-radius:50%;--btn-shadow:none}
+.specimen[data-id=k14]{--btn-bg:linear-gradient(110deg,#086960,#3c60ab,#8243a2);--btn-fg:#fff;--btn-border:transparent;--btn-radius:8px;--btn-shadow:none}
+.specimen[data-id=k21]{--btn-bg:#ffffff70;--btn-fg:#36203a;--btn-border:#ffffffcc;--btn-radius:8px;--btn-shadow:none}

@@ -1,5 +1,111 @@
 [
   {
+    "site_url": "https://gran-burger.com/",
+    "gallery_url": "https://sankoudesign.com/web/granburger/",
+    "tags": [
+      "gallery:sankou",
+      "posted:2026/11/05",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:none-assigned"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://ondocollective.jp/",
+    "gallery_url": "https://sankoudesign.com/web/ondocollective/",
+    "tags": [
+      "gallery:sankou",
+      "posted:2026/11/05",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:none-assigned"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://digital-academy.kyoshin.co.jp/",
+    "gallery_url": "https://sankoudesign.com/web/kyoshindigitalacademy/",
+    "tags": [
+      "gallery:sankou",
+      "posted:2026/11/05",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:none-assigned"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://www.globalwork.jp/women/foxknit/2026autumn",
+    "gallery_url": "https://sankoudesign.com/web/globalwork-foxknit2026autumn/",
+    "tags": [
+      "gallery:sankou",
+      "posted:2026/11/05",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:none-assigned"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://wedding.tonami-komuro.com/",
+    "gallery_url": "https://sankoudesign.com/web/komuro-wedding/",
+    "tags": [
+      "gallery:sankou",
+      "posted:2026/11/04",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:none-assigned"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://wedding.s-tmro.com/",
+    "gallery_url": "https://sankoudesign.com/web/sugawara-wedding/",
+    "tags": [
+      "gallery:sankou",
+      "posted:2026/11/04",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:none-assigned"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://wantedlyinc.com/",
+    "gallery_url": "https://sankoudesign.com/web/wantedly/",
+    "tags": [
+      "gallery:sankou",
+      "posted:2026/11/03",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:j01",
+      "button:arrow-circle-with-unboxed-label"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://mycampus.jue.ac.jp/",
+    "gallery_url": "https://io3000.com/bm/mycampus/",
+    "tags": [
+      "gallery:io",
+      "posted:2025-12-31",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:j05",
+      "button:capsule-with-inset-arrow-lozenge"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
     "site_url": "https://www.ueshima-coffee-ten.jp/",
     "gallery_url": "https://io3000.com/bm/ueshima-coffee-ten/",
     "tags": [
@@ -10,6 +116,91 @@
       "inspection:rendered-two-scroll-positions",
       "candidate:j02",
       "button:fixed-vertical-contact-tab"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://www.saiseikai.gr.jp/",
+    "gallery_url": "https://io3000.com/bm/saiseikai-kawaguchi/",
+    "tags": [
+      "gallery:io",
+      "posted:2025-12-29",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:none-assigned"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://mizota-ks.com/",
+    "gallery_url": "https://io3000.com/bm/mizota-ks/",
+    "tags": [
+      "gallery:io",
+      "posted:2025-12-26",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:j03",
+      "button:outline-capsule-with-arrow"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://www.essnet.co.jp/",
+    "gallery_url": "https://io3000.com/bm/essnet/",
+    "tags": [
+      "gallery:io",
+      "posted:2025-12-25",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:j01",
+      "button:arrow-circle-with-unboxed-label"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://coffee.ajca.or.jp/",
+    "gallery_url": "https://io3000.com/bm/ajca/",
+    "tags": [
+      "gallery:io",
+      "posted:2025-12-24",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:j03",
+      "button:outline-capsule-with-arrow"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://www.mitsue.co.jp/",
+    "gallery_url": "https://io3000.com/bm/mitsue/",
+    "tags": [
+      "gallery:io",
+      "posted:2023-12-29",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:j01",
+      "button:arrow-circle-with-unboxed-label",
+      "candidate:j04",
+      "button:ruled-action-row-with-end-arrow"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://www.jeol.co.jp/",
+    "gallery_url": "https://io3000.com/bm/jeol/",
+    "tags": [
+      "gallery:io",
+      "posted:2023-12-28",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:j01",
+      "button:arrow-circle-with-unboxed-label"
     ],
     "observed_date": "2026-11-08"
   },
@@ -28,6 +219,59 @@
     "observed_date": "2026-11-08"
   },
   {
+    "site_url": "https://jinji.shogakukan.co.jp/",
+    "gallery_url": "https://io3000.com/bm/shogakukan-career/",
+    "tags": [
+      "gallery:io",
+      "posted:2023-12-26",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:none-assigned"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://www.ritsumei.ac.jp/mot/",
+    "gallery_url": "https://io3000.com/bm/ritsumei-mot/",
+    "tags": [
+      "gallery:io",
+      "posted:2024-12-31",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:j04",
+      "button:ruled-action-row-with-end-arrow"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://www.chibune-hsp.jp/nijikujira/",
+    "gallery_url": "https://io3000.com/bm/nijikujira/",
+    "tags": [
+      "gallery:io",
+      "posted:2024-12-30",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:none-assigned"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://www.bess.jp/",
+    "gallery_url": "https://io3000.com/bm/bess/",
+    "tags": [
+      "gallery:io",
+      "posted:2024-12-27",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:none-assigned"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
     "site_url": "https://shinsei-hospital.jp/",
     "gallery_url": "https://io3000.com/bm/shinsei-hospital/",
     "tags": [
@@ -38,6 +282,154 @@
       "inspection:rendered-two-scroll-positions",
       "candidate:j02",
       "button:fixed-vertical-contact-tab"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://recruit.toyox.co.jp/",
+    "gallery_url": "https://muuuuu.org/industry/company/25190.html",
+    "tags": [
+      "gallery:muuu",
+      "posted:2026-11-05",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:j03",
+      "button:outline-capsule-with-arrow",
+      "candidate:j05",
+      "button:capsule-with-inset-arrow-lozenge"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://mstage-group.jp/",
+    "gallery_url": "https://muuuuu.org/taglist/topjs/25187.html",
+    "tags": [
+      "gallery:muuu",
+      "posted:2026-11-04",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:none-assigned"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://evidencecare.jp/",
+    "gallery_url": "https://muuuuu.org/industry/hospital/25183.html",
+    "tags": [
+      "gallery:muuu",
+      "posted:2026-11-02",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:j04",
+      "button:ruled-action-row-with-end-arrow"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://and-dsgn.com/",
+    "gallery_url": "https://muuuuu.org/taglist/topjs/25160.html",
+    "tags": [
+      "gallery:muuu",
+      "posted:2026-10-28",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:none-assigned"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://tsukuru-jp.com/",
+    "gallery_url": "https://muuuuu.org/taglist/topjs/25150.html",
+    "tags": [
+      "gallery:muuu",
+      "posted:2026-10-26",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:j05",
+      "button:capsule-with-inset-arrow-lozenge"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://langgenius.co.jp/",
+    "gallery_url": "https://muuuuu.org/industry/technology/25131.html",
+    "tags": [
+      "gallery:muuu",
+      "posted:2026-10-23",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:none-assigned"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://www.kettle.co.jp/",
+    "gallery_url": "https://muuuuu.org/color/white/25121.html",
+    "tags": [
+      "gallery:muuu",
+      "posted:2026-10-21",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:none-assigned"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://kaitamaki.com/",
+    "gallery_url": "https://81-web.com/category/art-design/",
+    "tags": [
+      "gallery:81-web",
+      "posted:2026.11.5",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:none-assigned"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://2026.featuredprojects.jp/",
+    "gallery_url": "https://81-web.com/category/art-design/",
+    "tags": [
+      "gallery:81-web",
+      "posted:2026.10.16",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:none-assigned"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://altertokyo.com/2026/",
+    "gallery_url": "https://81-web.com/category/art-design/",
+    "tags": [
+      "gallery:81-web",
+      "posted:2026.10.9",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:none-assigned"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://shunjiyamanaka.com/",
+    "gallery_url": "https://81-web.com/category/art-design/",
+    "tags": [
+      "gallery:81-web",
+      "posted:2026.10.6",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:none-assigned"
     ],
     "observed_date": "2026-11-08"
   }
