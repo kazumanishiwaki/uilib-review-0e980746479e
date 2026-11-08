@@ -1,0 +1,5034 @@
+{
+  "schemaVersion": 2,
+  "observed": "2026-11-08",
+  "note": "18標本。SaaSホームページ40件をChromiumで確認し、38件で計算済みスタイルを観測。表示制限は未確認。Trendは8/40以上のみ。Expressiveはunverified / 独自案。CoreのDS証拠は既存の文書調査。",
+  "inventory": [
+    {
+      "url": "https://m3.material.io/components/buttons/overview",
+      "tags": [
+        "ds:M3",
+        "render:incomplete",
+        "family:solid",
+        "family:tint",
+        "family:outline",
+        "family:ghost",
+        "family:elevated"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+      "tags": [
+        "ds:HIG",
+        "evidence:guideline",
+        "family:glass",
+        "family:solid",
+        "family:elevated",
+        "content:text",
+        "content:icon+text",
+        "content:icon-only",
+        "content:loading",
+        "match:c01",
+        "match:c05"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://www.radix-ui.com/themes/docs/components/button",
+      "tags": [
+        "ds:Radix",
+        "evidence:documented-configuration",
+        "family:solid",
+        "family:tint",
+        "family:outline",
+        "family:ghost",
+        "family:elevated",
+        "shape:sharp",
+        "shape:rounded",
+        "shape:pill",
+        "match:c01",
+        "match:c02",
+        "match:c03",
+        "match:c04",
+        "match:c05",
+        "match:c07",
+        "match:c08"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://ui.shadcn.com/docs/components/button",
+      "tags": [
+        "ds:shadcn",
+        "evidence:documented-configuration",
+        "family:solid",
+        "family:outline",
+        "family:ghost",
+        "family:tint",
+        "shape:rounded",
+        "shape:pill",
+        "match:c01",
+        "match:c04",
+        "match:c06",
+        "match:c07",
+        "match:c09"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://vercel.com/geist/button",
+      "tags": [
+        "ds:Geist",
+        "evidence:documented-configuration",
+        "family:solid",
+        "family:outline",
+        "family:ghost",
+        "family:elevated",
+        "shape:rounded",
+        "shape:pill",
+        "content:loading",
+        "match:c01",
+        "match:c04",
+        "match:c05",
+        "match:c07"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://carbondesignsystem.com/components/button/usage/",
+      "tags": [
+        "ds:Carbon",
+        "evidence:guideline",
+        "family:solid",
+        "family:outline",
+        "family:ghost",
+        "shape:sharp",
+        "match:c02",
+        "match:c08"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://shopify.dev/docs/api/app-home/latest/web-components/actions/button",
+      "tags": [
+        "ds:Polaris",
+        "evidence:documented-configuration",
+        "family:solid",
+        "family:outline",
+        "family:ghost",
+        "family:elevated",
+        "shape:rounded",
+        "content:loading",
+        "match:c01",
+        "match:c04",
+        "match:c05",
+        "match:c07",
+        "match:c09"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://fluent2.microsoft.design/components/web/react/core/button/usage",
+      "tags": [
+        "ds:Fluent",
+        "evidence:guideline",
+        "family:solid",
+        "family:outline",
+        "family:ghost",
+        "shape:sharp",
+        "content:split",
+        "match:c02",
+        "match:c08",
+        "match:c10"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://github.com/material-components/material-components-android/blob/master/docs/components/CommonButton.md",
+      "tags": [
+        "ds:M3",
+        "evidence:guideline",
+        "family:solid",
+        "family:tint",
+        "family:outline",
+        "family:ghost",
+        "family:elevated",
+        "shape:pill",
+        "match:c03"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://www.radix-ui.com/themes/docs/components/icon-button",
+      "tags": [
+        "ds:Radix",
+        "evidence:documented-configuration",
+        "family:solid",
+        "family:tint",
+        "family:outline",
+        "family:ghost",
+        "shape:circle",
+        "match:c06",
+        "match:c09"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://linear.app/",
+      "tags": [
+        "saas:linear.app",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:solid/sharp/text",
+        "tuple:ghost/pill/text",
+        "tuple:solid/pill/text",
+        "tuple:ghost/rounded/icon+text",
+        "tuple:ghost/pill/icon-only",
+        "tuple:tint/pill/icon-only",
+        "tuple:tint/rounded/icon+text",
+        "tuple:ghost/sharp/icon-only",
+        "tuple:outline/pill/text",
+        "match:c04",
+        "match:c08",
+        "match:t02",
+        "match:t03"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://vercel.com/",
+      "tags": [
+        "saas:vercel.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:solid/rounded/text",
+        "tuple:ghost/sharp/icon+text",
+        "tuple:solid/pill/text",
+        "match:c01",
+        "match:c04",
+        "match:t02"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://stripe.com/",
+      "tags": [
+        "saas:stripe.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:ghost/sharp/icon+text",
+        "tuple:outline/sharp/icon+text",
+        "tuple:solid/sharp/icon+text",
+        "tuple:tint/sharp/icon+text",
+        "match:c02",
+        "match:c04"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://notion.com/",
+      "tags": [
+        "saas:notion.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:ghost/sharp/icon+text",
+        "tuple:solid/rounded/text",
+        "tuple:tint/pill/icon+text",
+        "match:c01",
+        "match:c04"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://raycast.com/",
+      "tags": [
+        "saas:raycast.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:solid/rounded/icon+text",
+        "tuple:solid/pill/icon+text",
+        "match:t01"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://arc.net/",
+      "tags": [
+        "saas:arc.net",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:tint/pill/text",
+        "match:c03"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://figma.com/",
+      "tags": [
+        "saas:figma.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:ghost/sharp/text",
+        "tuple:solid/rounded/text",
+        "tuple:ghost/sharp/icon-only",
+        "tuple:ghost/sharp/icon+text",
+        "match:c01",
+        "match:c04",
+        "match:c08"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://framer.com/",
+      "tags": [
+        "saas:framer.com",
+        "method:chromium-computed-style",
+        "render:unverified",
+        "failure:http-403"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://supabase.com/",
+      "tags": [
+        "saas:supabase.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:solid/rounded/text",
+        "tuple:ghost/rounded/icon+text",
+        "tuple:gradient/rounded/text",
+        "match:c01",
+        "match:c04"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://resend.com/",
+      "tags": [
+        "saas:resend.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:ghost/sharp/icon+text",
+        "tuple:gradient/rounded/text",
+        "tuple:gradient/pill/icon+text",
+        "match:c04"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://clerk.com/",
+      "tags": [
+        "saas:clerk.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:solid/rounded/text",
+        "tuple:ghost/rounded/text",
+        "tuple:solid/sharp/icon+text",
+        "tuple:ghost/pill/icon+text",
+        "tuple:solid/pill/icon+text",
+        "match:c01",
+        "match:c04",
+        "match:c08",
+        "match:t01"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://slack.com/",
+      "tags": [
+        "saas:slack.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:solid/sharp/text",
+        "tuple:ghost/sharp/icon+text",
+        "tuple:ghost/sharp/text",
+        "match:c04",
+        "match:c08",
+        "match:t03"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://airtable.com/",
+      "tags": [
+        "saas:airtable.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:outline/rounded/text",
+        "tuple:solid/rounded/text",
+        "tuple:solid/pill/icon-only",
+        "match:c01",
+        "match:c07"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://asana.com/",
+      "tags": [
+        "saas:asana.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:ghost/pill/icon+text",
+        "tuple:solid/pill/text",
+        "tuple:ghost/sharp/icon+text",
+        "match:c04",
+        "match:t02"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://monday.com/",
+      "tags": [
+        "saas:monday.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:outline/pill/text",
+        "tuple:solid/pill/icon+text",
+        "tuple:solid/pill/text",
+        "tuple:gradient/pill/icon+text",
+        "match:t01",
+        "match:t02"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://clickup.com/",
+      "tags": [
+        "saas:clickup.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:ghost/rounded/icon+text",
+        "tuple:ghost/rounded/text",
+        "tuple:solid/rounded/text",
+        "tuple:solid/pill/icon+text",
+        "match:c01",
+        "match:c04",
+        "match:c08",
+        "match:t01"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://miro.com/",
+      "tags": [
+        "saas:miro.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:solid/rounded/text",
+        "tuple:ghost/rounded/icon+text",
+        "tuple:outline/rounded/text",
+        "tuple:gradient/rounded/text",
+        "tuple:ghost/rounded/text",
+        "match:c01",
+        "match:c04",
+        "match:c07",
+        "match:c08"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://loom.com/",
+      "tags": [
+        "saas:loom.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:ghost/rounded/icon-only",
+        "tuple:ghost/pill/text",
+        "tuple:solid/pill/text",
+        "tuple:solid/pill/icon+text",
+        "tuple:solid/sharp/text",
+        "tuple:gradient/sharp/icon-only",
+        "match:c08",
+        "match:t01",
+        "match:t02",
+        "match:t03"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://dropbox.com/",
+      "tags": [
+        "saas:dropbox.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:solid/sharp/text",
+        "tuple:ghost/sharp/icon+text",
+        "tuple:ghost/sharp/icon-only",
+        "tuple:solid/rounded/text",
+        "tuple:solid/rounded/icon+text",
+        "match:c01",
+        "match:c04",
+        "match:t03"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://box.com/",
+      "tags": [
+        "saas:box.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:tint/pill/text",
+        "tuple:ghost/sharp/text",
+        "tuple:solid/pill/text",
+        "tuple:gradient/pill/text",
+        "match:c03",
+        "match:c08",
+        "match:t02"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://canva.com/",
+      "tags": [
+        "saas:canva.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:ghost/rounded/text",
+        "tuple:tint/rounded/text",
+        "tuple:gradient/pill/text",
+        "tuple:ghost/pill/text",
+        "tuple:ghost/sharp/icon-only",
+        "tuple:gradient/pill/icon-only",
+        "match:c08"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://webflow.com/",
+      "tags": [
+        "saas:webflow.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:solid/sharp/text",
+        "tuple:solid/rounded/text",
+        "tuple:ghost/sharp/text",
+        "tuple:solid/sharp/icon+text",
+        "tuple:ghost/sharp/icon-only",
+        "match:c01",
+        "match:c08",
+        "match:t03"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://retool.com/",
+      "tags": [
+        "saas:retool.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:ghost/sharp/text",
+        "tuple:ghost/sharp/icon+text",
+        "tuple:outline/pill/text",
+        "tuple:solid/pill/text",
+        "tuple:outline/pill/icon-only",
+        "tuple:tint/rounded/icon+text",
+        "tuple:solid/pill/icon-only",
+        "tuple:solid/rounded/icon+text",
+        "tuple:tint/pill/icon+text",
+        "match:c04",
+        "match:c08",
+        "match:t02"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://sentry.io/",
+      "tags": [
+        "saas:sentry.io",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:ghost/rounded/icon+text",
+        "tuple:gradient/rounded/text",
+        "tuple:tint/rounded/text",
+        "tuple:solid/pill/icon-only",
+        "tuple:solid/rounded/text",
+        "match:c01",
+        "match:c04"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://posthog.com/",
+      "tags": [
+        "saas:posthog.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:ghost/sharp/text",
+        "tuple:solid/rounded/text",
+        "tuple:ghost/sharp/icon-only",
+        "tuple:ghost/pill/icon-only",
+        "tuple:ghost/rounded/text",
+        "tuple:tint/sharp/icon-only",
+        "tuple:solid/pill/icon-only",
+        "match:c01",
+        "match:c08"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://planetscale.com/",
+      "tags": [
+        "saas:planetscale.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:outline/sharp/text",
+        "tuple:solid/sharp/text",
+        "tuple:ghost/sharp/text",
+        "tuple:outline/sharp/icon+text",
+        "match:c02",
+        "match:c08",
+        "match:t03"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://neon.tech/",
+      "tags": [
+        "saas:neon.tech",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:solid/sharp/text",
+        "tuple:solid/sharp/icon+text",
+        "tuple:outline/pill/text",
+        "tuple:solid/pill/text",
+        "match:t02",
+        "match:t03"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://railway.com/",
+      "tags": [
+        "saas:railway.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:solid/pill/icon+text",
+        "tuple:ghost/rounded/icon+text",
+        "tuple:ghost/rounded/text",
+        "tuple:solid/rounded/text",
+        "tuple:tint/rounded/text",
+        "match:c01",
+        "match:c04",
+        "match:c08",
+        "match:t01"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://render.com/",
+      "tags": [
+        "saas:render.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:ghost/sharp/icon+text",
+        "tuple:solid/sharp/text",
+        "tuple:solid/sharp/icon+text",
+        "tuple:ghost/sharp/icon-only",
+        "match:c04",
+        "match:t03"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://fly.io/",
+      "tags": [
+        "saas:fly.io",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:ghost/sharp/text",
+        "tuple:tint/pill/text",
+        "tuple:solid/rounded/text",
+        "tuple:solid/pill/icon+text",
+        "tuple:ghost/rounded/icon+text",
+        "match:c01",
+        "match:c03",
+        "match:c04",
+        "match:c08",
+        "match:t01"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://netlify.com/",
+      "tags": [
+        "saas:netlify.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:solid/sharp/text",
+        "tuple:ghost/sharp/icon+text",
+        "tuple:solid/pill/text",
+        "tuple:tint/pill/text",
+        "tuple:tint/pill/icon+text",
+        "tuple:outline/rounded/icon+text",
+        "tuple:solid/pill/icon+text",
+        "tuple:outline/sharp/text",
+        "match:c03",
+        "match:c04",
+        "match:t01",
+        "match:t02",
+        "match:t03"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://algolia.com/",
+      "tags": [
+        "saas:algolia.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:ghost/rounded/icon+text",
+        "tuple:ghost/sharp/text",
+        "tuple:outline/pill/icon+text",
+        "tuple:outline/rounded/text",
+        "tuple:gradient/rounded/text",
+        "tuple:solid/pill/text",
+        "tuple:ghost/rounded/text",
+        "tuple:solid/rounded/text",
+        "tuple:ghost/sharp/icon+text",
+        "tuple:solid/sharp/text",
+        "tuple:gradient/sharp/icon-only",
+        "match:c01",
+        "match:c04",
+        "match:c07",
+        "match:c08",
+        "match:t02",
+        "match:t03"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://intercom.com/",
+      "tags": [
+        "saas:intercom.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:ghost/sharp/icon-only",
+        "tuple:ghost/rounded/icon+text",
+        "tuple:solid/sharp/text",
+        "tuple:outline/sharp/text",
+        "match:c04",
+        "match:t03"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://zendesk.com/",
+      "tags": [
+        "saas:zendesk.com",
+        "method:chromium-computed-style",
+        "render:unverified",
+        "failure:http-403"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://hubspot.com/",
+      "tags": [
+        "saas:hubspot.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:solid/rounded/text",
+        "tuple:ghost/rounded/text",
+        "tuple:solid/sharp/icon+text",
+        "tuple:tint/pill/text",
+        "tuple:solid/pill/icon-only",
+        "tuple:ghost/pill/icon+text",
+        "match:c01",
+        "match:c03",
+        "match:c04",
+        "match:c08"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://cal.com/",
+      "tags": [
+        "saas:cal.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:ghost/rounded/icon+text",
+        "tuple:solid/rounded/text",
+        "tuple:solid/pill/text",
+        "tuple:solid/rounded/icon+text",
+        "match:c01",
+        "match:c04",
+        "match:t02"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://savvycal.com/",
+      "tags": [
+        "saas:savvycal.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:solid/pill/text",
+        "match:t02"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://attio.com/",
+      "tags": [
+        "saas:attio.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:ghost/rounded/icon-only",
+        "tuple:ghost/rounded/icon+text",
+        "tuple:solid/rounded/text",
+        "tuple:gradient/rounded/text",
+        "tuple:outline/rounded/icon+text",
+        "tuple:solid/sharp/icon-only",
+        "match:c01",
+        "match:c04"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://tally.so/",
+      "tags": [
+        "saas:tally.so",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:solid/rounded/text",
+        "tuple:solid/rounded/icon+text",
+        "match:c01"
+      ],
+      "observed": "2026-11-08"
+    },
+    {
+      "url": "https://typeform.com/",
+      "tags": [
+        "saas:typeform.com",
+        "method:chromium-computed-style",
+        "render:checked",
+        "tuple:ghost/sharp/icon-only",
+        "tuple:ghost/sharp/icon+text",
+        "tuple:solid/rounded/text",
+        "match:c01",
+        "match:c04"
+      ],
+      "observed": "2026-11-08"
+    }
+  ],
+  "variants": [
+    {
+      "id": "c01",
+      "name": "ソリッド・ラウンド",
+      "tier": "Core",
+      "axes": {
+        "fill": "solid",
+        "shape": "rounded",
+        "content": "text"
+      },
+      "frequency": {
+        "ds": 5,
+        "dsTotal": 8,
+        "saas": 20,
+        "saasTotal": 40,
+        "saasPercent": 50.0,
+        "scope": "computed fill/shape/content; buttons and CTA; ghost shapes merged"
+      },
+      "qualified": true,
+      "verification": "qualified",
+      "sources": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+          "tags": [
+            "ds:HIG",
+            "evidence:guideline",
+            "family:glass",
+            "family:solid",
+            "family:elevated",
+            "content:text",
+            "content:icon+text",
+            "content:icon-only",
+            "content:loading",
+            "match:c01",
+            "match:c05"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:sharp",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c02",
+            "match:c03",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://ui.shadcn.com/docs/components/button",
+          "tags": [
+            "ds:shadcn",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:tint",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c04",
+            "match:c06",
+            "match:c07",
+            "match:c09"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://vercel.com/geist/button",
+          "tags": [
+            "ds:Geist",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "shape:pill",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://shopify.dev/docs/api/app-home/latest/web-components/actions/button",
+          "tags": [
+            "ds:Polaris",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c09"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://vercel.com/",
+          "tags": [
+            "saas:vercel.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:solid/pill/text",
+            "match:c01",
+            "match:c04",
+            "match:t02"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://notion.com/",
+          "tags": [
+            "saas:notion.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:solid/rounded/text",
+            "tuple:tint/pill/icon+text",
+            "match:c01",
+            "match:c04"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://figma.com/",
+          "tags": [
+            "saas:figma.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/text",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/sharp/icon-only",
+            "tuple:ghost/sharp/icon+text",
+            "match:c01",
+            "match:c04",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://supabase.com/",
+          "tags": [
+            "saas:supabase.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:gradient/rounded/text",
+            "match:c01",
+            "match:c04"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://clerk.com/",
+          "tags": [
+            "saas:clerk.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/rounded/text",
+            "tuple:solid/sharp/icon+text",
+            "tuple:ghost/pill/icon+text",
+            "tuple:solid/pill/icon+text",
+            "match:c01",
+            "match:c04",
+            "match:c08",
+            "match:t01"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://airtable.com/",
+          "tags": [
+            "saas:airtable.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:outline/rounded/text",
+            "tuple:solid/rounded/text",
+            "tuple:solid/pill/icon-only",
+            "match:c01",
+            "match:c07"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://clickup.com/",
+          "tags": [
+            "saas:clickup.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:ghost/rounded/text",
+            "tuple:solid/rounded/text",
+            "tuple:solid/pill/icon+text",
+            "match:c01",
+            "match:c04",
+            "match:c08",
+            "match:t01"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://miro.com/",
+          "tags": [
+            "saas:miro.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:outline/rounded/text",
+            "tuple:gradient/rounded/text",
+            "tuple:ghost/rounded/text",
+            "match:c01",
+            "match:c04",
+            "match:c07",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://dropbox.com/",
+          "tags": [
+            "saas:dropbox.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/sharp/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:ghost/sharp/icon-only",
+            "tuple:solid/rounded/text",
+            "tuple:solid/rounded/icon+text",
+            "match:c01",
+            "match:c04",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://webflow.com/",
+          "tags": [
+            "saas:webflow.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/sharp/text",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/sharp/text",
+            "tuple:solid/sharp/icon+text",
+            "tuple:ghost/sharp/icon-only",
+            "match:c01",
+            "match:c08",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://sentry.io/",
+          "tags": [
+            "saas:sentry.io",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:gradient/rounded/text",
+            "tuple:tint/rounded/text",
+            "tuple:solid/pill/icon-only",
+            "tuple:solid/rounded/text",
+            "match:c01",
+            "match:c04"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://posthog.com/",
+          "tags": [
+            "saas:posthog.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/text",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/sharp/icon-only",
+            "tuple:ghost/pill/icon-only",
+            "tuple:ghost/rounded/text",
+            "tuple:tint/sharp/icon-only",
+            "tuple:solid/pill/icon-only",
+            "match:c01",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://railway.com/",
+          "tags": [
+            "saas:railway.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/pill/icon+text",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:ghost/rounded/text",
+            "tuple:solid/rounded/text",
+            "tuple:tint/rounded/text",
+            "match:c01",
+            "match:c04",
+            "match:c08",
+            "match:t01"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://fly.io/",
+          "tags": [
+            "saas:fly.io",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/text",
+            "tuple:tint/pill/text",
+            "tuple:solid/rounded/text",
+            "tuple:solid/pill/icon+text",
+            "tuple:ghost/rounded/icon+text",
+            "match:c01",
+            "match:c03",
+            "match:c04",
+            "match:c08",
+            "match:t01"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://algolia.com/",
+          "tags": [
+            "saas:algolia.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:ghost/sharp/text",
+            "tuple:outline/pill/icon+text",
+            "tuple:outline/rounded/text",
+            "tuple:gradient/rounded/text",
+            "tuple:solid/pill/text",
+            "tuple:ghost/rounded/text",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:solid/sharp/text",
+            "tuple:gradient/sharp/icon-only",
+            "match:c01",
+            "match:c04",
+            "match:c07",
+            "match:c08",
+            "match:t02",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://hubspot.com/",
+          "tags": [
+            "saas:hubspot.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/rounded/text",
+            "tuple:solid/sharp/icon+text",
+            "tuple:tint/pill/text",
+            "tuple:solid/pill/icon-only",
+            "tuple:ghost/pill/icon+text",
+            "match:c01",
+            "match:c03",
+            "match:c04",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://cal.com/",
+          "tags": [
+            "saas:cal.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:solid/rounded/text",
+            "tuple:solid/pill/text",
+            "tuple:solid/rounded/icon+text",
+            "match:c01",
+            "match:c04",
+            "match:t02"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://attio.com/",
+          "tags": [
+            "saas:attio.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/rounded/icon-only",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:solid/rounded/text",
+            "tuple:gradient/rounded/text",
+            "tuple:outline/rounded/icon+text",
+            "tuple:solid/sharp/icon-only",
+            "match:c01",
+            "match:c04"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://tally.so/",
+          "tags": [
+            "saas:tally.so",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/rounded/text",
+            "tuple:solid/rounded/icon+text",
+            "match:c01"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://typeform.com/",
+          "tags": [
+            "saas:typeform.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/icon-only",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:solid/rounded/text",
+            "match:c01",
+            "match:c04"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://m3.material.io/components/buttons/overview",
+          "tags": [
+            "ds:M3",
+            "render:incomplete",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://carbondesignsystem.com/components/button/usage/",
+          "tags": [
+            "ds:Carbon",
+            "evidence:guideline",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "shape:sharp",
+            "match:c02",
+            "match:c08",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://fluent2.microsoft.design/components/web/react/core/button/usage",
+          "tags": [
+            "ds:Fluent",
+            "evidence:guideline",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "shape:sharp",
+            "content:split",
+            "match:c02",
+            "match:c08",
+            "match:c10",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://github.com/material-components/material-components-android/blob/master/docs/components/CommonButton.md",
+          "tags": [
+            "ds:M3",
+            "evidence:guideline",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:pill",
+            "match:c03",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/icon-button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "shape:circle",
+            "match:c06",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        }
+      ],
+      "provenance": "independent-reconstruction"
+    },
+    {
+      "id": "c02",
+      "name": "ストラクチャー・アウトライン",
+      "tier": "Core",
+      "axes": {
+        "fill": "outline",
+        "shape": "sharp",
+        "content": "icon+text"
+      },
+      "frequency": {
+        "ds": 3,
+        "dsTotal": 8,
+        "saas": 2,
+        "saasTotal": 40,
+        "saasPercent": 5.0,
+        "scope": "computed fill/shape/content; buttons and CTA; ghost shapes merged"
+      },
+      "qualified": false,
+      "verification": "candidate",
+      "sources": [
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:sharp",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c02",
+            "match:c03",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://carbondesignsystem.com/components/button/usage/",
+          "tags": [
+            "ds:Carbon",
+            "evidence:guideline",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "shape:sharp",
+            "match:c02",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://fluent2.microsoft.design/components/web/react/core/button/usage",
+          "tags": [
+            "ds:Fluent",
+            "evidence:guideline",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "shape:sharp",
+            "content:split",
+            "match:c02",
+            "match:c08",
+            "match:c10"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://stripe.com/",
+          "tags": [
+            "saas:stripe.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:outline/sharp/icon+text",
+            "tuple:solid/sharp/icon+text",
+            "tuple:tint/sharp/icon+text",
+            "match:c02",
+            "match:c04"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://planetscale.com/",
+          "tags": [
+            "saas:planetscale.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:outline/sharp/text",
+            "tuple:solid/sharp/text",
+            "tuple:ghost/sharp/text",
+            "tuple:outline/sharp/icon+text",
+            "match:c02",
+            "match:c08",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://m3.material.io/components/buttons/overview",
+          "tags": [
+            "ds:M3",
+            "render:incomplete",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://ui.shadcn.com/docs/components/button",
+          "tags": [
+            "ds:shadcn",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:tint",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c04",
+            "match:c06",
+            "match:c07",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://vercel.com/geist/button",
+          "tags": [
+            "ds:Geist",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "shape:pill",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://shopify.dev/docs/api/app-home/latest/web-components/actions/button",
+          "tags": [
+            "ds:Polaris",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://github.com/material-components/material-components-android/blob/master/docs/components/CommonButton.md",
+          "tags": [
+            "ds:M3",
+            "evidence:guideline",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:pill",
+            "match:c03",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/icon-button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "shape:circle",
+            "match:c06",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        }
+      ],
+      "provenance": "independent-reconstruction"
+    },
+    {
+      "id": "c03",
+      "name": "トーナル・カプセル",
+      "tier": "Core",
+      "axes": {
+        "fill": "tint",
+        "shape": "pill",
+        "content": "text"
+      },
+      "frequency": {
+        "ds": 2,
+        "dsTotal": 8,
+        "saas": 5,
+        "saasTotal": 40,
+        "saasPercent": 12.5,
+        "scope": "computed fill/shape/content; buttons and CTA; ghost shapes merged"
+      },
+      "qualified": false,
+      "verification": "candidate",
+      "sources": [
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:sharp",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c02",
+            "match:c03",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://github.com/material-components/material-components-android/blob/master/docs/components/CommonButton.md",
+          "tags": [
+            "ds:M3",
+            "evidence:guideline",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:pill",
+            "match:c03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://arc.net/",
+          "tags": [
+            "saas:arc.net",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:tint/pill/text",
+            "match:c03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://box.com/",
+          "tags": [
+            "saas:box.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:tint/pill/text",
+            "tuple:ghost/sharp/text",
+            "tuple:solid/pill/text",
+            "tuple:gradient/pill/text",
+            "match:c03",
+            "match:c08",
+            "match:t02"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://fly.io/",
+          "tags": [
+            "saas:fly.io",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/text",
+            "tuple:tint/pill/text",
+            "tuple:solid/rounded/text",
+            "tuple:solid/pill/icon+text",
+            "tuple:ghost/rounded/icon+text",
+            "match:c01",
+            "match:c03",
+            "match:c04",
+            "match:c08",
+            "match:t01"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://netlify.com/",
+          "tags": [
+            "saas:netlify.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/sharp/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:solid/pill/text",
+            "tuple:tint/pill/text",
+            "tuple:tint/pill/icon+text",
+            "tuple:outline/rounded/icon+text",
+            "tuple:solid/pill/icon+text",
+            "tuple:outline/sharp/text",
+            "match:c03",
+            "match:c04",
+            "match:t01",
+            "match:t02",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://hubspot.com/",
+          "tags": [
+            "saas:hubspot.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/rounded/text",
+            "tuple:solid/sharp/icon+text",
+            "tuple:tint/pill/text",
+            "tuple:solid/pill/icon-only",
+            "tuple:ghost/pill/icon+text",
+            "match:c01",
+            "match:c03",
+            "match:c04",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://m3.material.io/components/buttons/overview",
+          "tags": [
+            "ds:M3",
+            "render:incomplete",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://ui.shadcn.com/docs/components/button",
+          "tags": [
+            "ds:shadcn",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:tint",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c04",
+            "match:c06",
+            "match:c07",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/icon-button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "shape:circle",
+            "match:c06",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        }
+      ],
+      "provenance": "independent-reconstruction"
+    },
+    {
+      "id": "c04",
+      "name": "ゴースト・アクション",
+      "tier": "Core",
+      "axes": {
+        "fill": "ghost",
+        "shape": "rounded",
+        "content": "icon+text"
+      },
+      "frequency": {
+        "ds": 4,
+        "dsTotal": 8,
+        "saas": 25,
+        "saasTotal": 40,
+        "saasPercent": 62.5,
+        "scope": "computed fill/shape/content; buttons and CTA; ghost shapes merged"
+      },
+      "qualified": true,
+      "verification": "qualified",
+      "sources": [
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:sharp",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c02",
+            "match:c03",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://ui.shadcn.com/docs/components/button",
+          "tags": [
+            "ds:shadcn",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:tint",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c04",
+            "match:c06",
+            "match:c07",
+            "match:c09"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://vercel.com/geist/button",
+          "tags": [
+            "ds:Geist",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "shape:pill",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://shopify.dev/docs/api/app-home/latest/web-components/actions/button",
+          "tags": [
+            "ds:Polaris",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c09"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://linear.app/",
+          "tags": [
+            "saas:linear.app",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/sharp/text",
+            "tuple:ghost/pill/text",
+            "tuple:solid/pill/text",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:ghost/pill/icon-only",
+            "tuple:tint/pill/icon-only",
+            "tuple:tint/rounded/icon+text",
+            "tuple:ghost/sharp/icon-only",
+            "tuple:outline/pill/text",
+            "match:c04",
+            "match:c08",
+            "match:t02",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://vercel.com/",
+          "tags": [
+            "saas:vercel.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:solid/pill/text",
+            "match:c01",
+            "match:c04",
+            "match:t02"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://stripe.com/",
+          "tags": [
+            "saas:stripe.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:outline/sharp/icon+text",
+            "tuple:solid/sharp/icon+text",
+            "tuple:tint/sharp/icon+text",
+            "match:c02",
+            "match:c04"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://notion.com/",
+          "tags": [
+            "saas:notion.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:solid/rounded/text",
+            "tuple:tint/pill/icon+text",
+            "match:c01",
+            "match:c04"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://figma.com/",
+          "tags": [
+            "saas:figma.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/text",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/sharp/icon-only",
+            "tuple:ghost/sharp/icon+text",
+            "match:c01",
+            "match:c04",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://supabase.com/",
+          "tags": [
+            "saas:supabase.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:gradient/rounded/text",
+            "match:c01",
+            "match:c04"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://resend.com/",
+          "tags": [
+            "saas:resend.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:gradient/rounded/text",
+            "tuple:gradient/pill/icon+text",
+            "match:c04"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://clerk.com/",
+          "tags": [
+            "saas:clerk.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/rounded/text",
+            "tuple:solid/sharp/icon+text",
+            "tuple:ghost/pill/icon+text",
+            "tuple:solid/pill/icon+text",
+            "match:c01",
+            "match:c04",
+            "match:c08",
+            "match:t01"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://slack.com/",
+          "tags": [
+            "saas:slack.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/sharp/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:ghost/sharp/text",
+            "match:c04",
+            "match:c08",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://asana.com/",
+          "tags": [
+            "saas:asana.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/pill/icon+text",
+            "tuple:solid/pill/text",
+            "tuple:ghost/sharp/icon+text",
+            "match:c04",
+            "match:t02"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://clickup.com/",
+          "tags": [
+            "saas:clickup.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:ghost/rounded/text",
+            "tuple:solid/rounded/text",
+            "tuple:solid/pill/icon+text",
+            "match:c01",
+            "match:c04",
+            "match:c08",
+            "match:t01"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://miro.com/",
+          "tags": [
+            "saas:miro.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:outline/rounded/text",
+            "tuple:gradient/rounded/text",
+            "tuple:ghost/rounded/text",
+            "match:c01",
+            "match:c04",
+            "match:c07",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://dropbox.com/",
+          "tags": [
+            "saas:dropbox.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/sharp/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:ghost/sharp/icon-only",
+            "tuple:solid/rounded/text",
+            "tuple:solid/rounded/icon+text",
+            "match:c01",
+            "match:c04",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://retool.com/",
+          "tags": [
+            "saas:retool.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:outline/pill/text",
+            "tuple:solid/pill/text",
+            "tuple:outline/pill/icon-only",
+            "tuple:tint/rounded/icon+text",
+            "tuple:solid/pill/icon-only",
+            "tuple:solid/rounded/icon+text",
+            "tuple:tint/pill/icon+text",
+            "match:c04",
+            "match:c08",
+            "match:t02"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://sentry.io/",
+          "tags": [
+            "saas:sentry.io",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:gradient/rounded/text",
+            "tuple:tint/rounded/text",
+            "tuple:solid/pill/icon-only",
+            "tuple:solid/rounded/text",
+            "match:c01",
+            "match:c04"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://railway.com/",
+          "tags": [
+            "saas:railway.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/pill/icon+text",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:ghost/rounded/text",
+            "tuple:solid/rounded/text",
+            "tuple:tint/rounded/text",
+            "match:c01",
+            "match:c04",
+            "match:c08",
+            "match:t01"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://render.com/",
+          "tags": [
+            "saas:render.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:solid/sharp/text",
+            "tuple:solid/sharp/icon+text",
+            "tuple:ghost/sharp/icon-only",
+            "match:c04",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://fly.io/",
+          "tags": [
+            "saas:fly.io",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/text",
+            "tuple:tint/pill/text",
+            "tuple:solid/rounded/text",
+            "tuple:solid/pill/icon+text",
+            "tuple:ghost/rounded/icon+text",
+            "match:c01",
+            "match:c03",
+            "match:c04",
+            "match:c08",
+            "match:t01"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://netlify.com/",
+          "tags": [
+            "saas:netlify.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/sharp/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:solid/pill/text",
+            "tuple:tint/pill/text",
+            "tuple:tint/pill/icon+text",
+            "tuple:outline/rounded/icon+text",
+            "tuple:solid/pill/icon+text",
+            "tuple:outline/sharp/text",
+            "match:c03",
+            "match:c04",
+            "match:t01",
+            "match:t02",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://algolia.com/",
+          "tags": [
+            "saas:algolia.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:ghost/sharp/text",
+            "tuple:outline/pill/icon+text",
+            "tuple:outline/rounded/text",
+            "tuple:gradient/rounded/text",
+            "tuple:solid/pill/text",
+            "tuple:ghost/rounded/text",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:solid/sharp/text",
+            "tuple:gradient/sharp/icon-only",
+            "match:c01",
+            "match:c04",
+            "match:c07",
+            "match:c08",
+            "match:t02",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://intercom.com/",
+          "tags": [
+            "saas:intercom.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/icon-only",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:solid/sharp/text",
+            "tuple:outline/sharp/text",
+            "match:c04",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://hubspot.com/",
+          "tags": [
+            "saas:hubspot.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/rounded/text",
+            "tuple:solid/sharp/icon+text",
+            "tuple:tint/pill/text",
+            "tuple:solid/pill/icon-only",
+            "tuple:ghost/pill/icon+text",
+            "match:c01",
+            "match:c03",
+            "match:c04",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://cal.com/",
+          "tags": [
+            "saas:cal.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:solid/rounded/text",
+            "tuple:solid/pill/text",
+            "tuple:solid/rounded/icon+text",
+            "match:c01",
+            "match:c04",
+            "match:t02"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://attio.com/",
+          "tags": [
+            "saas:attio.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/rounded/icon-only",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:solid/rounded/text",
+            "tuple:gradient/rounded/text",
+            "tuple:outline/rounded/icon+text",
+            "tuple:solid/sharp/icon-only",
+            "match:c01",
+            "match:c04"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://typeform.com/",
+          "tags": [
+            "saas:typeform.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/icon-only",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:solid/rounded/text",
+            "match:c01",
+            "match:c04"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://m3.material.io/components/buttons/overview",
+          "tags": [
+            "ds:M3",
+            "render:incomplete",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://carbondesignsystem.com/components/button/usage/",
+          "tags": [
+            "ds:Carbon",
+            "evidence:guideline",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "shape:sharp",
+            "match:c02",
+            "match:c08",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://fluent2.microsoft.design/components/web/react/core/button/usage",
+          "tags": [
+            "ds:Fluent",
+            "evidence:guideline",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "shape:sharp",
+            "content:split",
+            "match:c02",
+            "match:c08",
+            "match:c10",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://github.com/material-components/material-components-android/blob/master/docs/components/CommonButton.md",
+          "tags": [
+            "ds:M3",
+            "evidence:guideline",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:pill",
+            "match:c03",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/icon-button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "shape:circle",
+            "match:c06",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        }
+      ],
+      "provenance": "independent-reconstruction"
+    },
+    {
+      "id": "c05",
+      "name": "フローティング・サーフェス",
+      "tier": "Core",
+      "axes": {
+        "fill": "elevated",
+        "shape": "rounded",
+        "content": "text"
+      },
+      "frequency": {
+        "ds": 4,
+        "dsTotal": 8,
+        "saas": 0,
+        "saasTotal": 40,
+        "saasPercent": 0.0,
+        "scope": "computed fill/shape/content; buttons and CTA; ghost shapes merged"
+      },
+      "qualified": true,
+      "verification": "qualified",
+      "sources": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+          "tags": [
+            "ds:HIG",
+            "evidence:guideline",
+            "family:glass",
+            "family:solid",
+            "family:elevated",
+            "content:text",
+            "content:icon+text",
+            "content:icon-only",
+            "content:loading",
+            "match:c01",
+            "match:c05"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:sharp",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c02",
+            "match:c03",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://vercel.com/geist/button",
+          "tags": [
+            "ds:Geist",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "shape:pill",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://shopify.dev/docs/api/app-home/latest/web-components/actions/button",
+          "tags": [
+            "ds:Polaris",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c09"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://m3.material.io/components/buttons/overview",
+          "tags": [
+            "ds:M3",
+            "render:incomplete",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://github.com/material-components/material-components-android/blob/master/docs/components/CommonButton.md",
+          "tags": [
+            "ds:M3",
+            "evidence:guideline",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:pill",
+            "match:c03",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        }
+      ],
+      "provenance": "independent-reconstruction"
+    },
+    {
+      "id": "c06",
+      "name": "ソリッド・サークル",
+      "tier": "Core",
+      "axes": {
+        "fill": "solid",
+        "shape": "circle",
+        "content": "icon-only"
+      },
+      "frequency": {
+        "ds": 2,
+        "dsTotal": 8,
+        "saas": 0,
+        "saasTotal": 40,
+        "saasPercent": 0.0,
+        "scope": "computed fill/shape/content; buttons and CTA; ghost shapes merged"
+      },
+      "qualified": false,
+      "verification": "candidate",
+      "sources": [
+        {
+          "url": "https://ui.shadcn.com/docs/components/button",
+          "tags": [
+            "ds:shadcn",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:tint",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c04",
+            "match:c06",
+            "match:c07",
+            "match:c09"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/icon-button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "shape:circle",
+            "match:c06",
+            "match:c09"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://m3.material.io/components/buttons/overview",
+          "tags": [
+            "ds:M3",
+            "render:incomplete",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+          "tags": [
+            "ds:HIG",
+            "evidence:guideline",
+            "family:glass",
+            "family:solid",
+            "family:elevated",
+            "content:text",
+            "content:icon+text",
+            "content:icon-only",
+            "content:loading",
+            "match:c01",
+            "match:c05",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:sharp",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c02",
+            "match:c03",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c08",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://vercel.com/geist/button",
+          "tags": [
+            "ds:Geist",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "shape:pill",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://carbondesignsystem.com/components/button/usage/",
+          "tags": [
+            "ds:Carbon",
+            "evidence:guideline",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "shape:sharp",
+            "match:c02",
+            "match:c08",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://shopify.dev/docs/api/app-home/latest/web-components/actions/button",
+          "tags": [
+            "ds:Polaris",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://fluent2.microsoft.design/components/web/react/core/button/usage",
+          "tags": [
+            "ds:Fluent",
+            "evidence:guideline",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "shape:sharp",
+            "content:split",
+            "match:c02",
+            "match:c08",
+            "match:c10",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://github.com/material-components/material-components-android/blob/master/docs/components/CommonButton.md",
+          "tags": [
+            "ds:M3",
+            "evidence:guideline",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:pill",
+            "match:c03",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        }
+      ],
+      "provenance": "independent-reconstruction"
+    },
+    {
+      "id": "c07",
+      "name": "ラウンド・アウトライン",
+      "tier": "Core",
+      "axes": {
+        "fill": "outline",
+        "shape": "rounded",
+        "content": "text"
+      },
+      "frequency": {
+        "ds": 4,
+        "dsTotal": 8,
+        "saas": 3,
+        "saasTotal": 40,
+        "saasPercent": 7.5,
+        "scope": "computed fill/shape/content; buttons and CTA; ghost shapes merged"
+      },
+      "qualified": true,
+      "verification": "qualified",
+      "sources": [
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:sharp",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c02",
+            "match:c03",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://ui.shadcn.com/docs/components/button",
+          "tags": [
+            "ds:shadcn",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:tint",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c04",
+            "match:c06",
+            "match:c07",
+            "match:c09"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://vercel.com/geist/button",
+          "tags": [
+            "ds:Geist",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "shape:pill",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://shopify.dev/docs/api/app-home/latest/web-components/actions/button",
+          "tags": [
+            "ds:Polaris",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c09"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://airtable.com/",
+          "tags": [
+            "saas:airtable.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:outline/rounded/text",
+            "tuple:solid/rounded/text",
+            "tuple:solid/pill/icon-only",
+            "match:c01",
+            "match:c07"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://miro.com/",
+          "tags": [
+            "saas:miro.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:outline/rounded/text",
+            "tuple:gradient/rounded/text",
+            "tuple:ghost/rounded/text",
+            "match:c01",
+            "match:c04",
+            "match:c07",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://algolia.com/",
+          "tags": [
+            "saas:algolia.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:ghost/sharp/text",
+            "tuple:outline/pill/icon+text",
+            "tuple:outline/rounded/text",
+            "tuple:gradient/rounded/text",
+            "tuple:solid/pill/text",
+            "tuple:ghost/rounded/text",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:solid/sharp/text",
+            "tuple:gradient/sharp/icon-only",
+            "match:c01",
+            "match:c04",
+            "match:c07",
+            "match:c08",
+            "match:t02",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://m3.material.io/components/buttons/overview",
+          "tags": [
+            "ds:M3",
+            "render:incomplete",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://carbondesignsystem.com/components/button/usage/",
+          "tags": [
+            "ds:Carbon",
+            "evidence:guideline",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "shape:sharp",
+            "match:c02",
+            "match:c08",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://fluent2.microsoft.design/components/web/react/core/button/usage",
+          "tags": [
+            "ds:Fluent",
+            "evidence:guideline",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "shape:sharp",
+            "content:split",
+            "match:c02",
+            "match:c08",
+            "match:c10",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://github.com/material-components/material-components-android/blob/master/docs/components/CommonButton.md",
+          "tags": [
+            "ds:M3",
+            "evidence:guideline",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:pill",
+            "match:c03",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/icon-button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "shape:circle",
+            "match:c06",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        }
+      ],
+      "provenance": "independent-reconstruction"
+    },
+    {
+      "id": "c08",
+      "name": "プレーン・テキスト",
+      "tier": "Core",
+      "axes": {
+        "fill": "ghost",
+        "shape": "rounded",
+        "content": "text"
+      },
+      "frequency": {
+        "ds": 3,
+        "dsTotal": 8,
+        "saas": 17,
+        "saasTotal": 40,
+        "saasPercent": 42.5,
+        "scope": "computed fill/shape/content; buttons and CTA; ghost shapes merged"
+      },
+      "qualified": false,
+      "verification": "candidate",
+      "sources": [
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:sharp",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c02",
+            "match:c03",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://carbondesignsystem.com/components/button/usage/",
+          "tags": [
+            "ds:Carbon",
+            "evidence:guideline",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "shape:sharp",
+            "match:c02",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://fluent2.microsoft.design/components/web/react/core/button/usage",
+          "tags": [
+            "ds:Fluent",
+            "evidence:guideline",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "shape:sharp",
+            "content:split",
+            "match:c02",
+            "match:c08",
+            "match:c10"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://linear.app/",
+          "tags": [
+            "saas:linear.app",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/sharp/text",
+            "tuple:ghost/pill/text",
+            "tuple:solid/pill/text",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:ghost/pill/icon-only",
+            "tuple:tint/pill/icon-only",
+            "tuple:tint/rounded/icon+text",
+            "tuple:ghost/sharp/icon-only",
+            "tuple:outline/pill/text",
+            "match:c04",
+            "match:c08",
+            "match:t02",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://figma.com/",
+          "tags": [
+            "saas:figma.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/text",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/sharp/icon-only",
+            "tuple:ghost/sharp/icon+text",
+            "match:c01",
+            "match:c04",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://clerk.com/",
+          "tags": [
+            "saas:clerk.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/rounded/text",
+            "tuple:solid/sharp/icon+text",
+            "tuple:ghost/pill/icon+text",
+            "tuple:solid/pill/icon+text",
+            "match:c01",
+            "match:c04",
+            "match:c08",
+            "match:t01"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://slack.com/",
+          "tags": [
+            "saas:slack.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/sharp/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:ghost/sharp/text",
+            "match:c04",
+            "match:c08",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://clickup.com/",
+          "tags": [
+            "saas:clickup.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:ghost/rounded/text",
+            "tuple:solid/rounded/text",
+            "tuple:solid/pill/icon+text",
+            "match:c01",
+            "match:c04",
+            "match:c08",
+            "match:t01"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://miro.com/",
+          "tags": [
+            "saas:miro.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:outline/rounded/text",
+            "tuple:gradient/rounded/text",
+            "tuple:ghost/rounded/text",
+            "match:c01",
+            "match:c04",
+            "match:c07",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://loom.com/",
+          "tags": [
+            "saas:loom.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/rounded/icon-only",
+            "tuple:ghost/pill/text",
+            "tuple:solid/pill/text",
+            "tuple:solid/pill/icon+text",
+            "tuple:solid/sharp/text",
+            "tuple:gradient/sharp/icon-only",
+            "match:c08",
+            "match:t01",
+            "match:t02",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://box.com/",
+          "tags": [
+            "saas:box.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:tint/pill/text",
+            "tuple:ghost/sharp/text",
+            "tuple:solid/pill/text",
+            "tuple:gradient/pill/text",
+            "match:c03",
+            "match:c08",
+            "match:t02"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://canva.com/",
+          "tags": [
+            "saas:canva.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/rounded/text",
+            "tuple:tint/rounded/text",
+            "tuple:gradient/pill/text",
+            "tuple:ghost/pill/text",
+            "tuple:ghost/sharp/icon-only",
+            "tuple:gradient/pill/icon-only",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://webflow.com/",
+          "tags": [
+            "saas:webflow.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/sharp/text",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/sharp/text",
+            "tuple:solid/sharp/icon+text",
+            "tuple:ghost/sharp/icon-only",
+            "match:c01",
+            "match:c08",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://retool.com/",
+          "tags": [
+            "saas:retool.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:outline/pill/text",
+            "tuple:solid/pill/text",
+            "tuple:outline/pill/icon-only",
+            "tuple:tint/rounded/icon+text",
+            "tuple:solid/pill/icon-only",
+            "tuple:solid/rounded/icon+text",
+            "tuple:tint/pill/icon+text",
+            "match:c04",
+            "match:c08",
+            "match:t02"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://posthog.com/",
+          "tags": [
+            "saas:posthog.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/text",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/sharp/icon-only",
+            "tuple:ghost/pill/icon-only",
+            "tuple:ghost/rounded/text",
+            "tuple:tint/sharp/icon-only",
+            "tuple:solid/pill/icon-only",
+            "match:c01",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://planetscale.com/",
+          "tags": [
+            "saas:planetscale.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:outline/sharp/text",
+            "tuple:solid/sharp/text",
+            "tuple:ghost/sharp/text",
+            "tuple:outline/sharp/icon+text",
+            "match:c02",
+            "match:c08",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://railway.com/",
+          "tags": [
+            "saas:railway.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/pill/icon+text",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:ghost/rounded/text",
+            "tuple:solid/rounded/text",
+            "tuple:tint/rounded/text",
+            "match:c01",
+            "match:c04",
+            "match:c08",
+            "match:t01"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://fly.io/",
+          "tags": [
+            "saas:fly.io",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/text",
+            "tuple:tint/pill/text",
+            "tuple:solid/rounded/text",
+            "tuple:solid/pill/icon+text",
+            "tuple:ghost/rounded/icon+text",
+            "match:c01",
+            "match:c03",
+            "match:c04",
+            "match:c08",
+            "match:t01"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://algolia.com/",
+          "tags": [
+            "saas:algolia.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:ghost/sharp/text",
+            "tuple:outline/pill/icon+text",
+            "tuple:outline/rounded/text",
+            "tuple:gradient/rounded/text",
+            "tuple:solid/pill/text",
+            "tuple:ghost/rounded/text",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:solid/sharp/text",
+            "tuple:gradient/sharp/icon-only",
+            "match:c01",
+            "match:c04",
+            "match:c07",
+            "match:c08",
+            "match:t02",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://hubspot.com/",
+          "tags": [
+            "saas:hubspot.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/rounded/text",
+            "tuple:solid/sharp/icon+text",
+            "tuple:tint/pill/text",
+            "tuple:solid/pill/icon-only",
+            "tuple:ghost/pill/icon+text",
+            "match:c01",
+            "match:c03",
+            "match:c04",
+            "match:c08"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://m3.material.io/components/buttons/overview",
+          "tags": [
+            "ds:M3",
+            "render:incomplete",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://ui.shadcn.com/docs/components/button",
+          "tags": [
+            "ds:shadcn",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:tint",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c04",
+            "match:c06",
+            "match:c07",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://vercel.com/geist/button",
+          "tags": [
+            "ds:Geist",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "shape:pill",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://shopify.dev/docs/api/app-home/latest/web-components/actions/button",
+          "tags": [
+            "ds:Polaris",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://github.com/material-components/material-components-android/blob/master/docs/components/CommonButton.md",
+          "tags": [
+            "ds:M3",
+            "evidence:guideline",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:pill",
+            "match:c03",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/icon-button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "shape:circle",
+            "match:c06",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        }
+      ],
+      "provenance": "independent-reconstruction"
+    },
+    {
+      "id": "c09",
+      "name": "ソフト・アイコン",
+      "tier": "Core",
+      "axes": {
+        "fill": "tint",
+        "shape": "rounded",
+        "content": "icon-only"
+      },
+      "frequency": {
+        "ds": 3,
+        "dsTotal": 8,
+        "saas": 0,
+        "saasTotal": 40,
+        "saasPercent": 0.0,
+        "scope": "computed fill/shape/content; buttons and CTA; ghost shapes merged"
+      },
+      "qualified": false,
+      "verification": "candidate",
+      "sources": [
+        {
+          "url": "https://ui.shadcn.com/docs/components/button",
+          "tags": [
+            "ds:shadcn",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:tint",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c04",
+            "match:c06",
+            "match:c07",
+            "match:c09"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://shopify.dev/docs/api/app-home/latest/web-components/actions/button",
+          "tags": [
+            "ds:Polaris",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c09"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/icon-button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "shape:circle",
+            "match:c06",
+            "match:c09"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://m3.material.io/components/buttons/overview",
+          "tags": [
+            "ds:M3",
+            "render:incomplete",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:sharp",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c02",
+            "match:c03",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c08",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://github.com/material-components/material-components-android/blob/master/docs/components/CommonButton.md",
+          "tags": [
+            "ds:M3",
+            "evidence:guideline",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:pill",
+            "match:c03",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        }
+      ],
+      "provenance": "independent-reconstruction"
+    },
+    {
+      "id": "c10",
+      "name": "ストラクチャー・スプリット",
+      "tier": "Core",
+      "axes": {
+        "fill": "solid",
+        "shape": "sharp",
+        "content": "split"
+      },
+      "frequency": {
+        "ds": 1,
+        "dsTotal": 8,
+        "saas": 0,
+        "saasTotal": 40,
+        "saasPercent": 0.0,
+        "scope": "computed fill/shape/content; buttons and CTA; ghost shapes merged"
+      },
+      "qualified": false,
+      "verification": "candidate",
+      "sources": [
+        {
+          "url": "https://fluent2.microsoft.design/components/web/react/core/button/usage",
+          "tags": [
+            "ds:Fluent",
+            "evidence:guideline",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "shape:sharp",
+            "content:split",
+            "match:c02",
+            "match:c08",
+            "match:c10"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://m3.material.io/components/buttons/overview",
+          "tags": [
+            "ds:M3",
+            "render:incomplete",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+          "tags": [
+            "ds:HIG",
+            "evidence:guideline",
+            "family:glass",
+            "family:solid",
+            "family:elevated",
+            "content:text",
+            "content:icon+text",
+            "content:icon-only",
+            "content:loading",
+            "match:c01",
+            "match:c05",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:sharp",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c02",
+            "match:c03",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c08",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://ui.shadcn.com/docs/components/button",
+          "tags": [
+            "ds:shadcn",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:tint",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c04",
+            "match:c06",
+            "match:c07",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://vercel.com/geist/button",
+          "tags": [
+            "ds:Geist",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "shape:pill",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://carbondesignsystem.com/components/button/usage/",
+          "tags": [
+            "ds:Carbon",
+            "evidence:guideline",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "shape:sharp",
+            "match:c02",
+            "match:c08",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://shopify.dev/docs/api/app-home/latest/web-components/actions/button",
+          "tags": [
+            "ds:Polaris",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://github.com/material-components/material-components-android/blob/master/docs/components/CommonButton.md",
+          "tags": [
+            "ds:M3",
+            "evidence:guideline",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:pill",
+            "match:c03",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/icon-button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "shape:circle",
+            "match:c06",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        }
+      ],
+      "provenance": "independent-reconstruction"
+    },
+    {
+      "id": "t01",
+      "name": "アロー・ピル",
+      "tier": "Trend",
+      "axes": {
+        "fill": "solid",
+        "shape": "pill",
+        "content": "icon+text"
+      },
+      "frequency": {
+        "ds": 0,
+        "dsTotal": 8,
+        "saas": 8,
+        "saasTotal": 40,
+        "saasPercent": 20.0,
+        "scope": "computed fill/shape/content; buttons and CTA; ghost shapes merged"
+      },
+      "qualified": true,
+      "verification": "qualified",
+      "sources": [
+        {
+          "url": "https://raycast.com/",
+          "tags": [
+            "saas:raycast.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/rounded/icon+text",
+            "tuple:solid/pill/icon+text",
+            "match:t01"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://clerk.com/",
+          "tags": [
+            "saas:clerk.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/rounded/text",
+            "tuple:solid/sharp/icon+text",
+            "tuple:ghost/pill/icon+text",
+            "tuple:solid/pill/icon+text",
+            "match:c01",
+            "match:c04",
+            "match:c08",
+            "match:t01"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://monday.com/",
+          "tags": [
+            "saas:monday.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:outline/pill/text",
+            "tuple:solid/pill/icon+text",
+            "tuple:solid/pill/text",
+            "tuple:gradient/pill/icon+text",
+            "match:t01",
+            "match:t02"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://clickup.com/",
+          "tags": [
+            "saas:clickup.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:ghost/rounded/text",
+            "tuple:solid/rounded/text",
+            "tuple:solid/pill/icon+text",
+            "match:c01",
+            "match:c04",
+            "match:c08",
+            "match:t01"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://loom.com/",
+          "tags": [
+            "saas:loom.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/rounded/icon-only",
+            "tuple:ghost/pill/text",
+            "tuple:solid/pill/text",
+            "tuple:solid/pill/icon+text",
+            "tuple:solid/sharp/text",
+            "tuple:gradient/sharp/icon-only",
+            "match:c08",
+            "match:t01",
+            "match:t02",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://railway.com/",
+          "tags": [
+            "saas:railway.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/pill/icon+text",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:ghost/rounded/text",
+            "tuple:solid/rounded/text",
+            "tuple:tint/rounded/text",
+            "match:c01",
+            "match:c04",
+            "match:c08",
+            "match:t01"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://fly.io/",
+          "tags": [
+            "saas:fly.io",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/text",
+            "tuple:tint/pill/text",
+            "tuple:solid/rounded/text",
+            "tuple:solid/pill/icon+text",
+            "tuple:ghost/rounded/icon+text",
+            "match:c01",
+            "match:c03",
+            "match:c04",
+            "match:c08",
+            "match:t01"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://netlify.com/",
+          "tags": [
+            "saas:netlify.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/sharp/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:solid/pill/text",
+            "tuple:tint/pill/text",
+            "tuple:tint/pill/icon+text",
+            "tuple:outline/rounded/icon+text",
+            "tuple:solid/pill/icon+text",
+            "tuple:outline/sharp/text",
+            "match:c03",
+            "match:c04",
+            "match:t01",
+            "match:t02",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://m3.material.io/components/buttons/overview",
+          "tags": [
+            "ds:M3",
+            "render:incomplete",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+          "tags": [
+            "ds:HIG",
+            "evidence:guideline",
+            "family:glass",
+            "family:solid",
+            "family:elevated",
+            "content:text",
+            "content:icon+text",
+            "content:icon-only",
+            "content:loading",
+            "match:c01",
+            "match:c05",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:sharp",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c02",
+            "match:c03",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c08",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://ui.shadcn.com/docs/components/button",
+          "tags": [
+            "ds:shadcn",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:tint",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c04",
+            "match:c06",
+            "match:c07",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://vercel.com/geist/button",
+          "tags": [
+            "ds:Geist",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "shape:pill",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://carbondesignsystem.com/components/button/usage/",
+          "tags": [
+            "ds:Carbon",
+            "evidence:guideline",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "shape:sharp",
+            "match:c02",
+            "match:c08",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://shopify.dev/docs/api/app-home/latest/web-components/actions/button",
+          "tags": [
+            "ds:Polaris",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://fluent2.microsoft.design/components/web/react/core/button/usage",
+          "tags": [
+            "ds:Fluent",
+            "evidence:guideline",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "shape:sharp",
+            "content:split",
+            "match:c02",
+            "match:c08",
+            "match:c10",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://github.com/material-components/material-components-android/blob/master/docs/components/CommonButton.md",
+          "tags": [
+            "ds:M3",
+            "evidence:guideline",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:pill",
+            "match:c03",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/icon-button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "shape:circle",
+            "match:c06",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        }
+      ],
+      "provenance": "independent-reconstruction"
+    },
+    {
+      "id": "t02",
+      "name": "ソリッド・ピル",
+      "tier": "Trend",
+      "axes": {
+        "fill": "solid",
+        "shape": "pill",
+        "content": "text"
+      },
+      "frequency": {
+        "ds": 0,
+        "dsTotal": 8,
+        "saas": 12,
+        "saasTotal": 40,
+        "saasPercent": 30.0,
+        "scope": "computed fill/shape/content; buttons and CTA; ghost shapes merged"
+      },
+      "qualified": true,
+      "verification": "qualified",
+      "sources": [
+        {
+          "url": "https://linear.app/",
+          "tags": [
+            "saas:linear.app",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/sharp/text",
+            "tuple:ghost/pill/text",
+            "tuple:solid/pill/text",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:ghost/pill/icon-only",
+            "tuple:tint/pill/icon-only",
+            "tuple:tint/rounded/icon+text",
+            "tuple:ghost/sharp/icon-only",
+            "tuple:outline/pill/text",
+            "match:c04",
+            "match:c08",
+            "match:t02",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://vercel.com/",
+          "tags": [
+            "saas:vercel.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:solid/pill/text",
+            "match:c01",
+            "match:c04",
+            "match:t02"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://asana.com/",
+          "tags": [
+            "saas:asana.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/pill/icon+text",
+            "tuple:solid/pill/text",
+            "tuple:ghost/sharp/icon+text",
+            "match:c04",
+            "match:t02"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://monday.com/",
+          "tags": [
+            "saas:monday.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:outline/pill/text",
+            "tuple:solid/pill/icon+text",
+            "tuple:solid/pill/text",
+            "tuple:gradient/pill/icon+text",
+            "match:t01",
+            "match:t02"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://loom.com/",
+          "tags": [
+            "saas:loom.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/rounded/icon-only",
+            "tuple:ghost/pill/text",
+            "tuple:solid/pill/text",
+            "tuple:solid/pill/icon+text",
+            "tuple:solid/sharp/text",
+            "tuple:gradient/sharp/icon-only",
+            "match:c08",
+            "match:t01",
+            "match:t02",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://box.com/",
+          "tags": [
+            "saas:box.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:tint/pill/text",
+            "tuple:ghost/sharp/text",
+            "tuple:solid/pill/text",
+            "tuple:gradient/pill/text",
+            "match:c03",
+            "match:c08",
+            "match:t02"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://retool.com/",
+          "tags": [
+            "saas:retool.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:outline/pill/text",
+            "tuple:solid/pill/text",
+            "tuple:outline/pill/icon-only",
+            "tuple:tint/rounded/icon+text",
+            "tuple:solid/pill/icon-only",
+            "tuple:solid/rounded/icon+text",
+            "tuple:tint/pill/icon+text",
+            "match:c04",
+            "match:c08",
+            "match:t02"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://neon.tech/",
+          "tags": [
+            "saas:neon.tech",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/sharp/text",
+            "tuple:solid/sharp/icon+text",
+            "tuple:outline/pill/text",
+            "tuple:solid/pill/text",
+            "match:t02",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://netlify.com/",
+          "tags": [
+            "saas:netlify.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/sharp/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:solid/pill/text",
+            "tuple:tint/pill/text",
+            "tuple:tint/pill/icon+text",
+            "tuple:outline/rounded/icon+text",
+            "tuple:solid/pill/icon+text",
+            "tuple:outline/sharp/text",
+            "match:c03",
+            "match:c04",
+            "match:t01",
+            "match:t02",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://algolia.com/",
+          "tags": [
+            "saas:algolia.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:ghost/sharp/text",
+            "tuple:outline/pill/icon+text",
+            "tuple:outline/rounded/text",
+            "tuple:gradient/rounded/text",
+            "tuple:solid/pill/text",
+            "tuple:ghost/rounded/text",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:solid/sharp/text",
+            "tuple:gradient/sharp/icon-only",
+            "match:c01",
+            "match:c04",
+            "match:c07",
+            "match:c08",
+            "match:t02",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://cal.com/",
+          "tags": [
+            "saas:cal.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:solid/rounded/text",
+            "tuple:solid/pill/text",
+            "tuple:solid/rounded/icon+text",
+            "match:c01",
+            "match:c04",
+            "match:t02"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://savvycal.com/",
+          "tags": [
+            "saas:savvycal.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/pill/text",
+            "match:t02"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://m3.material.io/components/buttons/overview",
+          "tags": [
+            "ds:M3",
+            "render:incomplete",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+          "tags": [
+            "ds:HIG",
+            "evidence:guideline",
+            "family:glass",
+            "family:solid",
+            "family:elevated",
+            "content:text",
+            "content:icon+text",
+            "content:icon-only",
+            "content:loading",
+            "match:c01",
+            "match:c05",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:sharp",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c02",
+            "match:c03",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c08",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://ui.shadcn.com/docs/components/button",
+          "tags": [
+            "ds:shadcn",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:tint",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c04",
+            "match:c06",
+            "match:c07",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://vercel.com/geist/button",
+          "tags": [
+            "ds:Geist",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "shape:pill",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://carbondesignsystem.com/components/button/usage/",
+          "tags": [
+            "ds:Carbon",
+            "evidence:guideline",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "shape:sharp",
+            "match:c02",
+            "match:c08",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://shopify.dev/docs/api/app-home/latest/web-components/actions/button",
+          "tags": [
+            "ds:Polaris",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://fluent2.microsoft.design/components/web/react/core/button/usage",
+          "tags": [
+            "ds:Fluent",
+            "evidence:guideline",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "shape:sharp",
+            "content:split",
+            "match:c02",
+            "match:c08",
+            "match:c10",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://github.com/material-components/material-components-android/blob/master/docs/components/CommonButton.md",
+          "tags": [
+            "ds:M3",
+            "evidence:guideline",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:pill",
+            "match:c03",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/icon-button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "shape:circle",
+            "match:c06",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        }
+      ],
+      "provenance": "independent-reconstruction"
+    },
+    {
+      "id": "t03",
+      "name": "ソリッド・シャープ",
+      "tier": "Trend",
+      "axes": {
+        "fill": "solid",
+        "shape": "sharp",
+        "content": "text"
+      },
+      "frequency": {
+        "ds": 0,
+        "dsTotal": 8,
+        "saas": 11,
+        "saasTotal": 40,
+        "saasPercent": 27.500000000000004,
+        "scope": "computed fill/shape/content; buttons and CTA; ghost shapes merged"
+      },
+      "qualified": true,
+      "verification": "qualified",
+      "sources": [
+        {
+          "url": "https://linear.app/",
+          "tags": [
+            "saas:linear.app",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/sharp/text",
+            "tuple:ghost/pill/text",
+            "tuple:solid/pill/text",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:ghost/pill/icon-only",
+            "tuple:tint/pill/icon-only",
+            "tuple:tint/rounded/icon+text",
+            "tuple:ghost/sharp/icon-only",
+            "tuple:outline/pill/text",
+            "match:c04",
+            "match:c08",
+            "match:t02",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://slack.com/",
+          "tags": [
+            "saas:slack.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/sharp/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:ghost/sharp/text",
+            "match:c04",
+            "match:c08",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://loom.com/",
+          "tags": [
+            "saas:loom.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/rounded/icon-only",
+            "tuple:ghost/pill/text",
+            "tuple:solid/pill/text",
+            "tuple:solid/pill/icon+text",
+            "tuple:solid/sharp/text",
+            "tuple:gradient/sharp/icon-only",
+            "match:c08",
+            "match:t01",
+            "match:t02",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://dropbox.com/",
+          "tags": [
+            "saas:dropbox.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/sharp/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:ghost/sharp/icon-only",
+            "tuple:solid/rounded/text",
+            "tuple:solid/rounded/icon+text",
+            "match:c01",
+            "match:c04",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://webflow.com/",
+          "tags": [
+            "saas:webflow.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/sharp/text",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/sharp/text",
+            "tuple:solid/sharp/icon+text",
+            "tuple:ghost/sharp/icon-only",
+            "match:c01",
+            "match:c08",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://planetscale.com/",
+          "tags": [
+            "saas:planetscale.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:outline/sharp/text",
+            "tuple:solid/sharp/text",
+            "tuple:ghost/sharp/text",
+            "tuple:outline/sharp/icon+text",
+            "match:c02",
+            "match:c08",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://neon.tech/",
+          "tags": [
+            "saas:neon.tech",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/sharp/text",
+            "tuple:solid/sharp/icon+text",
+            "tuple:outline/pill/text",
+            "tuple:solid/pill/text",
+            "match:t02",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://render.com/",
+          "tags": [
+            "saas:render.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:solid/sharp/text",
+            "tuple:solid/sharp/icon+text",
+            "tuple:ghost/sharp/icon-only",
+            "match:c04",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://netlify.com/",
+          "tags": [
+            "saas:netlify.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:solid/sharp/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:solid/pill/text",
+            "tuple:tint/pill/text",
+            "tuple:tint/pill/icon+text",
+            "tuple:outline/rounded/icon+text",
+            "tuple:solid/pill/icon+text",
+            "tuple:outline/sharp/text",
+            "match:c03",
+            "match:c04",
+            "match:t01",
+            "match:t02",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://algolia.com/",
+          "tags": [
+            "saas:algolia.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:ghost/sharp/text",
+            "tuple:outline/pill/icon+text",
+            "tuple:outline/rounded/text",
+            "tuple:gradient/rounded/text",
+            "tuple:solid/pill/text",
+            "tuple:ghost/rounded/text",
+            "tuple:solid/rounded/text",
+            "tuple:ghost/sharp/icon+text",
+            "tuple:solid/sharp/text",
+            "tuple:gradient/sharp/icon-only",
+            "match:c01",
+            "match:c04",
+            "match:c07",
+            "match:c08",
+            "match:t02",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://intercom.com/",
+          "tags": [
+            "saas:intercom.com",
+            "method:chromium-computed-style",
+            "render:checked",
+            "tuple:ghost/sharp/icon-only",
+            "tuple:ghost/rounded/icon+text",
+            "tuple:solid/sharp/text",
+            "tuple:outline/sharp/text",
+            "match:c04",
+            "match:t03"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://m3.material.io/components/buttons/overview",
+          "tags": [
+            "ds:M3",
+            "render:incomplete",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+          "tags": [
+            "ds:HIG",
+            "evidence:guideline",
+            "family:glass",
+            "family:solid",
+            "family:elevated",
+            "content:text",
+            "content:icon+text",
+            "content:icon-only",
+            "content:loading",
+            "match:c01",
+            "match:c05",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:sharp",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c02",
+            "match:c03",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c08",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://ui.shadcn.com/docs/components/button",
+          "tags": [
+            "ds:shadcn",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:tint",
+            "shape:rounded",
+            "shape:pill",
+            "match:c01",
+            "match:c04",
+            "match:c06",
+            "match:c07",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://vercel.com/geist/button",
+          "tags": [
+            "ds:Geist",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "shape:pill",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://carbondesignsystem.com/components/button/usage/",
+          "tags": [
+            "ds:Carbon",
+            "evidence:guideline",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "shape:sharp",
+            "match:c02",
+            "match:c08",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://shopify.dev/docs/api/app-home/latest/web-components/actions/button",
+          "tags": [
+            "ds:Polaris",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:rounded",
+            "content:loading",
+            "match:c01",
+            "match:c04",
+            "match:c05",
+            "match:c07",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://fluent2.microsoft.design/components/web/react/core/button/usage",
+          "tags": [
+            "ds:Fluent",
+            "evidence:guideline",
+            "family:solid",
+            "family:outline",
+            "family:ghost",
+            "shape:sharp",
+            "content:split",
+            "match:c02",
+            "match:c08",
+            "match:c10",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://github.com/material-components/material-components-android/blob/master/docs/components/CommonButton.md",
+          "tags": [
+            "ds:M3",
+            "evidence:guideline",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "family:elevated",
+            "shape:pill",
+            "match:c03",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        },
+        {
+          "url": "https://www.radix-ui.com/themes/docs/components/icon-button",
+          "tags": [
+            "ds:Radix",
+            "evidence:documented-configuration",
+            "family:solid",
+            "family:tint",
+            "family:outline",
+            "family:ghost",
+            "shape:circle",
+            "match:c06",
+            "match:c09",
+            "relation:family-only"
+          ],
+          "observed": "2026-11-08"
+        }
+      ],
+      "provenance": "independent-reconstruction"
+    },
+    {
+      "id": "e01",
+      "name": "グラス・カプセル",
+      "tier": "Expressive",
+      "axes": {
+        "fill": "glass",
+        "shape": "pill",
+        "content": "icon+text"
+      },
+      "frequency": {
+        "ds": 0,
+        "dsTotal": 8,
+        "saas": 0,
+        "saasTotal": 40,
+        "saasPercent": 0.0,
+        "scope": "computed fill/shape/content; buttons and CTA; ghost shapes merged"
+      },
+      "qualified": false,
+      "verification": "unverified/独自案",
+      "sources": [],
+      "provenance": "original-exploration"
+    },
+    {
+      "id": "e02",
+      "name": "スペクトラム・ピル",
+      "tier": "Expressive",
+      "axes": {
+        "fill": "spectrum",
+        "shape": "pill",
+        "content": "text"
+      },
+      "frequency": {
+        "ds": 0,
+        "dsTotal": 8,
+        "saas": 0,
+        "saasTotal": 40,
+        "saasPercent": 0.0,
+        "scope": "computed fill/shape/content; buttons and CTA; ghost shapes merged"
+      },
+      "qualified": false,
+      "verification": "unverified/独自案",
+      "sources": [],
+      "provenance": "original-exploration"
+    },
+    {
+      "id": "e03",
+      "name": "ハードシャドー・アロー",
+      "tier": "Expressive",
+      "axes": {
+        "fill": "neo-brutal",
+        "shape": "sharp",
+        "content": "icon+text"
+      },
+      "frequency": {
+        "ds": 0,
+        "dsTotal": 8,
+        "saas": 0,
+        "saasTotal": 40,
+        "saasPercent": 0.0,
+        "scope": "computed fill/shape/content; buttons and CTA; ghost shapes merged"
+      },
+      "qualified": false,
+      "verification": "unverified/独自案",
+      "sources": [],
+      "provenance": "original-exploration"
+    },
+    {
+      "id": "e04",
+      "name": "スペクトラム・スプリット",
+      "tier": "Expressive",
+      "axes": {
+        "fill": "spectrum",
+        "shape": "rounded",
+        "content": "split"
+      },
+      "frequency": {
+        "ds": 0,
+        "dsTotal": 8,
+        "saas": 0,
+        "saasTotal": 40,
+        "saasPercent": 0.0,
+        "scope": "computed fill/shape/content; buttons and CTA; ghost shapes merged"
+      },
+      "qualified": false,
+      "verification": "unverified/独自案",
+      "sources": [],
+      "provenance": "original-exploration"
+    },
+    {
+      "id": "e05",
+      "name": "タクタイル・オーブ",
+      "tier": "Expressive",
+      "axes": {
+        "fill": "tactile",
+        "shape": "circle",
+        "content": "icon-only"
+      },
+      "frequency": {
+        "ds": 0,
+        "dsTotal": 8,
+        "saas": 0,
+        "saasTotal": 40,
+        "saasPercent": 0.0,
+        "scope": "computed fill/shape/content; buttons and CTA; ghost shapes merged"
+      },
+      "qualified": false,
+      "verification": "unverified/独自案",
+      "sources": [],
+      "provenance": "original-exploration"
+    }
+  ]
+}

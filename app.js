@@ -1,144 +1,36 @@
 'use strict';
-const $ = s => document.querySelector(s);
-const KEY = 'btnlib-status-v1';
-const names = {ok:'OK',ng:'NG',hold:'保留'};
-const groups = {shape:['形状',{pill:'ピル',rounded:'角丸',square:'四角'}],fill:['塗り',{solid:'塗りつぶし',outline:'アウトライン',ghost:'ゴースト',text:'テキスト'}],icon:['アイコン',{'true':'あり','false':'なし'}],size:['サイズ',{S:'S',M:'M',L:'L'}]};
-let items = [], statuses = {}, active = null;
-const selected = Object.fromEntries(Object.keys(groups).map(k => [k,new Set()]));
-const validStatus = value => Object.hasOwn(names,value);
-function cleanStatuses(value) {
-  if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error('評価データはオブジェクトで指定してください。');
-  const result = Object.create(null);
-  for (const [id,status] of Object.entries(value)) {
-    if (!validStatus(status)) throw new Error('評価は ok・ng・hold のいずれかで指定してください。');
-    result[id] = status;
-  }
-  return result;
-}
-function notice(message) { $('#notice').textContent = message; }
-try { statuses = cleanStatuses(JSON.parse(localStorage.getItem(KEY) || '{}')); }
-catch { notice('保存済みの評価を読み込めませんでした。新しい評価から開始します。'); }
-function save() {
-  try { localStorage.setItem(KEY, JSON.stringify(statuses)); }
-  catch { notice('評価を保存できません。書き出してデータを保管してください。'); }
-}
-function el(tag, className, text) {
-  const node = document.createElement(tag);
-  if (className) node.className = className;
-  if (text !== undefined) node.textContent = text;
-  return node;
-}
-function picture(src, label) {
-  const img = el('img');
-  img.alt = label; img.loading = 'lazy'; img.decoding = 'async';
-  img.onerror = () => img.replaceWith(el('span','placeholder','画像を読み込めません'));
-  if (typeof src === 'string' && src.trim()) img.src = src;
-  else return el('span','placeholder','画像がありません');
-  return img;
-}
-function tags(item) {
-  const row = el('div','tags');
-  for (const [key,[,values]] of Object.entries(groups)) {
-    const value = values[String(item.tags?.[key])];
-    if (value) row.append(el('span','tag',key === 'icon' ? `アイコン${value}` : value));
-  }
-  return row;
-}
-for (const [key,[label,values]] of Object.entries(groups)) {
-  const row = el('div','chip-row'); row.setAttribute('role','group'); row.setAttribute('aria-label',label);
-  row.append(el('span','filter-label',label));
-  for (const [value,text] of Object.entries(values)) {
-    const button = el('button','',text); button.setAttribute('aria-pressed','false');
-    button.onclick = () => {
-      selected[key].has(value) ? selected[key].delete(value) : selected[key].add(value);
-      button.setAttribute('aria-pressed',String(selected[key].has(value))); render();
-    };
-    row.append(button);
-  }
-  $('#chips').append(row);
-}
-function render() {
-  const filtered = items.filter(item => Object.entries(selected).every(([key,values]) => !values.size || values.has(String(item.tags?.[key]))) && (!$('#site').value || item.site === $('#site').value) && (!$('#status').value || (statuses[item.id] || 'unreviewed') === $('#status').value));
-  $('#count').textContent = `${filtered.length} / ${items.length} 件`;
-  $('#empty').hidden = filtered.length !== 0;
-  const fragment = document.createDocumentFragment();
-  for (const item of filtered) {
-    const tile = el('button','tile'); tile.setAttribute('aria-label',`${item.site} ${item.label || 'ボタン'} 詳細を開く`);
-    const preview = el('div','preview');
-    const normal = picture(item.image, item.label || '通常のボタン'); preview.append(normal);
-    if (item.hover) {
-      const hover = picture(item.hover,`${item.label || 'ボタン'} ホバー`); hover.hidden = true;
-      // Use wrappers so a failed image retains the same show/hide behavior.
-      const normalWrap = el('div'), hoverWrap = el('div');
-      normalWrap.style.width = hoverWrap.style.width = '100%';
-      normalWrap.append(normal); hover.hidden = false; hoverWrap.append(hover); hoverWrap.hidden = true;
-      preview.replaceChildren(normalWrap,hoverWrap);
-      const swap = on => { normalWrap.hidden = on; hoverWrap.hidden = !on; };
-      tile.onpointerenter = e => { if (e.pointerType !== 'touch') swap(true); };
-      tile.onpointerleave = () => swap(false);
-      tile.onfocus = () => swap(true); tile.onblur = () => swap(false);
-    }
-    const info = el('div','tile-info'), line = el('div','site-line');
-    line.append(el('span','site-name',item.site),el('span','',String(item.award_year ?? '')));
-    info.append(line,tags(item));
-    if (statuses[item.id]) info.append(el('span','badge',names[statuses[item.id]]));
-    tile.append(preview,info); tile.onclick = () => openDetail(item); fragment.append(tile);
-  }
-  $('#gallery').replaceChildren(fragment);
-}
-function openDetail(item) {
-  active = item; $('#detail-title').textContent = item.label || item.site;
-  const pair = el('div','image-pair');
-  for (const [label,src] of [['通常',item.image],['ホバー',item.hover]]) {
-    const figure = el('figure'); figure.append(el('figcaption','',label));
-    const preview = el('div','large-preview'); preview.append(src ? picture(src,label) : el('span','muted','ホバー画像なし')); figure.append(preview); pair.append(figure);
-  }
-  const meta = el('div','meta');
-  meta.append(el('p','',`${item.site} · ${item.award_year ?? '年不明'}`),el('p','',`ID: ${item.id}`),el('p','',`セレクター: ${item.selector || '—'}`),tags(item));
-  try {
-    const url = new URL(item.site_url);
-    if (['http:','https:'].includes(url.protocol)) {
-      const link = el('a','', 'サイトを開く ↗'); link.href = url.href; link.target = '_blank'; link.rel = 'noopener noreferrer';
-      const p = el('p'); p.append(link); meta.append(p);
-    }
-  } catch { /* Invalid site URLs are not linked. */ }
-  $('#detail-content').replaceChildren(pair,meta); updateReview(); $('#detail').showModal();
-}
-function updateReview() {
-  document.querySelectorAll('[data-status]').forEach(b => b.setAttribute('aria-pressed',String(statuses[active.id] === b.dataset.status)));
-}
-document.querySelectorAll('[data-status]').forEach(b => b.onclick = () => { statuses[active.id] = b.dataset.status; save(); updateReview(); render(); });
-$('#close').onclick = () => $('#detail').close();
-$('#detail').onclick = e => { if (e.target === $('#detail')) { const r = e.target.getBoundingClientRect(); if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) e.target.close(); } };
-$('#site').onchange = $('#status').onchange = render;
-$('#reset').onclick = () => { Object.values(selected).forEach(s => s.clear()); document.querySelectorAll('#chips button').forEach(b => b.setAttribute('aria-pressed','false')); $('#site').value = $('#status').value = ''; render(); };
-$('#export').onclick = () => {
-  const url = URL.createObjectURL(new Blob([JSON.stringify(statuses,null,2)],{type:'application/json'}));
-  const a = el('a'); a.href = url; a.download = 'btnlib-approvals.json'; a.click(); setTimeout(() => URL.revokeObjectURL(url),1000);
-};
-$('#import').onchange = async e => {
-  const file = e.target.files[0]; if (!file) return;
-  try {
-    const imported = cleanStatuses(JSON.parse(await file.text()));
-    statuses = Object.assign(Object.create(null),statuses,imported); save(); render();
-    if (active) updateReview(); notice(`${Object.keys(imported).length} 件の評価を読み込みました。`);
-  } catch (error) { notice(`読み込みに失敗しました: ${error.message}`); }
-  e.target.value = '';
-};
-(async () => {
-  try {
-    const response = await fetch('buttons.json');
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
-    if (!Array.isArray(data.items)) throw new Error('items 配列がありません');
-    items = data.items.filter(item => item && (typeof item.id === 'string' || typeof item.id === 'number'));
-    for (const site of [...new Set(items.map(i => i.site).filter(Boolean))].sort((a,b) => a.localeCompare(b,'ja'))) {
-      const option = el('option','',site); option.value = site; $('#site').append(option);
-    }
-    render();
-    if (data.meta?.skipped?.length) notice(`収集時にスキップ: ${data.meta.skipped.length} 件`);
-  } catch (error) {
-    $('#count').textContent = '読み込みエラー';
-    notice(`buttons.json を読み込めませんでした (${error.message})。ファイルを配置し、HTTP サーバー経由で開いてください。`);
-  }
+(() => {
+const data=window.BUTTON_ATLAS; if(!data){document.querySelector('#gallery').textContent='データを読み込めませんでした。再読み込みしてください。';return;}
+const variants=data.variants, key='button-atlas-reviews-v1';
+const labels={fill:'塗り',shape:'かたち',content:'コンテンツ'};
+const values={fill:{solid:'ソリッド',tint:'淡い塗り',outline:'アウトライン',ghost:'ゴースト',elevated:'エレベーテッド',glass:'ガラス',gradient:'グラデーション','neo-brutal':'ネオブルータル',spectrum:'スペクトラム',tactile:'タクタイル'},shape:{sharp:'シャープ 0–4px',rounded:'角丸 6–10px',pill:'ピル',circle:'円形'},content:{text:'テキスト','icon+text':'アイコン＋テキスト','icon-only':'アイコンのみ',split:'分割'}};
+const filter={tier:'all',fill:'all',shape:'all',content:'all'};
+let reviews=Object.create(null), noticeTimer;
+const safeReviews=input=>{if(!input||typeof input!=='object'||Array.isArray(input))throw Error('評価データが不正です');const out=Object.create(null);for(const v of variants){if(!Object.hasOwn(input,v.id))continue;const r=input[v.id];if(!r||!['','OK','NG','保留'].includes(r.status)||typeof r.reason!=='string'||r.reason.length>5000)throw Error('評価の形式を確認してください');out[v.id]={status:r.status,reason:r.reason};}return out;};
+try{const saved=localStorage.getItem(key);if(saved)reviews=safeReviews(JSON.parse(saved));}catch{notify('保存済みの評価を読み込めません。現在の評価は書き出して保存できます。');}
+function notify(message){const n=document.querySelector('#notice');n.textContent=message;n.classList.add('show');clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>n.classList.remove('show'),4500);}
+const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const icon=(kind='arrow')=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${kind==='chevron'?'<path d="m7 10 5 5 5-5"/>':'<path d="M5 12h14m-6-6 6 6-6 6"/>'}</svg>`;
+function sample(v,state='',mini=false){const disabled=state==='disabled',cls=state?` is-${state}`:'';const base=`type="button" lang="en" class="sample-button${cls}" ${disabled?'disabled':''} ${mini?'tabindex="-1"':''}`;let inside='<span>Get started</span>';if(v.axes.content==='icon+text')inside=icon()+inside;if(v.axes.content==='icon-only')return `<button ${base.replace('sample-button','sample-button icon-only')} aria-label="Get started">${icon()}</button>`;if(v.axes.content==='split')return `<div class="split"><button ${base}>Get started</button><button ${base} lang="ja" aria-label="その他のオプション" data-menu="true" aria-haspopup="menu" aria-expanded="false">${icon('chevron')}</button></div>`;return `<button ${base}>${inside}</button>`;}
+function frequency(v){if(v.tier==='Expressive')return 'unverified / 独自案 · 確認済み利用例なし';const f=v.frequency;return `${f.ds}/8 DS · ${f.saas}/40 SaaS${v.qualified?'':' · 基準未達・候補'}`;}
+function render(){const visible=variants.filter(v=>(filter.tier==='all'||v.tier===filter.tier)&&['fill','shape','content'].every(a=>filter[a]==='all'||v.axes[a]===filter[a]));document.querySelector('#visible-count').textContent=`${visible.length} / ${variants.length}`;document.querySelector('#empty').hidden=visible.length>0;
+document.querySelector('#gallery').innerHTML=visible.map(v=>{const r=reviews[v.id]||{status:'',reason:''};return `<article class="card specimen" data-id="${v.id}" data-fill="${v.axes.fill}" data-shape="${v.axes.shape}" aria-labelledby="title-${v.id}"><div class="card-head"><span class="serial">${v.id.toUpperCase()} / ${String(variants.indexOf(v)+1).padStart(2,'0')}</span><span class="tier-badge ${v.tier}">${v.tier}${v.tier==='Expressive'?' unverified / 独自案':v.qualified?'':' 候補'}</span></div><div class="stage">${sample(v)}</div><div class="states" inert aria-hidden="true">${[['','通常'],['hover','ホバー'],['active','押下'],['focus','フォーカス'],['disabled','無効']].map(([s,n])=>`<div class="state-cell"><div class="mini-wrap">${sample(v,s,true)}</div><span>${n}</span></div>`).join('')}</div><div class="card-info"><h3 id="title-${v.id}">${escape(v.name)}</h3><div class="axes">${Object.keys(labels).map(a=>values[a][v.axes[a]]).join(' / ')}</div><div class="frequency">${frequency(v)}</div></div><div class="review"><div class="demo-options"><button type="button" data-load>処理状態を試す</button><label><input type="checkbox" data-danger> 危険な操作</label></div><div class="choices" role="group" aria-label="${escape(v.name)}の評価">${['OK','NG','保留'].map(s=>`<button type="button" data-status="${s}" aria-pressed="${r.status===s}">${s==='OK'?'✓ ':s==='NG'?'× ':'◷ '}${s}</button>`).join('')}</div><label class="sr-only" for="reason-${v.id}">${escape(v.name)}の評価理由</label><textarea id="reason-${v.id}" placeholder="選んだ理由・気になる点をメモ…" maxlength="5000">${escape(r.reason)}</textarea></div><details><summary>出典 ${v.sources.length}件 / 集計を確認</summary><p>軸の完全一致のみを集計。実ボタン・CTAの計算済みスタイルを分類。形状未確認は除外。</p><ul>${v.sources.map(s=>`<li><a href="${escape(s.url)}" target="_blank" rel="noopener noreferrer">${escape(new URL(s.url).hostname)}</a> · ${s.tags.map(escape).join(', ')} · ${s.observed}</li>`).join('')}</ul>${!v.sources.length?'<p>独自の探索案。確認済み利用例なし。</p>':''}</details></article>`;}).join('');progress();}
+function progress(){const count=variants.filter(v=>reviews[v.id]?.status).length;document.querySelector('#review-progress').textContent=`評価済み ${count} / ${variants.length}`;}
+function save(){try{localStorage.setItem(key,JSON.stringify(reviews));}catch{notify('ブラウザーに保存できません。評価を書き出してください。');}progress();}
+for(const tier of ['all','Core','Trend','Expressive']){const b=document.createElement('button');b.type='button';b.dataset.tier=tier;b.setAttribute('aria-pressed',String(tier==='all'));b.innerHTML=`${tier==='all'?'すべて':tier}<span class="tab-count">${tier==='all'?variants.length:variants.filter(v=>v.tier===tier).length}</span>`;b.onclick=()=>{filter.tier=tier;document.querySelectorAll('[data-tier]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));render();};document.querySelector('.tier-tabs').append(b);}
+for(const a of Object.keys(labels)){const l=document.createElement('label');l.textContent=labels[a];const select=document.createElement('select');select.id=`filter-${a}`;select.innerHTML='<option value="all">すべて</option>'+Object.entries(values[a]).map(([k,v])=>`<option value="${k}">${v}</option>`).join('');select.onchange=()=>{filter[a]=select.value;render();};l.append(select);document.querySelector('#axis-filters').append(l);}
+document.querySelector('#reset').onclick=()=>{Object.keys(filter).forEach(a=>filter[a]='all');document.querySelectorAll('#axis-filters select').forEach(s=>s.value='all');document.querySelectorAll('[data-tier]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.tier==='all')));render();};
+document.querySelector('#gallery').addEventListener('click',e=>{const c=e.target.closest('.card');if(!c)return;const rating=e.target.closest('[data-status]');if(rating){const prev=reviews[c.dataset.id]||{status:'',reason:''};reviews[c.dataset.id]={...prev,status:prev.status===rating.dataset.status?'':rating.dataset.status};c.querySelectorAll('[data-status]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.status===reviews[c.dataset.id].status)));save();return;}if(e.target.closest('.states'))return;
+const load=e.target.closest('[data-load]');if(load){const buttons=[...c.querySelectorAll('.stage .sample-button')];if(buttons.some(b=>b.getAttribute('aria-busy')==='true'))return;for(const b of buttons){b.style.width=b.getBoundingClientRect().width+'px';b.setAttribute('aria-busy','true');b.setAttribute('aria-disabled','true');b.insertAdjacentHTML('afterbegin','<span class="spinner" aria-hidden="true"></span>');}notify('処理中…');setTimeout(()=>{for(const b of buttons){b.removeAttribute('aria-busy');b.removeAttribute('aria-disabled');b.style.width='';b.querySelector('.spinner')?.remove();}notify('処理が完了しました。');},1200);return;}
+const b=e.target.closest('.sample-button');if(!b||b.disabled||b.getAttribute('aria-disabled')==='true')return;
+if(b.dataset.menu){const wasOpen=b.getAttribute('aria-expanded')==='true';closeMenu();if(wasOpen)return;const menu=document.createElement('div');menu.className='action-menu';menu.id='options-menu';menu.setAttribute('role','menu');menu.innerHTML='<button role="menuitem" type="button">詳細を表示</button><button role="menuitem" type="button">リンクをコピー</button>';b.setAttribute('aria-expanded','true');b.setAttribute('aria-controls',menu.id);b.closest('.stage').append(menu);menu.querySelector('button').focus();menu.onclick=()=>{notify('追加オプションを実行しました。');closeMenu(true);};return;}
+const dialog=document.querySelector('#action-dialog');dialog.showModal();});
+function closeMenu(focus=false){const trigger=document.querySelector('[data-menu][aria-expanded="true"]');document.querySelector('.action-menu')?.remove();if(trigger){trigger.setAttribute('aria-expanded','false');trigger.removeAttribute('aria-controls');if(focus)trigger.focus();}}
+document.addEventListener('click',e=>{if(!e.target.closest('.action-menu,[data-menu]'))closeMenu();});
+document.addEventListener('keydown',e=>{const menu=document.querySelector('.action-menu');if(!menu)return;const items=[...menu.querySelectorAll('[role=menuitem]')];let i=items.indexOf(document.activeElement);if(e.key==='Escape'){e.preventDefault();closeMenu(true);}else if(['ArrowDown','ArrowUp','Home','End'].includes(e.key)){e.preventDefault();i=e.key==='Home'?0:e.key==='End'?items.length-1:(i+(e.key==='ArrowDown'?1:-1)+items.length)%items.length;items[i].focus();}else if(e.key==='Tab')closeMenu(true);});
+
+document.querySelector('#gallery').addEventListener('input',e=>{if(e.target.matches('[data-danger]')){e.target.closest('.card').classList.toggle('danger',e.target.checked);return;}if(e.target.tagName!=='TEXTAREA')return;const id=e.target.closest('.card').dataset.id;reviews[id]={status:reviews[id]?.status||'',reason:e.target.value};save();});
+document.querySelector('#export').onclick=()=>{const blob=new Blob([JSON.stringify({schemaVersion:1,collection:'button-atlas',exportedAt:new Date().toISOString(),reviews},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='button-atlas-reviews.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);notify('評価JSONを書き出しました。');};
+document.querySelector('#import').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>1024*1024)throw Error('ファイルは1MB以下にしてください');const parsed=JSON.parse(await file.text());if(parsed.schemaVersion!==1||parsed.collection!=='button-atlas')throw Error('Button Atlasの評価JSONを選んでください');const incoming=safeReviews(parsed.reviews);if(!Object.keys(incoming).length)throw Error('一致する標本がありません');reviews=Object.assign(Object.create(null),reviews,incoming);save();render();notify(`${Object.keys(incoming).length}件の評価を読み込みました。`);}catch(err){notify(`読み込みできません: ${err.message}`);}e.target.value='';};
+document.querySelector('#total').textContent=variants.length;document.querySelector('#research-note').textContent=data.note;render();
 })();

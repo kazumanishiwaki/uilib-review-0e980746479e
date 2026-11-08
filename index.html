@@ -1,19 +1,6 @@
 <!doctype html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ボタンデザインライブラリ</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js" defer></script>
-</head>
-<body>
-  <header class="page-header"><div><p class="eyebrow">BUTTON DESIGN LIBRARY</p><h1>ボタンを集める、見つける。</h1><p class="subtitle">かたちやスタイルで絞り込んで、気になるデザインをチェック。</p></div><div class="actions"><button id="export">評価を書き出す</button><label class="button" for="import">評価を読み込む</label><input id="import" type="file" accept="application/json,.json" hidden></div></header>
-  <details class="filters" open>
-    <summary>絞り込み <span id="count" aria-live="polite">読み込み中…</span></summary>
-    <div class="filter-body"><div id="chips"></div><div class="selects"><label>サイト<select id="site"><option value="">すべてのサイト</option></select></label><label>評価<select id="status"><option value="">すべての評価</option><option value="unreviewed">未評価</option><option value="ok">OK</option><option value="ng">NG</option><option value="hold">保留</option></select></label><button id="reset">絞り込みをリセット</button></div></div>
-  </details>
-  <main><p id="notice" role="status"></p><div id="gallery" class="grid" aria-label="ボタン一覧"></div><p id="empty" hidden>条件に合うボタンがありません。</p></main>
-  <dialog id="detail" aria-labelledby="detail-title"><div class="modal-head"><div><p class="eyebrow">BUTTON DETAIL</p><h2 id="detail-title"></h2></div><button id="close" aria-label="詳細を閉じる">✕</button></div><div id="detail-content"></div><div class="review" role="group" aria-label="このボタンの評価"><button data-status="ok">OK</button><button data-status="ng">NG</button><button data-status="hold">保留</button></div></dialog>
-</body>
-</html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f5f4f0"><title>Button Atlas — ボタンの標本室</title><link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="style.css"><script src="data/catalog.js" defer></script><script src="app.js" defer></script></head>
+<body><a class="skip" href="#gallery">標本へ移動</a><header class="topbar"><a class="brand" href="./"><span class="brand-icon" aria-hidden="true">↗</span> BUTTON ATLAS <span class="edition">/ 001</span></a><span class="topnote">UIのかたちを、比較する。</span><div class="tools"><button id="export" type="button">評価を書き出す ↗</button><label class="import-label" for="import">読み込む<input id="import" type="file" accept="application/json,.json"></label></div></header>
+<main><section class="intro"><div><p class="eyebrow">THE INTERACTION COLLECTION · 2026</p><h1>小さなボタン。<br>大きな違い<span class="accent">。</span></h1><p class="lead">塗り、かたち、コンテンツ。<br>同じ「Get started」で、アクションの表情を見比べる。</p></div><aside class="intro-aside"><div class="hero-art" aria-hidden="true"><span class="art-btn">Get started <span>↗</span></span><span class="art-orbit"></span><span class="art-dot"></span><span class="art-caption">FORM FOLLOWS ACTION</span></div><div class="metrics"><div><strong id="total">18</strong><span>バリエーション</span></div><div><strong>08</strong><span>デザインシステム</span></div><div><strong>38/40</strong><span>SaaS 外観確認</span></div></div></aside></section>
+<section class="workspace" aria-label="ボタンの比較"><div class="section-top"><div><span class="eyebrow">01 / THE SPECIMENS</span><h2>ボタンの標本室 <span id="visible-count"></span></h2></div><p id="review-progress">評価済み 0 / 18</p></div><div class="tier-tabs" role="group" aria-label="層で絞り込む"></div><div class="filterbar"><div id="axis-filters"></div><button id="reset" type="button">リセット ↺</button></div><div class="legend"><span><i></i> 各標本は操作できます</span><span>下段は5つの状態を固定表示</span></div><div id="gallery" class="gallery" tabindex="-1"></div><p id="empty" hidden>条件に合う標本はありません。絞り込みを変更してください。</p></section>
+<section class="method"><div><p class="eyebrow">02 / RESEARCH NOTES</p><h2>流行を、印象だけで決めない。</h2></div><div><p>Core は8つのデザインシステム中4以上、Trend は40製品中8以上の確認を採用基準とします。頻度は同一製品を1回だけ計上。Expressive は探索用の独自提案です。</p><p id="research-note"></p><a href="data/sources.json">出典・頻度データを見る ↗</a> <a href="README.md">調査方法・制約 ↗</a></div></section></main><footer><span>BUTTON ATLAS / 独自のトークンと図形で再構築</span><span>観測日 2026.11.08</span></footer><div id="notice" role="status" aria-live="polite"></div><dialog id="action-dialog"><form method="dialog"><p class="eyebrow">INTERACTION PREVIEW</p><h2>Get started</h2><p>ボタンのアクションを実行しました。</p><button class="dialog-close">閉じる</button></form></dialog></body></html>
