@@ -1,0 +1,44 @@
+[
+  {
+    "site_url": "https://www.ueshima-coffee-ten.jp/",
+    "gallery_url": "https://io3000.com/bm/ueshima-coffee-ten/",
+    "tags": [
+      "gallery:io",
+      "posted:2025-12-30",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:j02",
+      "button:fixed-vertical-contact-tab"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://www.kkokita.com/",
+    "gallery_url": "https://io3000.com/bm/kkokita/",
+    "tags": [
+      "gallery:io",
+      "posted:2023-12-27",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:j02",
+      "button:fixed-vertical-contact-tab"
+    ],
+    "observed_date": "2026-11-08"
+  },
+  {
+    "site_url": "https://shinsei-hospital.jp/",
+    "gallery_url": "https://io3000.com/bm/shinsei-hospital/",
+    "tags": [
+      "gallery:io",
+      "posted:2024-12-26",
+      "locale:ja",
+      "method:chromium-desktop-visual",
+      "inspection:rendered-two-scroll-positions",
+      "candidate:j02",
+      "button:fixed-vertical-contact-tab"
+    ],
+    "observed_date": "2026-11-08"
+  }
+]
