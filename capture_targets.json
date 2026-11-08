@@ -1,0 +1,786 @@
+{
+  "meta": {
+    "checked_at": "2026-11-08",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "status_ja": "全件pending。撮影未実施。",
+    "verification_ja": "curl -LでHTML取得。anchorはHTML上の対象要素を確認。JS専用の描画・空の一覧はnull。",
+    "position_ja": "HTMLの主要領域順からの目安。スクロール%は移動可能距離に対する概算（0=先頭、100=末尾）。CSS・JS・表示状態による位置は未実測。",
+    "policy_ja": "撮影対象のメタデータのみ。サイト構築・素材や実装の複製なし。",
+    "award_range": [
+      2021,
+      2026
+    ],
+    "counts": {
+      "sites": 20,
+      "JP": 8,
+      "overseas": 12,
+      "parts": 36,
+      "with_anchor": 32
+    }
+  },
+  "targets": [
+    {
+      "id": "capture-tbwa-hero",
+      "site": "TBWA\\HAKUHODO",
+      "page_url": "https://www.tbwahakuhodo.co.jp/",
+      "section": "hero",
+      "part_ja": "冒頭",
+      "anchor": ".p-top-kv",
+      "position": "冒頭・約0%",
+      "status": "pending",
+      "award_year": 2026,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-tbwa-nav",
+      "site": "TBWA\\HAKUHODO",
+      "page_url": "https://www.tbwahakuhodo.co.jp/",
+      "section": "nav",
+      "part_ja": "メニュー",
+      "anchor": "#global-nav",
+      "position": "約0%・固定メニューを開く",
+      "status": "pending",
+      "award_year": 2026,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-homunculus-hero",
+      "site": "homunculus",
+      "page_url": "https://homunculus.jp/",
+      "section": "hero",
+      "part_ja": "冒頭",
+      "anchor": null,
+      "position": "冒頭・約0%",
+      "status": "pending",
+      "note": "要ブラウザ確認",
+      "award_year": 2026,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": null
+      }
+    },
+    {
+      "id": "capture-homunculus-buttons",
+      "site": "homunculus",
+      "page_url": "https://homunculus.jp/",
+      "section": "buttons",
+      "part_ja": "問い合わせ導線",
+      "anchor": "button.head-contact",
+      "position": "約0%・ヘッダーのContact（入場後）",
+      "status": "pending",
+      "award_year": 2026,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-indig-nav",
+      "site": "INDIG",
+      "page_url": "https://indig.co.jp/",
+      "section": "nav",
+      "part_ja": "メニュー",
+      "anchor": "#header",
+      "position": "約0%・menuを開く",
+      "status": "pending",
+      "award_year": 2024,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-indig-case-list",
+      "site": "INDIG",
+      "page_url": "https://indig.co.jp/casestudy/",
+      "section": "case list",
+      "part_ja": "実績一覧",
+      "anchor": null,
+      "position": "実績ページ冒頭から一覧を探す・位置未確定",
+      "status": "pending",
+      "note": "要ブラウザ確認",
+      "award_year": 2024,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": null
+      }
+    },
+    {
+      "id": "capture-datagrid-hero",
+      "site": "DATAGRID",
+      "page_url": "https://datagrid.co.jp/",
+      "section": "hero",
+      "part_ja": "冒頭",
+      "anchor": "#hero",
+      "position": "冒頭・約0%",
+      "status": "pending",
+      "award_year": 2022,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-datagrid-news-list",
+      "site": "DATAGRID",
+      "page_url": "https://datagrid.co.jp/",
+      "section": "news list",
+      "part_ja": "お知らせ一覧",
+      "anchor": "#news",
+      "position": "第4セクション・NEWS（underHeroから数えたHTML順）",
+      "status": "pending",
+      "award_year": 2022,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-trunk-nav",
+      "site": "TRUNK",
+      "page_url": "https://www.trunk-base.com/",
+      "section": "nav",
+      "part_ja": "主要メニュー",
+      "anchor": "nav.pcmenu",
+      "position": "約0%・PC主要メニュー",
+      "status": "pending",
+      "award_year": 2022,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-trunk-news-list",
+      "site": "TRUNK",
+      "page_url": "https://www.trunk-base.com/",
+      "section": "news list",
+      "part_ja": "お知らせ一覧",
+      "anchor": ".section--news",
+      "position": "第7セクション",
+      "status": "pending",
+      "award_year": 2022,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-creamu-hero",
+      "site": "creamu",
+      "page_url": "https://www.creamu.co.jp/",
+      "section": "hero",
+      "part_ja": "冒頭",
+      "anchor": "h1.txt_tagline",
+      "position": "冒頭・約0%",
+      "status": "pending",
+      "award_year": 2025,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-creamu-footer",
+      "site": "creamu",
+      "page_url": "https://www.creamu.co.jp/",
+      "section": "footer",
+      "part_ja": "末尾",
+      "anchor": "footer.ftr",
+      "position": "末尾・約100%",
+      "status": "pending",
+      "award_year": 2025,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-mount-case-list",
+      "site": "mount",
+      "page_url": "https://mount.jp/",
+      "section": "case list",
+      "part_ja": "実績導線",
+      "anchor": "a[href=\"/projects/\"]",
+      "position": "第3セクション内・制作事例リンク",
+      "status": "pending",
+      "award_year": 2026,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 3
+      }
+    },
+    {
+      "id": "capture-mount-news-list",
+      "site": "mount",
+      "page_url": "https://mount.jp/",
+      "section": "news list",
+      "part_ja": "お知らせ一覧",
+      "anchor": ".mTopnews:not(._magazine)",
+      "position": "第5セクション・NEWS",
+      "status": "pending",
+      "award_year": 2026,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-saze-hero",
+      "site": "Saze",
+      "page_url": "https://saze.co.jp/",
+      "section": "hero",
+      "part_ja": "冒頭",
+      "anchor": "#sec_fv",
+      "position": "冒頭・約0%",
+      "status": "pending",
+      "award_year": 2026,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-saze-nav",
+      "site": "Saze",
+      "page_url": "https://saze.co.jp/",
+      "section": "nav",
+      "part_ja": "メニュー",
+      "anchor": ".lHeader__menu",
+      "position": "約0%・ヘッダー。全体メニューは#jsMenuBtnを開く",
+      "status": "pending",
+      "award_year": 2026,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-lusion-hero",
+      "site": "Lusion",
+      "page_url": "https://lusion.co/",
+      "section": "hero",
+      "part_ja": "冒頭",
+      "anchor": "#home-hero",
+      "position": "第1セクション・約0%",
+      "status": "pending",
+      "award_year": 2023,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-lusion-case-list",
+      "site": "Lusion",
+      "page_url": "https://lusion.co/",
+      "section": "case list",
+      "part_ja": "実績一覧",
+      "anchor": "#home-featured",
+      "position": "第3セクション",
+      "status": "pending",
+      "award_year": 2023,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-locomotive-hero",
+      "site": "Locomotive",
+      "page_url": "https://locomotive.ca/",
+      "section": "hero",
+      "part_ja": "冒頭",
+      "anchor": ".c-home-hero",
+      "position": "第1領域・約0%",
+      "status": "pending",
+      "award_year": 2023,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-locomotive-case-list",
+      "site": "Locomotive",
+      "page_url": "https://locomotive.ca/",
+      "section": "case list",
+      "part_ja": "実績一覧",
+      "anchor": ".c-featured-links",
+      "position": "第3領域（hero・紹介文の次）",
+      "status": "pending",
+      "award_year": 2023,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-unseen-hero",
+      "site": "Unseen Studio",
+      "page_url": "https://unseen.co/",
+      "section": "hero",
+      "part_ja": "冒頭",
+      "anchor": null,
+      "position": "冒頭・約0%・入場後の主画面、位置未実測",
+      "status": "pending",
+      "note": "要ブラウザ確認（主画面がWebGL描画のためHTML内に対象領域を特定できない）",
+      "award_year": 2023,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": null
+      }
+    },
+    {
+      "id": "capture-webisoft-hero",
+      "site": "Webisoft",
+      "page_url": "https://webisoft.com/",
+      "section": "hero",
+      "part_ja": "冒頭",
+      "anchor": ".c-hero-home-section-hero",
+      "position": "第1セクション・約0%",
+      "status": "pending",
+      "award_year": 2024,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-webisoft-buttons",
+      "site": "Webisoft",
+      "page_url": "https://webisoft.com/",
+      "section": "buttons",
+      "part_ja": "問い合わせ導線",
+      "anchor": "a.c-button[href=\"/contact\"][aria-label=\"Let's Talk\"]",
+      "position": "約0%・ヘッダーの問い合わせボタン",
+      "status": "pending",
+      "award_year": 2024,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-buro-hero",
+      "site": "Bürocratik",
+      "page_url": "https://www.burocratik.com/",
+      "section": "hero",
+      "part_ja": "冒頭",
+      "anchor": "header._video-header",
+      "position": "冒頭・約0%・動画ヘッダー",
+      "status": "pending",
+      "award_year": 2025,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-reform-case-list",
+      "site": "Reform Collective",
+      "page_url": "https://www.reformcollective.com/",
+      "section": "case list",
+      "part_ja": "実績一覧",
+      "anchor": "h1.h493d3d",
+      "position": "冒頭の紹介領域の次・Our featured Work見出し、位置未実測",
+      "status": "pending",
+      "award_year": 2023,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-reform-footer",
+      "site": "Reform Collective",
+      "page_url": "https://www.reformcollective.com/",
+      "section": "footer",
+      "part_ja": "末尾",
+      "anchor": "footer",
+      "position": "末尾・約100%",
+      "status": "pending",
+      "award_year": 2023,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-immersivegarden-hero",
+      "site": "Immersive Garden",
+      "page_url": "https://immersive-g.com/",
+      "section": "hero",
+      "part_ja": "冒頭",
+      "anchor": ".hero",
+      "position": "冒頭・約0%",
+      "status": "pending",
+      "award_year": 2024,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-immersivegarden-case-list",
+      "site": "Immersive Garden",
+      "page_url": "https://immersive-g.com/",
+      "section": "case list",
+      "part_ja": "実績一覧",
+      "anchor": ".projectBlock",
+      "position": "heroの次・最初の実績から",
+      "status": "pending",
+      "award_year": 2024,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 18
+      }
+    },
+    {
+      "id": "capture-cuberto-hero",
+      "site": "Cuberto",
+      "page_url": "https://cuberto.com/",
+      "section": "hero",
+      "part_ja": "冒頭",
+      "anchor": ".TopheadSection",
+      "position": "第1セクション・約0%",
+      "status": "pending",
+      "award_year": 2023,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-cuberto-case-list",
+      "site": "Cuberto",
+      "page_url": "https://cuberto.com/",
+      "section": "case list",
+      "part_ja": "実績一覧",
+      "anchor": "#featured",
+      "position": "第6セクション",
+      "status": "pending",
+      "award_year": 2023,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-obys-case-list",
+      "site": "Obys",
+      "page_url": "https://obys.agency/",
+      "section": "case list",
+      "part_ja": "実績一覧",
+      "anchor": "#ho-wo",
+      "position": "冒頭・約0%・初期表示の実績ビュー",
+      "status": "pending",
+      "award_year": 2026,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-buttermax-hero",
+      "site": "Buttermax",
+      "page_url": "https://buttermax.net/",
+      "section": "hero",
+      "part_ja": "冒頭",
+      "anchor": null,
+      "position": "冒頭・約0%",
+      "status": "pending",
+      "note": "要ブラウザ確認",
+      "award_year": 2024,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": null
+      }
+    },
+    {
+      "id": "capture-monopoparis-case-list",
+      "site": "monopo paris",
+      "page_url": "https://monopo.paris/",
+      "section": "case list",
+      "part_ja": "実績一覧",
+      "anchor": ".home__works",
+      "position": "第4セクション",
+      "status": "pending",
+      "award_year": 2024,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-monopoparis-buttons",
+      "site": "monopo paris",
+      "page_url": "https://monopo.paris/",
+      "section": "buttons",
+      "part_ja": "表示切替",
+      "anchor": "button.header__grid-index__button",
+      "position": "約0%・ヘッダーの表示切替",
+      "status": "pending",
+      "award_year": 2024,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-papertiger-stats",
+      "site": "Paper Tiger",
+      "page_url": "https://www.papertiger.com/",
+      "section": "stats",
+      "part_ja": "数値実績",
+      "anchor": ".c-hm-hero-note.is_lt",
+      "position": "第1セクション内・数値メモ",
+      "status": "pending",
+      "award_year": 2026,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    },
+    {
+      "id": "capture-papertiger-logo-wall",
+      "site": "Paper Tiger",
+      "page_url": "https://www.papertiger.com/",
+      "section": "logo wall",
+      "part_ja": "取引先一覧",
+      "anchor": "section.ft-client",
+      "position": "第2セクション",
+      "status": "pending",
+      "award_year": 2026,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "verification": {
+        "checked_at": "2026-11-08",
+        "method": "curl -L / HTML selector照合",
+        "page_http_status": 200,
+        "anchor_matches": 1
+      }
+    }
+  ]
+}

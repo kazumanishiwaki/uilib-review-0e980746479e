@@ -1,0 +1,1302 @@
+{
+  "meta": {
+    "language": "ja",
+    "checked_at": "2026-11-08",
+    "purpose_ja": "チーム共有・コーポサイトのセクション設計のためのリサーチ",
+    "implementation_assumption": "素のHTML/CSS＋CSSカスタムプロパティ",
+    "policy_ja": "参考サイトは公式トップへのリンクと分類・軸タグのみ。文言・画像・動画・コード・レイアウトの複製はしない。ツール・UI・ライブラリは構築しない。",
+    "url_policy_ja": "urlは公式トップ／各デザインシステムの公式入口のみ。受賞・利用条件の検証用sourceは該当する一次資料の詳細ページ。",
+    "selection_ja": "広く参照される主要システムの編集選定。世界順位や優劣のランキングではない。",
+    "score_method_ja": "公式の標準的な部品・ガイド・公開例を基にした1〜5の編集評価。高いほど良いという意味はなく、公式採点や実測値ではない。Open Props・Every Layout・Utopia等の未規定軸は比較用の仮置き。",
+    "site_tag_method_ja": "公式トップの構成と受賞ページの紹介・ハイライトを根拠にした編集タグ。全ページ・全状態のブラウザ実測ではない。タグはそのパーツのみでサイト全体の採点ではない。",
+    "award_caveat_ja": "受賞は記載年の版に対するもの。現在のトップと受賞時のデザインが一致する保証はない。国内は対象企業の日本拠点で分類し、制作会社の所在地は基準にしない。",
+    "axis_rules_ja": [
+      "同じ画面幅・表示領域を比較する。",
+      "spacing/radiusは複合軸。傾向が割れる場合は余白を優先し角形などを補記する。",
+      "contrastは視覚的な強弱であり、本文の可読性・WCAG適合度の評価ではない。",
+      "motionは通常時の表現強度。動きを減らす設定の対応状況とは別。",
+      "cardsは形式、case list・news listは内容。重複時は内容を主分類にする。CTA band・formsは領域、buttonsは部品。"
+    ],
+    "css_translation_ja": {
+      "density": "列数・行高",
+      "spacing/radius": "gap・padding・border-radius",
+      "typography": "font-size・font-weight・line-height",
+      "contrast": "背景・本文・罫線色",
+      "motion": "duration・easing",
+      "tone": "色・形状・文体の組合せ"
+    },
+    "site_selection_ja": "2021〜2026年受賞、確認日にcurlでHTTP 200の企業・スタジオの自社コーポサイト。国内8／海外12。全20件の受賞ページと年を再確認。",
+    "site_verification_ja": "2026-11-08にcurl -Lで公式トップ・対象ページ・受賞ページを取得。HTMLを検証用に一時参照し、素材・実装の複製、撮影、構築は実施しない。"
+  },
+  "axes": [
+    {
+      "id": "density",
+      "short": "D",
+      "name_ja": "情報密度",
+      "direction": "疎→密",
+      "scale": {
+        "1": "主役1つ・補助情報ほぼなし",
+        "2": "少数要素を大きく区切る",
+        "3": "標準的な見出し・本文・複数項目",
+        "4": "一覧・補助ラベルが多い",
+        "5": "表や操作群を高密度に配置"
+      }
+    },
+    {
+      "id": "spacing/radius",
+      "short": "S",
+      "name_ja": "余白・角丸",
+      "direction": "引き締め・角形→ゆったり・丸形",
+      "scale": {
+        "1": "小さい余白・ほぼ直角",
+        "2": "控えめな余白・小角丸",
+        "3": "標準余白・中角丸",
+        "4": "大きな余白・大角丸",
+        "5": "非常に広い余白・ピル形主体"
+      }
+    },
+    {
+      "id": "typography",
+      "short": "T",
+      "name_ja": "文字の表現強度",
+      "direction": "均質・実用→大胆・表現的",
+      "scale": {
+        "1": "本文中心・サイズ差が小さい",
+        "2": "実用的な小見出しで整理",
+        "3": "明瞭な見出し階層",
+        "4": "大見出し・太さやサイズの強い差",
+        "5": "巨大文字・独自組版・文字自体が主役"
+      }
+    },
+    {
+      "id": "contrast",
+      "short": "C",
+      "name_ja": "視覚的な明暗差",
+      "direction": "穏やか→強烈",
+      "scale": {
+        "1": "面・罫線の差がごく小さい",
+        "2": "淡い面と控えめな境界",
+        "3": "本文と背景・領域の差が明瞭",
+        "4": "強い明暗差やアクセント",
+        "5": "白黒反転・強い明暗ブロックが主役"
+      }
+    },
+    {
+      "id": "motion",
+      "short": "M",
+      "name_ja": "動きの存在感",
+      "direction": "静止→没入的",
+      "scale": {
+        "1": "静止主体",
+        "2": "hover・focus等の短い状態変化",
+        "3": "開閉・出現等の局所的な遷移",
+        "4": "スクロール連動・連続した演出",
+        "5": "全面映像・3D・持続的なインタラクション"
+      }
+    },
+    {
+      "id": "tone",
+      "short": "O",
+      "name_ja": "印象の親しみやすさ",
+      "direction": "公的・厳格→遊び心",
+      "scale": {
+        "1": "公的・厳格・装飾を抑制",
+        "2": "堅実・業務的",
+        "3": "中立・現代的",
+        "4": "親しみ・柔らかさ",
+        "5": "遊び心・個性・感情表現が強い"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "hero",
+      "definition_ja": "ページ冒頭で企業の価値・主題と主要導線を示す領域。"
+    },
+    {
+      "id": "nav",
+      "definition_ja": "ページや主要領域を移動するためのメニュー。"
+    },
+    {
+      "id": "CTA band",
+      "definition_ja": "問い合わせ・資料請求等の行動を促す、横断的な帯状領域。"
+    },
+    {
+      "id": "cards",
+      "definition_ja": "画像・見出し・説明等をひとまとまりにした反復単位。"
+    },
+    {
+      "id": "case list",
+      "definition_ja": "制作実績・導入事例を、案件名や概要とともに並べる一覧。"
+    },
+    {
+      "id": "news list",
+      "definition_ja": "日付・カテゴリ・題名を基本にした更新情報の一覧。"
+    },
+    {
+      "id": "stats",
+      "definition_ja": "実績数・年数等の数値と単位・説明を組み合わせる領域。"
+    },
+    {
+      "id": "logo wall",
+      "definition_ja": "取引先・導入企業等のロゴを反復配置する領域。"
+    },
+    {
+      "id": "footer",
+      "definition_ja": "末尾に補助導線・会社情報・法的情報をまとめる領域。"
+    },
+    {
+      "id": "forms",
+      "definition_ja": "入力・選択・検証・送信を伴う情報収集の領域。"
+    },
+    {
+      "id": "buttons",
+      "definition_ja": "送信・開閉等の操作要素。遷移を行うボタン風リンクも視覚分類として含む。"
+    }
+  ],
+  "libraries": [
+    {
+      "id": "material3",
+      "name": "Material 3",
+      "url": "https://m3.material.io/",
+      "license": "Apache-2.0（Material Web実装）",
+      "feature_ja": "色・形状・動きの役割をトークンとして整理するGoogleの体系。",
+      "scores": {
+        "density": 3,
+        "spacing/radius": 4,
+        "typography": 3,
+        "contrast": 3,
+        "motion": 3,
+        "tone": 4
+      },
+      "license_source": "https://github.com/material-components/material-web/blob/main/LICENSE",
+      "note_ja": "ガイドラインと実装は別。"
+    },
+    {
+      "id": "carbon",
+      "name": "Carbon",
+      "url": "https://www.carbondesignsystem.com/",
+      "license": "Apache-2.0（Carbon実装）",
+      "feature_ja": "IBMの業務UIを支えるグリッドと密度設計。",
+      "scores": {
+        "density": 4,
+        "spacing/radius": 1,
+        "typography": 3,
+        "contrast": 4,
+        "motion": 2,
+        "tone": 2
+      },
+      "license_source": "https://github.com/carbon-design-system/carbon/blob/main/LICENSE",
+      "note_ja": ""
+    },
+    {
+      "id": "polaris",
+      "name": "Polaris",
+      "url": "https://polaris.shopify.com/",
+      "license": "Shopify独自ライセンス（旧React実装。Shopify連携等の制限あり）",
+      "feature_ja": "マーチャントの操作・フォーム・情報整理に強いShopifyの体系。",
+      "scores": {
+        "density": 4,
+        "spacing/radius": 3,
+        "typography": 2,
+        "contrast": 3,
+        "motion": 2,
+        "tone": 3
+      },
+      "license_source": "https://github.com/Shopify/polaris/blob/main/LICENSE.md",
+      "note_ja": "公式入口は現在Shopify開発者向けPolaris資料へ転送。採点対象は従来の管理画面向けUI。"
+    },
+    {
+      "id": "primer",
+      "name": "Primer",
+      "url": "https://primer.style/",
+      "license": "MIT（Primer CSS）",
+      "feature_ja": "GitHub由来の実務的な階層・罫線・状態設計。",
+      "scores": {
+        "density": 4,
+        "spacing/radius": 2,
+        "typography": 2,
+        "contrast": 3,
+        "motion": 2,
+        "tone": 2
+      },
+      "license_source": "https://github.com/primer/css/blob/main/LICENSE",
+      "note_ja": ""
+    },
+    {
+      "id": "radix",
+      "name": "Radix Themes",
+      "url": "https://www.radix-ui.com/",
+      "license": "MIT（Themes）",
+      "feature_ja": "アクセシブルな部品と調整しやすいテーマを組み合わせる。",
+      "scores": {
+        "density": 3,
+        "spacing/radius": 3,
+        "typography": 3,
+        "contrast": 3,
+        "motion": 2,
+        "tone": 3
+      },
+      "license_source": "https://github.com/radix-ui/themes/blob/main/LICENSE",
+      "note_ja": "React実装。素のHTML/CSSでは設計の参照に使う。"
+    },
+    {
+      "id": "openprops",
+      "name": "Open Props",
+      "url": "https://open-props.style/",
+      "license": "MIT（CSSトークン）",
+      "feature_ja": "色・余白・文字・動きをCSS変数で扱う低依存の土台。",
+      "scores": {
+        "density": 3,
+        "spacing/radius": 3,
+        "typography": 3,
+        "contrast": 3,
+        "motion": 2,
+        "tone": 3
+      },
+      "license_source": "https://github.com/argyleink/open-props/blob/main/LICENSE",
+      "note_ja": "固定の見た目はない。採点は中立的に構成した場合の比較用仮置き。"
+    },
+    {
+      "id": "pico",
+      "name": "Pico CSS",
+      "url": "https://picocss.com/",
+      "license": "MIT（CSS）／文書CC BY-SA 4.0",
+      "feature_ja": "意味的なHTMLに少ないクラスで読みやすい外観を与える。",
+      "scores": {
+        "density": 2,
+        "spacing/radius": 3,
+        "typography": 3,
+        "contrast": 3,
+        "motion": 2,
+        "tone": 3
+      },
+      "license_source": "https://github.com/picocss/pico/blob/master/LICENSE.md",
+      "note_ja": "文書ライセンスは公式トップのフッターに記載。"
+    },
+    {
+      "id": "everylayout",
+      "name": "Every Layout",
+      "url": "https://every-layout.dev/",
+      "license": "独自の購入・利用規約（本文の再公開・再販売禁止）",
+      "feature_ja": "レイアウトの原理を小さなCSSパターンとして学べる。",
+      "scores": {
+        "density": 2,
+        "spacing/radius": 2,
+        "typography": 3,
+        "contrast": 3,
+        "motion": 1,
+        "tone": 3
+      },
+      "license_source": "https://every-layout.dev/terms-and-conditions/",
+      "note_ja": "教材。固定テーマはなく、採点は公開例からの仮置き。チーム内への教材複製はしない。"
+    },
+    {
+      "id": "apple",
+      "name": "Apple HIG",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/",
+      "license": "Apple独自規約（公開ガイドライン）",
+      "feature_ja": "階層・一貫性・プラットフォームの慣習を重視する指針。",
+      "scores": {
+        "density": 2,
+        "spacing/radius": 4,
+        "typography": 3,
+        "contrast": 3,
+        "motion": 3,
+        "tone": 3
+      },
+      "license_source": "https://www.apple.com/legal/internet-services/terms/site.html",
+      "note_ja": "主にAppleプラットフォーム向け。Web UIのOSSライセンスではない。"
+    },
+    {
+      "id": "fluent",
+      "name": "Fluent 2",
+      "url": "https://fluent2.microsoft.design/",
+      "license": "MIT（Fluent UI実装。フォント・アイコンは別規約）",
+      "feature_ja": "Microsoftの多製品をつなぐ柔らかな形状と状態表現。",
+      "scores": {
+        "density": 3,
+        "spacing/radius": 3,
+        "typography": 3,
+        "contrast": 3,
+        "motion": 3,
+        "tone": 3
+      },
+      "license_source": "https://github.com/microsoft/fluentui/blob/master/LICENSE",
+      "note_ja": ""
+    },
+    {
+      "id": "atlassian",
+      "name": "Atlassian Design System",
+      "url": "https://atlassian.design/",
+      "license": "Atlassian独自ライセンス（製品連携用途に制限、OSS部分は別）",
+      "feature_ja": "共同作業UIの情報設計・状態・文章指針を統合する。",
+      "scores": {
+        "density": 4,
+        "spacing/radius": 2,
+        "typography": 2,
+        "contrast": 3,
+        "motion": 2,
+        "tone": 3
+      },
+      "license_source": "https://atlassian.design/license/",
+      "note_ja": "一般のコーポサイト向けOSSと扱わない。"
+    },
+    {
+      "id": "govuk",
+      "name": "GOV.UK Design System",
+      "url": "https://design-system.service.gov.uk/",
+      "license": "MIT（GOV.UK Frontend）／文書OGL v3.0",
+      "feature_ja": "公共サービスの読みやすいフォームと明快な導線。",
+      "scores": {
+        "density": 2,
+        "spacing/radius": 1,
+        "typography": 3,
+        "contrast": 5,
+        "motion": 1,
+        "tone": 1
+      },
+      "license_source": "https://github.com/alphagov/govuk-frontend/blob/main/LICENSE.txt",
+      "note_ja": "文書ライセンスは公式トップのフッターに記載。"
+    },
+    {
+      "id": "spectrum",
+      "name": "Spectrum",
+      "url": "https://spectrum.adobe.com/",
+      "license": "Apache-2.0（Spectrum CSS）",
+      "feature_ja": "Adobeの制作ツールを支える細かな状態と複数スケール。",
+      "scores": {
+        "density": 4,
+        "spacing/radius": 2,
+        "typography": 2,
+        "contrast": 3,
+        "motion": 2,
+        "tone": 2
+      },
+      "license_source": "https://github.com/adobe/spectrum-css/blob/main/LICENSE",
+      "note_ja": ""
+    },
+    {
+      "id": "baseweb",
+      "name": "Base Web",
+      "url": "https://baseweb.design/",
+      "license": "MIT（Base Web実装）",
+      "feature_ja": "Uber由来の部品とテーマ・上書きの柔軟さを持つ。",
+      "scores": {
+        "density": 3,
+        "spacing/radius": 3,
+        "typography": 3,
+        "contrast": 4,
+        "motion": 2,
+        "tone": 3
+      },
+      "license_source": "https://github.com/uber/baseweb/blob/main/LICENSE",
+      "note_ja": "React実装。"
+    },
+    {
+      "id": "ant",
+      "name": "Ant Design",
+      "url": "https://ant.design/",
+      "license": "MIT（実装）",
+      "feature_ja": "業務アプリの一覧・フォーム・複雑な操作を広く網羅する。",
+      "scores": {
+        "density": 4,
+        "spacing/radius": 2,
+        "typography": 2,
+        "contrast": 3,
+        "motion": 2,
+        "tone": 2
+      },
+      "license_source": "https://github.com/ant-design/ant-design/blob/master/LICENSE",
+      "note_ja": "React実装。"
+    },
+    {
+      "id": "geist",
+      "name": "Geist",
+      "url": "https://vercel.com/geist",
+      "license": "Vercel独自規約（公開設計資料）／GeistフォントOFL-1.1",
+      "feature_ja": "明暗・罫線・タイポグラフィで技術企業らしさを作る。",
+      "scores": {
+        "density": 3,
+        "spacing/radius": 2,
+        "typography": 3,
+        "contrast": 5,
+        "motion": 2,
+        "tone": 2
+      },
+      "license_source": "https://vercel.com/legal/terms",
+      "note_ja": "UI全体をMITとみなさない。フォントのライセンスは公式フォント配布ページで別途確認。"
+    },
+    {
+      "id": "lightning",
+      "name": "Lightning Design System",
+      "url": "https://www.lightningdesignsystem.com/",
+      "license": "BSD-3-Clause相当（公開SLDSコード）",
+      "feature_ja": "Salesforceの高密度な業務UIと部品の構造を整理する。",
+      "scores": {
+        "density": 5,
+        "spacing/radius": 2,
+        "typography": 2,
+        "contrast": 3,
+        "motion": 2,
+        "tone": 2
+      },
+      "license_source": "https://github.com/salesforce-ux/design-system/blob/main/LICENSE.txt",
+      "note_ja": "採点・ライセンスは公開SLDSコードを対象。SLDS 2の全アセットへ拡張しない。"
+    },
+    {
+      "id": "dads",
+      "name": "デジタル庁デザインシステム",
+      "url": "https://design.digital.go.jp/dads/",
+      "license": "MIT（コード）／CC BY 4.0（Figma、独自の出典条件あり）",
+      "feature_ja": "日本語の行政サービス向けに可読性と操作性を体系化する。",
+      "scores": {
+        "density": 2,
+        "spacing/radius": 2,
+        "typography": 3,
+        "contrast": 4,
+        "motion": 1,
+        "tone": 1
+      },
+      "license_source": "https://design.digital.go.jp/dads/introduction/notices/",
+      "note_ja": "素材は個別規約。"
+    },
+    {
+      "id": "smarthr",
+      "name": "SmartHR UI",
+      "url": "https://smarthr.design/",
+      "license": "MIT（SmartHR UI）／DS・ブランド素材は独自規約",
+      "feature_ja": "日本語の人事労務UIに適したフォーム・文言・状態設計。",
+      "scores": {
+        "density": 4,
+        "spacing/radius": 2,
+        "typography": 2,
+        "contrast": 4,
+        "motion": 2,
+        "tone": 3
+      },
+      "license_source": "https://github.com/kufu/smarthr-ui/blob/master/LICENSE",
+      "note_ja": "公式入口はSmartHR Design System。"
+    },
+    {
+      "id": "utopia",
+      "name": "Utopia",
+      "url": "https://utopia.fyi/",
+      "license": "ISC（utopia-core計算コア）",
+      "feature_ja": "文字と余白を画面幅に応じて連続変化させる設計手法。",
+      "scores": {
+        "density": 2,
+        "spacing/radius": 3,
+        "typography": 4,
+        "contrast": 3,
+        "motion": 1,
+        "tone": 3
+      },
+      "license_source": "https://github.com/trys/utopia-core/blob/master/package.json",
+      "note_ja": "サイト本文全体のライセンスへ拡張しない。角丸・配色・動きは規定せず、採点は公開例からの仮置き。"
+    }
+  ],
+  "sites": [
+    {
+      "id": "tbwa",
+      "name": "TBWA\\HAKUHODO",
+      "region": "JP",
+      "url": "https://www.tbwahakuhodo.co.jp/",
+      "award": {
+        "organization": "CSSDA",
+        "title": "Special Kudos",
+        "date": "2026-08-14",
+        "source": "https://cssdesignawards.com/sites/tbwahakuhodo/49947/"
+      },
+      "parts": [
+        {
+          "part_ja": "冒頭",
+          "section": "hero",
+          "axis_tags": {
+            "typography": 5,
+            "motion": 4
+          },
+          "capture_target_id": "capture-tbwa-hero"
+        },
+        {
+          "part_ja": "メニュー",
+          "section": "nav",
+          "axis_tags": {
+            "typography": 4,
+            "contrast": 4
+          },
+          "capture_target_id": "capture-tbwa-nav"
+        }
+      ],
+      "award_year": 2026,
+      "verification": {
+        "checked_at": "2026-11-08",
+        "site_method": "curl -L",
+        "site_http_status": 200,
+        "site_effective_url": "https://www.tbwahakuhodo.co.jp/",
+        "award_page_verified": true,
+        "award_method": "curl -L / HTMLの受賞名・年・日付を確認"
+      }
+    },
+    {
+      "id": "homunculus",
+      "name": "homunculus",
+      "region": "JP",
+      "url": "https://homunculus.jp/",
+      "award": {
+        "organization": "CSSDA",
+        "title": "Website of the Day",
+        "date": "2026-07-30",
+        "source": "https://cssdesignawards.com/sites/homunculus-inc-2026/49744/"
+      },
+      "parts": [
+        {
+          "part_ja": "冒頭",
+          "section": "hero",
+          "axis_tags": {
+            "motion": 5,
+            "tone": 5
+          },
+          "capture_target_id": "capture-homunculus-hero"
+        },
+        {
+          "part_ja": "問い合わせ導線",
+          "section": "buttons",
+          "axis_tags": {
+            "tone": 4
+          },
+          "capture_target_id": "capture-homunculus-buttons"
+        }
+      ],
+      "award_year": 2026,
+      "verification": {
+        "checked_at": "2026-11-08",
+        "site_method": "curl -L",
+        "site_http_status": 200,
+        "site_effective_url": "https://homunculus.jp/",
+        "award_page_verified": true,
+        "award_method": "curl -L / HTMLの受賞名・年・日付を確認"
+      }
+    },
+    {
+      "id": "indig",
+      "name": "INDIG",
+      "region": "JP",
+      "url": "https://indig.co.jp/",
+      "award": {
+        "organization": "CSSDA",
+        "title": "Special Kudos",
+        "date": "2024-12-14",
+        "source": "https://cssdesignawards.com/sites/indig-inc/46728/"
+      },
+      "parts": [
+        {
+          "part_ja": "メニュー",
+          "section": "nav",
+          "axis_tags": {
+            "contrast": 4,
+            "tone": 2
+          },
+          "capture_target_id": "capture-indig-nav"
+        },
+        {
+          "part_ja": "実績一覧",
+          "section": "case list",
+          "axis_tags": {
+            "density": 3,
+            "contrast": 4
+          },
+          "capture_target_id": "capture-indig-case-list"
+        }
+      ],
+      "award_year": 2024,
+      "verification": {
+        "checked_at": "2026-11-08",
+        "site_method": "curl -L",
+        "site_http_status": 200,
+        "site_effective_url": "https://indig.co.jp/",
+        "award_page_verified": true,
+        "award_method": "curl -L / HTMLの受賞名・年・日付を確認"
+      }
+    },
+    {
+      "id": "datagrid",
+      "name": "DATAGRID",
+      "region": "JP",
+      "url": "https://datagrid.co.jp/",
+      "award": {
+        "organization": "CSSDA",
+        "title": "Website of the Day",
+        "date": "2022-01-04",
+        "source": "https://cssdesignawards.com/sites/datagrid-inc/40296/"
+      },
+      "parts": [
+        {
+          "part_ja": "冒頭",
+          "section": "hero",
+          "axis_tags": {
+            "typography": 4,
+            "density": 1
+          },
+          "capture_target_id": "capture-datagrid-hero"
+        },
+        {
+          "part_ja": "お知らせ一覧",
+          "section": "news list",
+          "axis_tags": {
+            "density": 3,
+            "typography": 3
+          },
+          "capture_target_id": "capture-datagrid-news-list"
+        }
+      ],
+      "award_year": 2022,
+      "verification": {
+        "checked_at": "2026-11-08",
+        "site_method": "curl -L",
+        "site_http_status": 200,
+        "site_effective_url": "https://datagrid.co.jp/",
+        "award_page_verified": true,
+        "award_method": "curl -L / HTMLの受賞名・年・日付を確認"
+      }
+    },
+    {
+      "id": "trunk",
+      "name": "TRUNK",
+      "region": "JP",
+      "url": "https://www.trunk-base.com/",
+      "award": {
+        "organization": "CSSDA",
+        "title": "Special Kudos",
+        "date": "2022-10-11",
+        "source": "https://cssdesignawards.com/sites/trunk-corporate-site/42184/"
+      },
+      "parts": [
+        {
+          "part_ja": "主要メニュー",
+          "section": "nav",
+          "axis_tags": {
+            "typography": 4,
+            "density": 2
+          },
+          "capture_target_id": "capture-trunk-nav"
+        },
+        {
+          "part_ja": "お知らせ一覧",
+          "section": "news list",
+          "axis_tags": {
+            "density": 3,
+            "tone": 2
+          },
+          "capture_target_id": "capture-trunk-news-list"
+        }
+      ],
+      "award_year": 2022,
+      "verification": {
+        "checked_at": "2026-11-08",
+        "site_method": "curl -L",
+        "site_http_status": 200,
+        "site_effective_url": "https://www.trunk-base.com/",
+        "award_page_verified": true,
+        "award_method": "curl -L / HTMLの受賞名・年・日付を確認"
+      }
+    },
+    {
+      "id": "creamu",
+      "name": "creamu",
+      "region": "JP",
+      "url": "https://www.creamu.co.jp/",
+      "award": {
+        "organization": "CSSDA",
+        "title": "Special Kudos",
+        "date": "2025-06-07",
+        "source": "https://cssdesignawards.com/sites/creamu-inc/47598/"
+      },
+      "parts": [
+        {
+          "part_ja": "冒頭",
+          "section": "hero",
+          "axis_tags": {
+            "typography": 4,
+            "density": 1
+          },
+          "capture_target_id": "capture-creamu-hero"
+        },
+        {
+          "part_ja": "末尾",
+          "section": "footer",
+          "axis_tags": {
+            "density": 2,
+            "tone": 2
+          },
+          "capture_target_id": "capture-creamu-footer"
+        }
+      ],
+      "award_year": 2025,
+      "verification": {
+        "checked_at": "2026-11-08",
+        "site_method": "curl -L",
+        "site_http_status": 200,
+        "site_effective_url": "https://www.creamu.co.jp/",
+        "award_page_verified": true,
+        "award_method": "curl -L / HTMLの受賞名・年・日付を確認"
+      }
+    },
+    {
+      "id": "mount",
+      "name": "mount",
+      "region": "JP",
+      "url": "https://mount.jp/",
+      "award": {
+        "organization": "MUUUUU.ORG",
+        "title": "Site of the Day",
+        "date": "2026-03-25",
+        "source": "https://muuuuu.org/en/industry/art/23269.html"
+      },
+      "parts": [
+        {
+          "part_ja": "実績導線",
+          "section": "case list",
+          "axis_tags": {
+            "typography": 3,
+            "density": 2
+          },
+          "capture_target_id": "capture-mount-case-list"
+        },
+        {
+          "part_ja": "お知らせ一覧",
+          "section": "news list",
+          "axis_tags": {
+            "density": 3,
+            "tone": 2
+          },
+          "capture_target_id": "capture-mount-news-list"
+        }
+      ],
+      "award_year": 2026,
+      "verification": {
+        "checked_at": "2026-11-08",
+        "site_method": "curl -L",
+        "site_http_status": 200,
+        "site_effective_url": "https://mount.jp/",
+        "award_page_verified": true,
+        "award_method": "curl -L / HTMLの受賞名・年・日付を確認"
+      }
+    },
+    {
+      "id": "saze",
+      "name": "Saze",
+      "region": "JP",
+      "url": "https://saze.co.jp/",
+      "award": {
+        "organization": "CSSDA",
+        "title": "Website of the Day",
+        "date": "2026-02-28",
+        "source": "https://www.cssdesignawards.com/sites/saze/48887/"
+      },
+      "parts": [
+        {
+          "part_ja": "冒頭",
+          "section": "hero",
+          "axis_tags": {
+            "motion": 5,
+            "tone": 4
+          },
+          "capture_target_id": "capture-saze-hero"
+        },
+        {
+          "part_ja": "メニュー",
+          "section": "nav",
+          "axis_tags": {
+            "density": 2,
+            "typography": 3
+          },
+          "capture_target_id": "capture-saze-nav"
+        }
+      ],
+      "award_year": 2026,
+      "verification": {
+        "checked_at": "2026-11-08",
+        "site_method": "curl -L",
+        "site_http_status": 200,
+        "site_effective_url": "https://saze.co.jp/",
+        "award_page_verified": true,
+        "award_method": "curl -L / HTMLの受賞名・年・日付を確認"
+      }
+    },
+    {
+      "id": "lusion",
+      "name": "Lusion",
+      "region": "海外",
+      "url": "https://lusion.co/",
+      "award": {
+        "organization": "Awwwards",
+        "title": "Site of the Day",
+        "date": "2023-10-02",
+        "source": "https://www.awwwards.com/sites/lusion-v3"
+      },
+      "parts": [
+        {
+          "part_ja": "冒頭",
+          "section": "hero",
+          "axis_tags": {
+            "motion": 5,
+            "density": 1
+          },
+          "capture_target_id": "capture-lusion-hero"
+        },
+        {
+          "part_ja": "実績一覧",
+          "section": "case list",
+          "axis_tags": {
+            "motion": 4,
+            "typography": 4
+          },
+          "capture_target_id": "capture-lusion-case-list"
+        }
+      ],
+      "award_year": 2023,
+      "verification": {
+        "checked_at": "2026-11-08",
+        "site_method": "curl -L",
+        "site_http_status": 200,
+        "site_effective_url": "https://lusion.co/",
+        "award_page_verified": true,
+        "award_method": "curl -L / HTMLの受賞名・年・日付を確認"
+      }
+    },
+    {
+      "id": "locomotive",
+      "name": "Locomotive",
+      "region": "海外",
+      "url": "https://locomotive.ca/",
+      "award": {
+        "organization": "CSSDA",
+        "title": "Website of the Day",
+        "date": "2023-04-27",
+        "source": "https://www.cssdesignawards.com/sites/locomotive/43241/"
+      },
+      "parts": [
+        {
+          "part_ja": "冒頭",
+          "section": "hero",
+          "axis_tags": {
+            "typography": 5,
+            "tone": 4
+          },
+          "capture_target_id": "capture-locomotive-hero"
+        },
+        {
+          "part_ja": "実績一覧",
+          "section": "case list",
+          "axis_tags": {
+            "density": 3,
+            "typography": 4
+          },
+          "capture_target_id": "capture-locomotive-case-list"
+        }
+      ],
+      "award_year": 2023,
+      "verification": {
+        "checked_at": "2026-11-08",
+        "site_method": "curl -L",
+        "site_http_status": 200,
+        "site_effective_url": "https://locomotive.ca/",
+        "award_page_verified": true,
+        "award_method": "curl -L / HTMLの受賞名・年・日付を確認"
+      }
+    },
+    {
+      "id": "unseen",
+      "name": "Unseen Studio",
+      "region": "海外",
+      "url": "https://unseen.co/",
+      "award": {
+        "organization": "CSSDA",
+        "title": "Website of the Day",
+        "date": "2023-01-13",
+        "source": "https://www.cssdesignawards.com/sites/unseen-studio/42663"
+      },
+      "parts": [
+        {
+          "part_ja": "冒頭",
+          "section": "hero",
+          "axis_tags": {
+            "motion": 5,
+            "tone": 5
+          },
+          "capture_target_id": "capture-unseen-hero"
+        }
+      ],
+      "award_year": 2023,
+      "verification": {
+        "checked_at": "2026-11-08",
+        "site_method": "curl -L",
+        "site_http_status": 200,
+        "site_effective_url": "https://unseen.co/",
+        "award_page_verified": true,
+        "award_method": "curl -L / HTMLの受賞名・年・日付を確認"
+      }
+    },
+    {
+      "id": "webisoft",
+      "name": "Webisoft",
+      "region": "海外",
+      "url": "https://webisoft.com/",
+      "award": {
+        "organization": "CSSDA",
+        "title": "Website of the Day",
+        "date": "2024-09-20",
+        "source": "https://cssdesignawards.com/sites/webisoft-software-agency/46288/"
+      },
+      "parts": [
+        {
+          "part_ja": "冒頭",
+          "section": "hero",
+          "axis_tags": {
+            "typography": 5,
+            "contrast": 4
+          },
+          "capture_target_id": "capture-webisoft-hero"
+        },
+        {
+          "part_ja": "問い合わせ導線",
+          "section": "buttons",
+          "axis_tags": {
+            "typography": 3,
+            "tone": 3
+          },
+          "capture_target_id": "capture-webisoft-buttons"
+        }
+      ],
+      "award_year": 2024,
+      "verification": {
+        "checked_at": "2026-11-08",
+        "site_method": "curl -L",
+        "site_http_status": 200,
+        "site_effective_url": "https://webisoft.com/",
+        "award_page_verified": true,
+        "award_method": "curl -L / HTMLの受賞名・年・日付を確認"
+      }
+    },
+    {
+      "id": "buro",
+      "name": "Bürocratik",
+      "region": "海外",
+      "url": "https://www.burocratik.com/",
+      "award": {
+        "organization": "CSSDA",
+        "title": "Website of the Day",
+        "date": "2025-05-02",
+        "source": "https://www.cssdesignawards.com/sites/we-are-buro/47381/"
+      },
+      "parts": [
+        {
+          "part_ja": "冒頭",
+          "section": "hero",
+          "axis_tags": {
+            "typography": 4,
+            "density": 2
+          },
+          "capture_target_id": "capture-buro-hero"
+        }
+      ],
+      "award_year": 2025,
+      "verification": {
+        "checked_at": "2026-11-08",
+        "site_method": "curl -L",
+        "site_http_status": 200,
+        "site_effective_url": "https://www.burocratik.com/",
+        "award_page_verified": true,
+        "award_method": "curl -L / HTMLの受賞名・年・日付を確認"
+      }
+    },
+    {
+      "id": "reform",
+      "name": "Reform Collective",
+      "region": "海外",
+      "url": "https://www.reformcollective.com/",
+      "award": {
+        "organization": "CSSDA",
+        "title": "Special Kudos",
+        "date": "2023-02-10",
+        "source": "https://www.cssdesignawards.com/sites/reform-collective/42887/"
+      },
+      "parts": [
+        {
+          "part_ja": "実績一覧",
+          "section": "case list",
+          "axis_tags": {
+            "density": 3,
+            "typography": 4
+          },
+          "capture_target_id": "capture-reform-case-list"
+        },
+        {
+          "part_ja": "末尾",
+          "section": "footer",
+          "axis_tags": {
+            "density": 3,
+            "typography": 3
+          },
+          "capture_target_id": "capture-reform-footer"
+        }
+      ],
+      "award_year": 2023,
+      "verification": {
+        "checked_at": "2026-11-08",
+        "site_method": "curl -L",
+        "site_http_status": 200,
+        "site_effective_url": "https://www.reformcollective.com/",
+        "award_page_verified": true,
+        "award_method": "curl -L / HTMLの受賞名・年・日付を確認"
+      }
+    },
+    {
+      "id": "immersivegarden",
+      "name": "Immersive Garden",
+      "region": "海外",
+      "url": "https://immersive-g.com/",
+      "award": {
+        "organization": "CSSDA",
+        "title": "Website of the Day",
+        "date": "2024-12-31",
+        "source": "https://www.cssdesignawards.com/sites/immersive-garden/46787/"
+      },
+      "parts": [
+        {
+          "part_ja": "冒頭",
+          "section": "hero",
+          "axis_tags": {
+            "motion": 5,
+            "density": 1
+          },
+          "capture_target_id": "capture-immersivegarden-hero"
+        },
+        {
+          "part_ja": "実績一覧",
+          "section": "case list",
+          "axis_tags": {
+            "motion": 4,
+            "typography": 4
+          },
+          "capture_target_id": "capture-immersivegarden-case-list"
+        }
+      ],
+      "award_year": 2024,
+      "verification": {
+        "checked_at": "2026-11-08",
+        "site_method": "curl -L",
+        "site_http_status": 200,
+        "site_effective_url": "https://immersive-g.com/",
+        "award_page_verified": true,
+        "award_method": "curl -L / HTMLの受賞名・年・日付を確認"
+      }
+    },
+    {
+      "id": "cuberto",
+      "name": "Cuberto",
+      "region": "海外",
+      "url": "https://cuberto.com/",
+      "award": {
+        "organization": "CSSDA",
+        "title": "Website of the Day",
+        "date": "2023-02-20",
+        "source": "https://www.cssdesignawards.com/sites/cuberto-agency/42911/"
+      },
+      "parts": [
+        {
+          "part_ja": "冒頭",
+          "section": "hero",
+          "axis_tags": {
+            "typography": 5,
+            "motion": 4
+          },
+          "capture_target_id": "capture-cuberto-hero"
+        },
+        {
+          "part_ja": "実績一覧",
+          "section": "case list",
+          "axis_tags": {
+            "density": 2,
+            "tone": 4
+          },
+          "capture_target_id": "capture-cuberto-case-list"
+        }
+      ],
+      "award_year": 2023,
+      "verification": {
+        "checked_at": "2026-11-08",
+        "site_method": "curl -L",
+        "site_http_status": 200,
+        "site_effective_url": "https://cuberto.com/",
+        "award_page_verified": true,
+        "award_method": "curl -L / HTMLの受賞名・年・日付を確認"
+      }
+    },
+    {
+      "id": "obys",
+      "name": "Obys",
+      "region": "海外",
+      "url": "https://obys.agency/",
+      "award": {
+        "organization": "CSSDA",
+        "title": "Website of the Day",
+        "date": "2026-04-24",
+        "source": "https://cssdesignawards.com/sites/obys/49223/"
+      },
+      "parts": [
+        {
+          "part_ja": "実績一覧",
+          "section": "case list",
+          "axis_tags": {
+            "typography": 5,
+            "motion": 4
+          },
+          "capture_target_id": "capture-obys-case-list"
+        }
+      ],
+      "award_year": 2026,
+      "verification": {
+        "checked_at": "2026-11-08",
+        "site_method": "curl -L",
+        "site_http_status": 200,
+        "site_effective_url": "https://obys.agency/",
+        "award_page_verified": true,
+        "award_method": "curl -L / HTMLの受賞名・年・日付を確認"
+      }
+    },
+    {
+      "id": "buttermax",
+      "name": "Buttermax",
+      "region": "海外",
+      "url": "https://buttermax.net/",
+      "award": {
+        "organization": "CSSDA",
+        "title": "Website of the Year",
+        "date": "2024",
+        "source": "https://cssdesignawards.com/sites/buttermax/44830/"
+      },
+      "parts": [
+        {
+          "part_ja": "冒頭",
+          "section": "hero",
+          "axis_tags": {
+            "motion": 5,
+            "tone": 5
+          },
+          "capture_target_id": "capture-buttermax-hero"
+        }
+      ],
+      "award_year": 2024,
+      "verification": {
+        "checked_at": "2026-11-08",
+        "site_method": "curl -L",
+        "site_http_status": 200,
+        "site_effective_url": "https://buttermax.net/",
+        "award_page_verified": true,
+        "award_method": "curl -L / HTMLの受賞名・年・日付を確認"
+      }
+    },
+    {
+      "id": "monopoparis",
+      "name": "monopo paris",
+      "region": "海外",
+      "url": "https://monopo.paris/",
+      "award": {
+        "organization": "Awwwards",
+        "title": "Site of the Day",
+        "date": "2024-03-23",
+        "source": "https://www.awwwards.com/sites/monopo-paris"
+      },
+      "parts": [
+        {
+          "part_ja": "実績一覧",
+          "section": "case list",
+          "axis_tags": {
+            "motion": 4,
+            "tone": 5
+          },
+          "capture_target_id": "capture-monopoparis-case-list"
+        },
+        {
+          "part_ja": "表示切替",
+          "section": "buttons",
+          "axis_tags": {
+            "tone": 5,
+            "motion": 3
+          },
+          "capture_target_id": "capture-monopoparis-buttons"
+        }
+      ],
+      "award_year": 2024,
+      "verification": {
+        "checked_at": "2026-11-08",
+        "site_method": "curl -L",
+        "site_http_status": 200,
+        "site_effective_url": "https://monopo.paris/",
+        "award_page_verified": true,
+        "award_method": "curl -L / HTMLの受賞名・年・日付を確認"
+      }
+    },
+    {
+      "id": "papertiger",
+      "name": "Paper Tiger",
+      "region": "海外",
+      "url": "https://www.papertiger.com/",
+      "award": {
+        "organization": "Awwwards",
+        "title": "Site of the Day",
+        "date": "2026-01-17",
+        "source": "https://www.awwwards.com/sites/paper-tiger"
+      },
+      "parts": [
+        {
+          "part_ja": "数値実績",
+          "section": "stats",
+          "axis_tags": {
+            "typography": 4,
+            "tone": 4
+          },
+          "capture_target_id": "capture-papertiger-stats"
+        },
+        {
+          "part_ja": "取引先一覧",
+          "section": "logo wall",
+          "axis_tags": {
+            "density": 3,
+            "tone": 3
+          },
+          "capture_target_id": "capture-papertiger-logo-wall"
+        }
+      ],
+      "award_year": 2026,
+      "verification": {
+        "checked_at": "2026-11-08",
+        "site_method": "curl -L",
+        "site_http_status": 200,
+        "site_effective_url": "https://www.papertiger.com/",
+        "award_page_verified": true,
+        "award_method": "curl -L / HTMLの受賞名・年・日付を確認"
+      }
+    }
+  ],
+  "additional_sources": [
+    {
+      "label": "Pico文書ライセンス",
+      "url": "https://github.com/picocss/picocss.com/blob/main/LICENSE.md"
+    },
+    {
+      "label": "SmartHR DS利用規約",
+      "url": "https://smarthr.design/terms/"
+    },
+    {
+      "label": "Geistフォント配布・ライセンス",
+      "url": "https://vercel.com/font"
+    },
+    {
+      "label": "GOV.UK文書ライセンス",
+      "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+  ]
+}
