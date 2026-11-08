@@ -1,121 +1,144 @@
 'use strict';
-const STORAGE_KEY = 'uilib.parts-review.v1';
-const labels = { pending: '未レビュー', approved: '承認', rejected: '却下', hold: '保留' };
-const $ = (id) => document.getElementById(id);
-let targets = [], reviews = {}, parts = new Map(), axes = new Map();
-function notice(message, error = false) { $('notice').textContent = message; $('notice').classList.toggle('error', error); }
-function element(tag, className, text) {
+const $ = s => document.querySelector(s);
+const KEY = 'btnlib-status-v1';
+const names = {ok:'OK',ng:'NG',hold:'保留'};
+const groups = {shape:['形状',{pill:'ピル',rounded:'角丸',square:'四角'}],fill:['塗り',{solid:'塗りつぶし',outline:'アウトライン',ghost:'ゴースト',text:'テキスト'}],icon:['アイコン',{'true':'あり','false':'なし'}],size:['サイズ',{S:'S',M:'M',L:'L'}]};
+let items = [], statuses = {}, active = null;
+const selected = Object.fromEntries(Object.keys(groups).map(k => [k,new Set()]));
+const validStatus = value => Object.hasOwn(names,value);
+function cleanStatuses(value) {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error('評価データはオブジェクトで指定してください。');
+  const result = Object.create(null);
+  for (const [id,status] of Object.entries(value)) {
+    if (!validStatus(status)) throw new Error('評価は ok・ng・hold のいずれかで指定してください。');
+    result[id] = status;
+  }
+  return result;
+}
+function notice(message) { $('#notice').textContent = message; }
+try { statuses = cleanStatuses(JSON.parse(localStorage.getItem(KEY) || '{}')); }
+catch { notice('保存済みの評価を読み込めませんでした。新しい評価から開始します。'); }
+function save() {
+  try { localStorage.setItem(KEY, JSON.stringify(statuses)); }
+  catch { notice('評価を保存できません。書き出してデータを保管してください。'); }
+}
+function el(tag, className, text) {
   const node = document.createElement(tag);
   if (className) node.className = className;
   if (text !== undefined) node.textContent = text;
   return node;
 }
-function validate(value) {
-  if (!value || value.version !== 1 || !Array.isArray(value.approvals)) throw new Error('version: 1 と approvals 配列が必要です。');
-  const result = {};
-  for (const row of value.approvals) {
-    if (!row || typeof row.id !== 'string' || !Object.hasOwn(labels, row.status) || typeof row.memo !== 'string' || (row.updated_at !== undefined && typeof row.updated_at !== 'string') || Object.hasOwn(result, row.id)) throw new Error('ID・status・memo の形式、またはIDの重複を確認してください。');
-    Object.defineProperty(result, row.id, { value: { status: row.status, memo: row.memo, updated_at: row.updated_at || null }, enumerable: true, writable: true, configurable: true });
+function picture(src, label) {
+  const img = el('img');
+  img.alt = label; img.loading = 'lazy'; img.decoding = 'async';
+  img.onerror = () => img.replaceWith(el('span','placeholder','画像を読み込めません'));
+  if (typeof src === 'string' && src.trim()) img.src = src;
+  else return el('span','placeholder','画像がありません');
+  return img;
+}
+function tags(item) {
+  const row = el('div','tags');
+  for (const [key,[,values]] of Object.entries(groups)) {
+    const value = values[String(item.tags?.[key])];
+    if (value) row.append(el('span','tag',key === 'icon' ? `アイコン${value}` : value));
   }
-  return result;
+  return row;
 }
-function current(id) { return Object.hasOwn(reviews, id) ? reviews[id] : { status: 'pending', memo: '', updated_at: null }; }
-function persist() {
-  try { localStorage.setItem(STORAGE_KEY, JSON.stringify({ version: 1, approvals: Object.entries(reviews).map(([id, row]) => ({ id, ...row })) })); notice('このブラウザに保存しました。'); }
-  catch { notice('ブラウザに保存できません。エクスポートして状態を保管してください。', true); }
-}
-function update(id, patch) { reviews[id] = { ...current(id), ...patch, updated_at: new Date().toISOString() }; persist(); }
-function imagePanel(id, folder, title) {
-  const panel = element('figure', 'image-panel');
-  panel.append(element('figcaption', '', title));
-  const box = element('div', 'image-box');
-  const fallback = element('div', 'placeholder');
-  fallback.append(element('strong', '', '画像未配置'), element('span', '', `${folder}/${id}.png`));
-  const img = document.createElement('img');
-  img.alt = `${id} — ${title}`; img.loading = 'lazy';
-  img.addEventListener('error', () => { img.remove(); fallback.hidden = false; });
-  fallback.hidden = true;
-  img.src = `${folder}/${encodeURIComponent(id)}.png`;
-  box.append(fallback, img); panel.append(box); return panel;
+for (const [key,[label,values]] of Object.entries(groups)) {
+  const row = el('div','chip-row'); row.setAttribute('role','group'); row.setAttribute('aria-label',label);
+  row.append(el('span','filter-label',label));
+  for (const [value,text] of Object.entries(values)) {
+    const button = el('button','',text); button.setAttribute('aria-pressed','false');
+    button.onclick = () => {
+      selected[key].has(value) ? selected[key].delete(value) : selected[key].add(value);
+      button.setAttribute('aria-pressed',String(selected[key].has(value))); render();
+    };
+    row.append(button);
+  }
+  $('#chips').append(row);
 }
 function render() {
-  const visible = targets.filter(t => (!$('section').value || t.section === $('section').value) && (!$('status').value || current(t.id).status === $('status').value));
-  const counts = Object.fromEntries(Object.keys(labels).map(s => [s, targets.filter(t => current(t.id).status === s).length]));
-  $('summary').textContent = `${visible.length} / ${targets.length} パーツ · ${Object.entries(labels).map(([s, label]) => `${label} ${counts[s]}`).join(' / ')}`;
-  $('cards').classList.toggle('comparing', $('compare').checked);
+  const filtered = items.filter(item => Object.entries(selected).every(([key,values]) => !values.size || values.has(String(item.tags?.[key]))) && (!$('#site').value || item.site === $('#site').value) && (!$('#status').value || (statuses[item.id] || 'unreviewed') === $('#status').value));
+  $('#count').textContent = `${filtered.length} / ${items.length} 件`;
+  $('#empty').hidden = filtered.length !== 0;
   const fragment = document.createDocumentFragment();
-  for (const target of visible) {
-    const match = parts.get(target.id), row = current(target.id);
-    const card = element('article', 'card');
-    const images = element('div', 'images'); images.append(imagePanel(target.id, 'shots', 'ORIGINAL / 元画像'));
-    if ($('compare').checked) images.append(imagePanel(target.id, 'rebuilt', 'REBUILT / 再現画像'));
-    const content = element('div', 'content');
-    const meta = element('div', 'meta');
-    const badge = element('span', 'badge', labels[row.status]); badge.dataset.status = row.status;
-    meta.append(element('span', '', `${target.award_year ?? match?.site.award_year ?? '—'} 受賞`), element('span', 'tag', target.section), badge);
-    content.append(meta, element('h2', '', target.site || match?.site.name || target.id), element('p', 'part', target.part_ja || match?.part.part_ja || target.section));
-    const tags = element('div', 'tags');
-    for (const [axis, score] of Object.entries(match?.part.axis_tags || {})) {
-      const definition = axes.get(axis);
-      const tag = element('span', 'tag', `${definition?.name_ja || axis} ${score}`);
-      tag.title = `${definition?.direction || axis} / ${definition?.scale?.[score] || score}`;
-      tags.append(tag);
+  for (const item of filtered) {
+    const tile = el('button','tile'); tile.setAttribute('aria-label',`${item.site} ${item.label || 'ボタン'} 詳細を開く`);
+    const preview = el('div','preview');
+    const normal = picture(item.image, item.label || '通常のボタン'); preview.append(normal);
+    if (item.hover) {
+      const hover = picture(item.hover,`${item.label || 'ボタン'} ホバー`); hover.hidden = true;
+      // Use wrappers so a failed image retains the same show/hide behavior.
+      const normalWrap = el('div'), hoverWrap = el('div');
+      normalWrap.style.width = hoverWrap.style.width = '100%';
+      normalWrap.append(normal); hover.hidden = false; hoverWrap.append(hover); hoverWrap.hidden = true;
+      preview.replaceChildren(normalWrap,hoverWrap);
+      const swap = on => { normalWrap.hidden = on; hoverWrap.hidden = !on; };
+      tile.onpointerenter = e => { if (e.pointerType !== 'touch') swap(true); };
+      tile.onpointerleave = () => swap(false);
+      tile.onfocus = () => swap(true); tile.onblur = () => swap(false);
     }
-    if (!tags.childNodes.length) tags.append(element('span', 'tag', '軸タグなし'));
-    content.append(tags);
-    const link = element('a', 'source', target.page_url); link.target = '_blank'; link.rel = 'noopener noreferrer';
-    try { const url = new URL(target.page_url); if (['https:', 'http:'].includes(url.protocol)) link.href = url.href; } catch { /* Invalid source remains plain text. */ }
-    content.append(link);
-    const actions = element('div', 'actions');
-    for (const status of ['approved', 'rejected', 'hold', 'pending']) {
-      const button = element('button', '', status === 'pending' ? '未レビューに戻す' : labels[status]);
-      button.dataset.status = status; button.setAttribute('aria-pressed', String(row.status === status));
-      button.addEventListener('click', () => { update(target.id, { status }); render(); }); actions.append(button);
-    }
-    const memo = element('label', 'memo', 'レビューのメモ');
-    const textarea = document.createElement('textarea'); textarea.value = row.memo; textarea.placeholder = '選定理由や再現時の確認点…';
-    textarea.addEventListener('input', () => update(target.id, { memo: textarea.value })); memo.append(textarea);
-    content.append(actions, memo); card.append(images, content); fragment.append(card);
+    const info = el('div','tile-info'), line = el('div','site-line');
+    line.append(el('span','site-name',item.site),el('span','',String(item.award_year ?? '')));
+    info.append(line,tags(item));
+    if (statuses[item.id]) info.append(el('span','badge',names[statuses[item.id]]));
+    tile.append(preview,info); tile.onclick = () => openDetail(item); fragment.append(tile);
   }
-  if (!visible.length) fragment.append(element('p', 'empty', '条件に一致するパーツはありません。'));
-  $('cards').replaceChildren(fragment);
+  $('#gallery').replaceChildren(fragment);
 }
-$('export').addEventListener('click', () => {
-  const payload = { version: 1, exported_at: new Date().toISOString(), approvals: targets.map(t => ({ id: t.id, ...current(t.id) })) };
-  const url = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 2) + '\n'], { type: 'application/json' }));
-  const link = document.createElement('a'); link.href = url; link.download = 'approvals.json'; link.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
-});
-$('import').addEventListener('change', async (event) => {
-  const file = event.target.files[0]; if (!file) return;
+function openDetail(item) {
+  active = item; $('#detail-title').textContent = item.label || item.site;
+  const pair = el('div','image-pair');
+  for (const [label,src] of [['通常',item.image],['ホバー',item.hover]]) {
+    const figure = el('figure'); figure.append(el('figcaption','',label));
+    const preview = el('div','large-preview'); preview.append(src ? picture(src,label) : el('span','muted','ホバー画像なし')); figure.append(preview); pair.append(figure);
+  }
+  const meta = el('div','meta');
+  meta.append(el('p','',`${item.site} · ${item.award_year ?? '年不明'}`),el('p','',`ID: ${item.id}`),el('p','',`セレクター: ${item.selector || '—'}`),tags(item));
   try {
-    const imported = validate(JSON.parse(await file.text()));
-    const ids = new Set(targets.map(t => t.id)); let count = 0, skipped = 0;
-    for (const [id, row] of Object.entries(imported)) { if (ids.has(id)) { reviews[id] = row; count++; } else skipped++; }
-    persist(); render();
-    const message = `${count} 件をインポートしました。${skipped ? `未知のID ${skipped} 件は除外しました。` : ''}`;
-    // Keep a storage error visible if persistence failed.
-    if (!$('notice').classList.contains('error')) notice(message);
-  } catch (error) { notice(`インポートできません: ${error.message}`, true); }
-  event.target.value = '';
-});
-for (const id of ['section', 'status', 'compare']) $(id).addEventListener('change', render);
-async function load() {
-  try {
-    const [capture, data] = await Promise.all(['./capture_targets.json', './data.json'].map(async path => {
-      const response = await fetch(path); if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`); return response.json();
-    }));
-    if (!Array.isArray(capture.targets) || !Array.isArray(data.sites)) throw new Error('入力JSONの構造が正しくありません。');
-    targets = capture.targets;
-    axes = new Map((data.axes || []).map(axis => [axis.id, axis]));
-    for (const site of data.sites) for (const part of site.parts || []) parts.set(part.capture_target_id, { site, part });
-    let warning = '';
-    try { const saved = localStorage.getItem(STORAGE_KEY); if (saved) reviews = validate(JSON.parse(saved)); }
-    catch { warning = '保存済み状態を読み込めませんでした。必要に応じてバックアップをインポートしてください。'; }
-    for (const section of [...new Set(targets.map(t => t.section))].sort()) {
-      const option = element('option', '', section); option.value = section; $('section').append(option);
+    const url = new URL(item.site_url);
+    if (['http:','https:'].includes(url.protocol)) {
+      const link = el('a','', 'サイトを開く ↗'); link.href = url.href; link.target = '_blank'; link.rel = 'noopener noreferrer';
+      const p = el('p'); p.append(link); meta.append(p);
     }
-    for (const id of ['section', 'status', 'export', 'import']) $(id).disabled = false;
-    render(); notice(warning || '準備完了。画像がないパーツはプレースホルダで表示します。', Boolean(warning));
-  } catch (error) { notice(`読み込みに失敗しました: ${error.message} HTTPサーバー経由で開いてください。`, true); }
+  } catch { /* Invalid site URLs are not linked. */ }
+  $('#detail-content').replaceChildren(pair,meta); updateReview(); $('#detail').showModal();
 }
-load();
+function updateReview() {
+  document.querySelectorAll('[data-status]').forEach(b => b.setAttribute('aria-pressed',String(statuses[active.id] === b.dataset.status)));
+}
+document.querySelectorAll('[data-status]').forEach(b => b.onclick = () => { statuses[active.id] = b.dataset.status; save(); updateReview(); render(); });
+$('#close').onclick = () => $('#detail').close();
+$('#detail').onclick = e => { if (e.target === $('#detail')) { const r = e.target.getBoundingClientRect(); if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) e.target.close(); } };
+$('#site').onchange = $('#status').onchange = render;
+$('#reset').onclick = () => { Object.values(selected).forEach(s => s.clear()); document.querySelectorAll('#chips button').forEach(b => b.setAttribute('aria-pressed','false')); $('#site').value = $('#status').value = ''; render(); };
+$('#export').onclick = () => {
+  const url = URL.createObjectURL(new Blob([JSON.stringify(statuses,null,2)],{type:'application/json'}));
+  const a = el('a'); a.href = url; a.download = 'btnlib-approvals.json'; a.click(); setTimeout(() => URL.revokeObjectURL(url),1000);
+};
+$('#import').onchange = async e => {
+  const file = e.target.files[0]; if (!file) return;
+  try {
+    const imported = cleanStatuses(JSON.parse(await file.text()));
+    statuses = Object.assign(Object.create(null),statuses,imported); save(); render();
+    if (active) updateReview(); notice(`${Object.keys(imported).length} 件の評価を読み込みました。`);
+  } catch (error) { notice(`読み込みに失敗しました: ${error.message}`); }
+  e.target.value = '';
+};
+(async () => {
+  try {
+    const response = await fetch('buttons.json');
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+    if (!Array.isArray(data.items)) throw new Error('items 配列がありません');
+    items = data.items.filter(item => item && (typeof item.id === 'string' || typeof item.id === 'number'));
+    for (const site of [...new Set(items.map(i => i.site).filter(Boolean))].sort((a,b) => a.localeCompare(b,'ja'))) {
+      const option = el('option','',site); option.value = site; $('#site').append(option);
+    }
+    render();
+    if (data.meta?.skipped?.length) notice(`収集時にスキップ: ${data.meta.skipped.length} 件`);
+  } catch (error) {
+    $('#count').textContent = '読み込みエラー';
+    notice(`buttons.json を読み込めませんでした (${error.message})。ファイルを配置し、HTTP サーバー経由で開いてください。`);
+  }
+})();
