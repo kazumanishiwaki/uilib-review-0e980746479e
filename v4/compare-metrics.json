@@ -1,0 +1,3621 @@
+{
+  "both": 105,
+  "rows": [
+    {
+      "code": "ACT-01-1",
+      "name": "黒ベタ角型",
+      "chapter": "汎用/ボタン・操作",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 176,
+        "css_chars": 1149,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 28
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 308,
+        "css_chars": 1343,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 32
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": []
+    },
+    {
+      "code": "ACT-01-2",
+      "name": "ゴースト（罫線のみ）",
+      "chapter": "汎用/ボタン・操作",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 78,
+        "css_chars": 841,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 20
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 90,
+        "css_chars": 882,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 20
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "ACT-01-3",
+      "name": "下線リンク型",
+      "chapter": "汎用/ボタン・操作",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 67,
+        "css_chars": 626,
+        "js_chars": 148,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 15
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 95,
+        "css_chars": 876,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 19
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "ACT-02-1",
+      "name": "登録トグル型",
+      "chapter": "汎用/ボタン・操作",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 324,
+        "css_chars": 1458,
+        "js_chars": 266,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 32
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 796,
+        "css_chars": 2580,
+        "js_chars": 353,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 54
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "ACT-02-2",
+      "name": "確認ダイアログ経由型",
+      "chapter": "汎用/ボタン・操作",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 717,
+        "css_chars": 3387,
+        "js_chars": 910,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 74
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1015,
+        "css_chars": 4411,
+        "js_chars": 907,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 98
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "ACT-02-3",
+      "name": "リアクション型",
+      "chapter": "汎用/ボタン・操作",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 280,
+        "css_chars": 1683,
+        "js_chars": 291,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 39
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 435,
+        "css_chars": 1708,
+        "js_chars": 472,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 34
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "ACT-03-1",
+      "name": "アイコンのみ標準型",
+      "chapter": "汎用/ボタン・操作",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 346,
+        "css_chars": 1686,
+        "js_chars": 354,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 37
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 383,
+        "css_chars": 1860,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 47
+      },
+      "fable_a11y": [],
+      "opus_a11y": []
+    },
+    {
+      "code": "ACT-03-2",
+      "name": "拡張型（アイコン＋テキスト）",
+      "chapter": "汎用/ボタン・操作",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 421,
+        "css_chars": 2017,
+        "js_chars": 245,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 47
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 564,
+        "css_chars": 2462,
+        "js_chars": 331,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 64
+      },
+      "fable_a11y": [],
+      "opus_a11y": []
+    },
+    {
+      "code": "ACT-03-3",
+      "name": "展開メニュー型",
+      "chapter": "汎用/ボタン・操作",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1080,
+        "css_chars": 3397,
+        "js_chars": 536,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 74
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1641,
+        "css_chars": 4192,
+        "js_chars": 746,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 94
+      },
+      "fable_a11y": [],
+      "opus_a11y": []
+    },
+    {
+      "code": "ACT-04-1",
+      "name": "インライン型",
+      "chapter": "汎用/ボタン・操作",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 799,
+        "css_chars": 1488,
+        "js_chars": 325,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 39
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1867,
+        "css_chars": 2508,
+        "js_chars": 469,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 62
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "ACT-04-2",
+      "name": "追従レール型",
+      "chapter": "汎用/ボタン・操作",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 1073,
+        "css_chars": 1736,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 40
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 2041,
+        "css_chars": 2989,
+        "js_chars": 453,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 66
+      },
+      "fable_a11y": [],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "ACT-04-3",
+      "name": "画像オーバーレイ型",
+      "chapter": "汎用/ボタン・操作",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 961,
+        "css_chars": 2574,
+        "js_chars": 633,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 50
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 2407,
+        "css_chars": 3374,
+        "js_chars": 697,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 61
+      },
+      "fable_a11y": [],
+      "opus_a11y": []
+    },
+    {
+      "code": "ACT-05-1",
+      "name": "部分スワイプ・ボタン群露出型",
+      "chapter": "汎用/ボタン・操作",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 2063,
+        "css_chars": 3471,
+        "js_chars": 1775,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 72
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 3365,
+        "css_chars": 3592,
+        "js_chars": 2486,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 70
+      },
+      "fable_a11y": [],
+      "opus_a11y": []
+    },
+    {
+      "code": "ACT-05-2",
+      "name": "フルスワイプ即実行型",
+      "chapter": "汎用/ボタン・操作",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1347,
+        "css_chars": 3698,
+        "js_chars": 1535,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 81
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1927,
+        "css_chars": 3106,
+        "js_chars": 2122,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 67
+      },
+      "fable_a11y": [],
+      "opus_a11y": []
+    },
+    {
+      "code": "ACT-06-1",
+      "name": "常時表示型",
+      "chapter": "汎用/ボタン・操作",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1680,
+        "css_chars": 1873,
+        "js_chars": 1420,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 40
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 2098,
+        "css_chars": 2458,
+        "js_chars": 1643,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 57
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "ACT-06-2",
+      "name": "全体ドラッグ型（カード暗黙型）",
+      "chapter": "汎用/ボタン・操作",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 836,
+        "css_chars": 1531,
+        "js_chars": 1239,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 35
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1357,
+        "css_chars": 2314,
+        "js_chars": 1751,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 55
+      },
+      "fable_a11y": [],
+      "opus_a11y": []
+    },
+    {
+      "code": "ACT-07-1",
+      "name": "可変型（値を持つ連続調整）",
+      "chapter": "汎用/ボタン・操作",
+      "fable": {
+        "html_lines": 2,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 504,
+        "css_chars": 2401,
+        "js_chars": 1001,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 46
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 838,
+        "css_chars": 3203,
+        "js_chars": 1286,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 66
+      },
+      "fable_a11y": [],
+      "opus_a11y": []
+    },
+    {
+      "code": "ACT-07-2",
+      "name": "折りたたみ端点型",
+      "chapter": "汎用/ボタン・操作",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 675,
+        "css_chars": 3378,
+        "js_chars": 1210,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 78
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1034,
+        "css_chars": 4523,
+        "js_chars": 2028,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 90
+      },
+      "fable_a11y": [],
+      "opus_a11y": []
+    },
+    {
+      "code": "CONT-01-1",
+      "name": "影カード",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 664,
+        "css_chars": 1254,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 30
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 717,
+        "css_chars": 1441,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 35
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-01-2",
+      "name": "番号リスト型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 474,
+        "css_chars": 814,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 20
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 546,
+        "css_chars": 1023,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 25
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-01-3",
+      "name": "横型カード（画像左＋本文右）",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 691,
+        "css_chars": 1090,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 24
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 1080,
+        "css_chars": 1479,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 31
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-01-4",
+      "name": "画像重ね型（キャプション面）",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 547,
+        "css_chars": 1155,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 23
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 978,
+        "css_chars": 1615,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 36
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-01-5",
+      "name": "スタッキング型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 596,
+        "css_chars": 1309,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 34
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 698,
+        "css_chars": 1998,
+        "js_chars": 661,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 48
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-02-1",
+      "name": "2行型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 779,
+        "css_chars": 1017,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 21
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 1192,
+        "css_chars": 1730,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 36
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": []
+    },
+    {
+      "code": "CONT-02-2",
+      "name": "アバター型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 541,
+        "css_chars": 1155,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 25
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 607,
+        "css_chars": 1363,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 29
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-02-3",
+      "name": "選択コントロール付き型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 895,
+        "css_chars": 1393,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 28
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 1184,
+        "css_chars": 3073,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 61
+      },
+      "fable_a11y": [
+        "input_label_unclear",
+        "input_label_unclear",
+        "input_label_unclear",
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "input_label_unclear",
+        "input_label_unclear",
+        "input_label_unclear"
+      ]
+    },
+    {
+      "code": "CONT-03-1",
+      "name": "著者行付き型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 371,
+        "css_chars": 1158,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 27
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 482,
+        "css_chars": 1321,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 33
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-03-2",
+      "name": "星評価付き型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 551,
+        "css_chars": 869,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 20
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 1714,
+        "css_chars": 1197,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 25
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-03-3",
+      "name": "動画サムネイル型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 790,
+        "css_chars": 2318,
+        "js_chars": 443,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 43
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 954,
+        "css_chars": 4011,
+        "js_chars": 433,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 78
+      },
+      "fable_a11y": [],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-03-4",
+      "name": "ウォール型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 875,
+        "css_chars": 799,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 22
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 820,
+        "css_chars": 1312,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 31
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-04-1",
+      "name": "トレンド付き型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 697,
+        "css_chars": 1600,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 37
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 903,
+        "css_chars": 1996,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 46
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-04-2",
+      "name": "スパークライン付き型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 887,
+        "css_chars": 1229,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 23
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 1172,
+        "css_chars": 1456,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 31
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-04-3",
+      "name": "目標プログレス付き型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 1012,
+        "css_chars": 1396,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 29
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 1213,
+        "css_chars": 1704,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 38
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-05-1",
+      "name": "罫線行",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 529,
+        "css_chars": 1108,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 26
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 714,
+        "css_chars": 1391,
+        "js_chars": 268,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 32
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-05-2",
+      "name": "日付ブロック型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 920,
+        "css_chars": 1754,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 39
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 930,
+        "css_chars": 2080,
+        "js_chars": 268,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 47
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-06-1",
+      "name": "罫線表型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 335,
+        "css_chars": 559,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 15
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 438,
+        "css_chars": 736,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 20
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-07-1",
+      "name": "情報表型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 474,
+        "css_chars": 1572,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 39
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 673,
+        "css_chars": 2531,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 64
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-07-2",
+      "name": "2カラム型（表＋アクセス）",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 717,
+        "css_chars": 2453,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 59
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1128,
+        "css_chars": 3008,
+        "js_chars": 268,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 69
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-08-1",
+      "name": "記号マトリクス型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 1533,
+        "css_chars": 1174,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 23
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 1963,
+        "css_chars": 2093,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 47
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-08-2",
+      "name": "グループ見出し行型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 900,
+        "css_chars": 883,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 18
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 1976,
+        "css_chars": 1651,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 36
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-09-1",
+      "name": "罫線区切り＋シェブロン",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 689,
+        "css_chars": 1350,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 29
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 853,
+        "css_chars": 1566,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 33
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-09-2",
+      "name": "カテゴリ見出し分割型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 798,
+        "css_chars": 1780,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 39
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 1243,
+        "css_chars": 2264,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 50
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": []
+    },
+    {
+      "code": "CONT-09-3",
+      "name": "検索先行型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1725,
+        "css_chars": 2691,
+        "js_chars": 533,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 64
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1796,
+        "css_chars": 3557,
+        "js_chars": 908,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 85
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": []
+    },
+    {
+      "code": "CONT-09-4",
+      "name": "回答常時表示・2カラム行型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 546,
+        "css_chars": 866,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 22
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 497,
+        "css_chars": 1212,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 28
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-10-1",
+      "name": "スクロールボックス型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 649,
+        "css_chars": 1970,
+        "js_chars": 502,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 45
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 695,
+        "css_chars": 2126,
+        "js_chars": 745,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 49
+      },
+      "fable_a11y": [
+        "input_label_unclear",
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "input_label_unclear",
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-10-2",
+      "name": "アコーディオン要約型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1282,
+        "css_chars": 2868,
+        "js_chars": 515,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 69
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 1202,
+        "css_chars": 2716,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 59
+      },
+      "fable_a11y": [],
+      "opus_a11y": []
+    },
+    {
+      "code": "CONT-11-1",
+      "name": "横長バナー型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 395,
+        "css_chars": 2273,
+        "js_chars": 261,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 57
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 867,
+        "css_chars": 3063,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 71
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": []
+    },
+    {
+      "code": "CONT-11-2",
+      "name": "記事末尾の署名型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 310,
+        "css_chars": 1640,
+        "js_chars": 259,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 40
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 418,
+        "css_chars": 2200,
+        "js_chars": 343,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 50
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-11-3",
+      "name": "サイドバー縦型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 478,
+        "css_chars": 1975,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 44
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 971,
+        "css_chars": 3277,
+        "js_chars": 146,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 76
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-12-1",
+      "name": "横軸・スライド連動型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1454,
+        "css_chars": 2429,
+        "js_chars": 376,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 49
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 3459,
+        "css_chars": 4446,
+        "js_chars": 977,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 99
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-12-2",
+      "name": "縦年表リスト型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 331,
+        "css_chars": 703,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 16
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 888,
+        "css_chars": 815,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 18
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-12-3",
+      "name": "時代区分帯型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 670,
+        "css_chars": 996,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 23
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 1038,
+        "css_chars": 1570,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 42
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-13-1",
+      "name": "標準型（番号＋見出し＋説明文）",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 232,
+        "css_chars": 1296,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 27
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 603,
+        "css_chars": 1292,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 28
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-14-1",
+      "name": "グループ＋状態タグ型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 515,
+        "css_chars": 1259,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 31
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 912,
+        "css_chars": 1858,
+        "js_chars": 144,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 45
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-14-2",
+      "name": "番号付きセクション型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 565,
+        "css_chars": 1386,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 31
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 851,
+        "css_chars": 2121,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 49
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-14-3",
+      "name": "依存ロック型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 2051,
+        "css_chars": 2547,
+        "js_chars": 823,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 51
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 2056,
+        "css_chars": 3825,
+        "js_chars": 612,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 81
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-15-1",
+      "name": "フォロー時系列型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 520,
+        "css_chars": 1016,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 22
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1768,
+        "css_chars": 2761,
+        "js_chars": 142,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 67
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-15-2",
+      "name": "種別フィルタ付き型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 781,
+        "css_chars": 2002,
+        "js_chars": 363,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 51
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 2594,
+        "css_chars": 3105,
+        "js_chars": 391,
+        "hex_colors": 3,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 67
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-16-1",
+      "name": "フラット時系列型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 732,
+        "css_chars": 1550,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 37
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1578,
+        "css_chars": 3726,
+        "js_chars": 1263,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 91
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-16-2",
+      "name": "1段返信限定型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 772,
+        "css_chars": 2749,
+        "js_chars": 561,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 68
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 2049,
+        "css_chars": 3776,
+        "js_chars": 768,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 97
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-16-3",
+      "name": "折りたたみ・要約表示型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 960,
+        "css_chars": 2561,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 53
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 2288,
+        "css_chars": 3025,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 67
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-17-1",
+      "name": "採用マーク・投票順型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1242,
+        "css_chars": 2543,
+        "js_chars": 595,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 62
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 2520,
+        "css_chars": 4841,
+        "js_chars": 1033,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 110
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-17-2",
+      "name": "解決状態遷移型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 745,
+        "css_chars": 2603,
+        "js_chars": 283,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 57
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1549,
+        "css_chars": 4317,
+        "js_chars": 375,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 88
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-18-1",
+      "name": "投稿埋め込み・期限つき型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 804,
+        "css_chars": 3019,
+        "js_chars": 789,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 62
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1164,
+        "css_chars": 3659,
+        "js_chars": 853,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 75
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-18-2",
+      "name": "画像つき選択肢型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1487,
+        "css_chars": 3266,
+        "js_chars": 480,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 57
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 2484,
+        "css_chars": 4678,
+        "js_chars": 932,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 92
+      },
+      "fable_a11y": [
+        "input_label_unclear",
+        "input_label_unclear",
+        "input_label_unclear",
+        "input_label_unclear"
+      ],
+      "opus_a11y": [
+        "input_label_unclear",
+        "input_label_unclear",
+        "input_label_unclear",
+        "input_label_unclear"
+      ]
+    },
+    {
+      "code": "CONT-19-1",
+      "name": "インライン出典行型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 616,
+        "css_chars": 1330,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 27
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 1063,
+        "css_chars": 2542,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 51
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-19-2",
+      "name": "出典リスト型（末尾集約）",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 456,
+        "css_chars": 1423,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 34
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 1100,
+        "css_chars": 2539,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 52
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-19-3",
+      "name": "引用書式提示型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 6,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 626,
+        "css_chars": 2134,
+        "js_chars": 737,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 48
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1033,
+        "css_chars": 3069,
+        "js_chars": 1658,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 73
+      },
+      "fable_a11y": [],
+      "opus_a11y": []
+    },
+    {
+      "code": "CONT-19-4",
+      "name": "クレジット内蔵型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 495,
+        "css_chars": 1250,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 25
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 921,
+        "css_chars": 1814,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 38
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-19-5",
+      "name": "検証ハイライト型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 506,
+        "css_chars": 2171,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 46
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 1068,
+        "css_chars": 5458,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 117
+      },
+      "fable_a11y": [],
+      "opus_a11y": [
+        "input_label_unclear"
+      ]
+    },
+    {
+      "code": "CONT-20-1",
+      "name": "テキスト結果型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 496,
+        "css_chars": 713,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 14
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 1148,
+        "css_chars": 1940,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 38
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-20-2",
+      "name": "サムネイル付き型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 960,
+        "css_chars": 1550,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 30
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 2211,
+        "css_chars": 2848,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 55
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-20-3",
+      "name": "サイトリンク付き型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 443,
+        "css_chars": 1356,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 32
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 1131,
+        "css_chars": 3060,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 65
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-20-4",
+      "name": "画像／動画グリッド型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 1895,
+        "css_chars": 2165,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 41
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 3461,
+        "css_chars": 3886,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 66
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "input_label_unclear",
+        "input_label_unclear",
+        "input_label_unclear"
+      ]
+    },
+    {
+      "code": "CONT-21-1",
+      "name": "専用インボックス型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1215,
+        "css_chars": 3517,
+        "js_chars": 1001,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 80
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 2631,
+        "css_chars": 5147,
+        "js_chars": 2056,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 117
+      },
+      "fable_a11y": [
+        "input_label_unclear"
+      ],
+      "opus_a11y": [
+        "input_label_unclear",
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-21-2",
+      "name": "ドロップダウンパネル型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 850,
+        "css_chars": 3395,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 79
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1783,
+        "css_chars": 5492,
+        "js_chars": 1215,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 122
+      },
+      "fable_a11y": [],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-21-3",
+      "name": "行内アクション型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1077,
+        "css_chars": 2298,
+        "js_chars": 519,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 50
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1749,
+        "css_chars": 3562,
+        "js_chars": 902,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 76
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-22-1",
+      "name": "上限＋残数チップ型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 222,
+        "css_chars": 1046,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 24
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 676,
+        "css_chars": 2381,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 53
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "CONT-22-2",
+      "name": "残数クリック・ドロップダウン展開型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 765,
+        "css_chars": 3086,
+        "js_chars": 502,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 72
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1706,
+        "css_chars": 4853,
+        "js_chars": 545,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 108
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": []
+    },
+    {
+      "code": "CONT-22-3",
+      "name": "グリッド整列型",
+      "chapter": "汎用/カード・リスト・コンテンツ",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 689,
+        "css_chars": 959,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 22
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 1093,
+        "css_chars": 2421,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 58
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-01-1",
+      "name": "漢数字の話数付き",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 383,
+        "css_chars": 1356,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 34
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 345,
+        "css_chars": 1856,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 47
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-01-2",
+      "name": "鉤括弧キーフレーズ埋め込み",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 147,
+        "css_chars": 720,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 18
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 178,
+        "css_chars": 1056,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 27
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-01-3",
+      "name": "出典行付きタイトル",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 169,
+        "css_chars": 1011,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 28
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 162,
+        "css_chars": 1112,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 30
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-01-4",
+      "name": "ダッシュ副題接続タイトル",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 217,
+        "css_chars": 946,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 24
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 197,
+        "css_chars": 960,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 25
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-01-5",
+      "name": "極短体言止め",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 280,
+        "css_chars": 826,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 19
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 238,
+        "css_chars": 851,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 19
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-01-6",
+      "name": "質問・呼びかけ見出し",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 243,
+        "css_chars": 1726,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 39
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 155,
+        "css_chars": 1072,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 27
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-02-1",
+      "name": "指示文型",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 562,
+        "css_chars": 1342,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 31
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 502,
+        "css_chars": 1955,
+        "js_chars": 459,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 47
+      },
+      "fable_a11y": [],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-02-2",
+      "name": "記述＋対処型",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 763,
+        "css_chars": 2274,
+        "js_chars": 509,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 53
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 437,
+        "css_chars": 1714,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 44
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-02-3",
+      "name": "条件列挙＋代替提示型",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 720,
+        "css_chars": 2468,
+        "js_chars": 899,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 62
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 1115,
+        "css_chars": 2440,
+        "js_chars": 658,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 55
+      },
+      "fable_a11y": [],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-03-1",
+      "name": "初回・未投入型",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 236,
+        "css_chars": 1966,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 45
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 356,
+        "css_chars": 1717,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 41
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-03-2",
+      "name": "無結果型",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 895,
+        "css_chars": 2450,
+        "js_chars": 541,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 60
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 397,
+        "css_chars": 1734,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 41
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-03-3",
+      "name": "全処理済み型",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 494,
+        "css_chars": 1170,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 29
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 288,
+        "css_chars": 1096,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 26
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-04-1",
+      "name": "対象＋結果明示型",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 974,
+        "css_chars": 4614,
+        "js_chars": 967,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 107
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 899,
+        "css_chars": 3681,
+        "js_chars": 694,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 86
+      },
+      "fable_a11y": [],
+      "opus_a11y": [
+        "input_label_unclear",
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-04-2",
+      "name": "不可逆明示型",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 956,
+        "css_chars": 2974,
+        "js_chars": 709,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 70
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 905,
+        "css_chars": 3235,
+        "js_chars": 547,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 73
+      },
+      "fable_a11y": [],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-04-3",
+      "name": "保持分岐型",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 762,
+        "css_chars": 2905,
+        "js_chars": 719,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 65
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 853,
+        "css_chars": 3062,
+        "js_chars": 547,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 69
+      },
+      "fable_a11y": [],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-04-4",
+      "name": "入力確認型",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 996,
+        "css_chars": 3549,
+        "js_chars": 1109,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 84
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 881,
+        "css_chars": 3323,
+        "js_chars": 678,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 78
+      },
+      "fable_a11y": [],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-05-1",
+      "name": "事前静的明示型",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 560,
+        "css_chars": 1569,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 40
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 462,
+        "css_chars": 1873,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 44
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-05-2",
+      "name": "残量宣言＋延長接続型",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 587,
+        "css_chars": 2512,
+        "js_chars": 630,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 60
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 808,
+        "css_chars": 2931,
+        "js_chars": 581,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 68
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-05-3",
+      "name": "事後説明型",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 398,
+        "css_chars": 1874,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 46
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 470,
+        "css_chars": 2028,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 49
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-06-1",
+      "name": "完了宣言＋次工程予告型",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 668,
+        "css_chars": 1599,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 39
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 555,
+        "css_chars": 2100,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 45
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-06-2",
+      "name": "参照番号説明型",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 439,
+        "css_chars": 2016,
+        "js_chars": 616,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 50
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 341,
+        "css_chars": 1693,
+        "js_chars": 374,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 43
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-06-3",
+      "name": "要約＋再開接続型",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 531,
+        "css_chars": 2283,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 55
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 473,
+        "css_chars": 2054,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 43
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-07-1",
+      "name": "動詞単独型",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 624,
+        "css_chars": 2213,
+        "js_chars": 1012,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 52
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 576,
+        "css_chars": 2695,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 63
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-07-2",
+      "name": "動詞＋目的語型",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 460,
+        "css_chars": 1821,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 42
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 592,
+        "css_chars": 2695,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 63
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    },
+    {
+      "code": "COPY-07-3",
+      "name": "複合行為型",
+      "chapter": "文言",
+      "fable": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 1,
+        "html_chars": 398,
+        "css_chars": 2349,
+        "js_chars": 725,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 55
+      },
+      "opus": {
+        "html_lines": 1,
+        "css_lines": 1,
+        "js_lines": 0,
+        "html_chars": 591,
+        "css_chars": 2628,
+        "js_chars": 0,
+        "hex_colors": 0,
+        "rgb_colors": 0,
+        "px_literals": 0,
+        "var_uses": 61
+      },
+      "fable_a11y": [
+        "no_local_focus_style"
+      ],
+      "opus_a11y": [
+        "no_local_focus_style"
+      ]
+    }
+  ]
+}
