@@ -1,0 +1,252 @@
+/*
+ * UIパーツ見本帳 共通デザイントークン — 「静かな信頼」
+ * コンセプト: 白地・墨色の文字・落ち着いた青を軸に、医療/金融/公共からEC/車載/TVまで
+ *             同じ調子で使える、中立で読みやすいプロダクトUI。
+ * 使い方: 色・文字・角丸・余白・影・線・動き・重なり順は、必ずこのファイルの変数だけを使う。
+ *         16進カラーや px の直書きは禁止。案ごとの違いは「構造・形・挙動」だけで表現する。
+ *         足りない値があれば、パーツ側で作らずここにトークンを追加する。
+ */
+
+:root {
+  /* ---------- 色: 背景・面 ---------- */
+  --color-bg: #ffffff;                 /* ページ／demo の地 */
+  --color-surface: #f7f8fa;            /* カード・パネルなど一段下げた面 */
+  --color-surface-strong: #eef0f3;     /* 強調面、ホバー、表のヘッダー */
+  --color-surface-raised: #ffffff;     /* 影で浮かせる面（メニュー、ダイアログ） */
+  --color-surface-inverse: #1f2530;    /* ツールチップ、スナックバーなど反転面 */
+  --color-scrim: rgba(23, 28, 36, 0.48); /* demo 内オーバーレイの幕 */
+
+  /* ---------- 色: 文字 ---------- */
+  --color-text: #1a1f27;               /* 本文（白地で約16:1） */
+  --color-text-muted: #5a6472;         /* 補足・ラベル（白地で約6:1） */
+  --color-text-placeholder: #6b7583;   /* プレースホルダー（白地で4.5:1以上） */
+  --color-text-inverse: #ffffff;       /* 反転面の上の文字 */
+  --color-text-link: #2457c5;
+
+  /* ---------- 色: 境界線 ---------- */
+  --color-border: #d5dae1;             /* 区切り線、カード枠 */
+  --color-border-strong: #7c8694;      /* 入力欄など操作部品の枠（白地で3:1以上） */
+
+  /* ---------- 色: ブランド ---------- */
+  --color-brand: #2457c5;              /* 主ボタン、選択状態（白文字で約6.5:1） */
+  --color-brand-hover: #1c469f;
+  --color-brand-active: #173a85;
+  --color-brand-subtle: #eaf0fc;       /* 選択行、薄い強調の地 */
+  --color-brand-border: #a9c0ee;
+  --color-on-brand: #ffffff;           /* ブランド色の上の文字・アイコン */
+
+  /* ---------- 色: 状態（本体は白地の文字にも、白文字の地にも使える濃さ） ---------- */
+  --color-success: #18794a;
+  --color-success-subtle: #e8f5ee;
+  --color-success-border: #a3d3b8;
+
+  --color-warning: #9a5b00;
+  --color-warning-subtle: #fdf4e1;
+  --color-warning-border: #e6c583;
+
+  --color-danger: #c4281c;
+  --color-danger-hover: #a32117;
+  --color-danger-subtle: #fdecea;
+  --color-danger-border: #efb1ab;
+
+  --color-info: #1f6a9e;
+  --color-info-subtle: #e8f2f9;
+  --color-info-border: #a6cae3;
+
+  --color-on-status: #ffffff;          /* 状態色を地にしたときの文字 */
+
+  /* ---------- 色: フォーカス・無効 ---------- */
+  --color-focus: #1d4ed8;
+  --color-disabled-bg: #eef0f3;
+  --color-disabled-text: #8e97a4;
+  --color-disabled-border: #dfe3e8;
+
+  /* ---------- 文字: フォント ---------- */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+    "Yu Gothic UI", "Yu Gothic", Meiryo, "Noto Sans JP", "Noto Sans CJK JP", system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono",
+    "Osaka-Mono", "MS Gothic", monospace;
+
+  /* ---------- 文字: サイズ（1rem = 16px 前提） ---------- */
+  --font-size-xs: 0.75rem;     /* 12px 注記・バッジ */
+  --font-size-sm: 0.875rem;    /* 14px 補足・密な業務画面の本文 */
+  --font-size-md: 1rem;        /* 16px 本文の基準 */
+  --font-size-lg: 1.125rem;    /* 18px 小見出し */
+  --font-size-xl: 1.25rem;     /* 20px 見出し */
+  --font-size-2xl: 1.5rem;     /* 24px 画面タイトル */
+  --font-size-3xl: 1.875rem;   /* 30px 大見出し・金額などの数値 */
+  --font-size-4xl: 2.25rem;    /* 36px 車載/TV など遠視距離の主要表示 */
+
+  /* ---------- 文字: ウェイト（和文で確実に差が出る3段階） ---------- */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* ---------- 文字: 行の高さ（和文は欧文より広めに取る） ---------- */
+  --line-height-none: 1;       /* アイコン、1行固定のバッジ */
+  --line-height-tight: 1.35;   /* 大きな見出し */
+  --line-height-snug: 1.5;     /* ボタン、ラベル、表のセル */
+  --line-height-normal: 1.7;   /* 本文 */
+  --line-height-loose: 1.9;    /* 長文、注意書き */
+
+  /* ---------- 文字: 字間 ---------- */
+  --letter-spacing-tight: 0;       /* 大見出し、数値 */
+  --letter-spacing-normal: 0.02em; /* 本文・UI 全般 */
+  --letter-spacing-wide: 0.06em;   /* 小さなラベル、オーバーライン */
+
+  /* ---------- 余白（4px 系） ---------- */
+  --space-0: 0;
+  --space-0-5: 0.125rem;  /* 2px */
+  --space-1: 0.25rem;     /* 4px */
+  --space-2: 0.5rem;      /* 8px */
+  --space-3: 0.75rem;     /* 12px */
+  --space-4: 1rem;        /* 16px */
+  --space-5: 1.25rem;     /* 20px */
+  --space-6: 1.5rem;      /* 24px */
+  --space-8: 2rem;        /* 32px */
+  --space-10: 2.5rem;     /* 40px */
+  --space-12: 3rem;       /* 48px */
+  --space-16: 4rem;       /* 64px */
+
+  /* ---------- 操作部品の寸法 ---------- */
+  --size-control-sm: 2rem;      /* 32px 密な業務画面 */
+  --size-control-md: 2.5rem;    /* 40px 標準 */
+  --size-control-lg: 3rem;      /* 48px モバイル主要操作 */
+  --size-control-xl: 3.5rem;    /* 56px 車載/TV */
+  --size-touch-min: 2.75rem;    /* 44px タッチ領域の下限 */
+  --size-icon-sm: 1rem;
+  --size-icon-md: 1.25rem;
+  --size-icon-lg: 1.5rem;
+
+  /* ---------- 角丸 ---------- */
+  --radius-none: 0;
+  --radius-xs: 2px;       /* チェックボックス、タグの角 */
+  --radius-sm: 4px;       /* 入力欄、小さなボタン */
+  --radius-md: 8px;       /* ボタン、カードの標準 */
+  --radius-lg: 12px;      /* パネル、ダイアログ */
+  --radius-xl: 16px;      /* シート、大きな面 */
+  --radius-full: 9999px;  /* ピル、アバター */
+
+  /* ---------- 線の太さ ---------- */
+  --border-width-thin: 1px;     /* 標準の枠・区切り */
+  --border-width-medium: 2px;   /* 選択・エラーの強調、タブの下線 */
+  --border-width-thick: 4px;    /* 通知の左アクセント */
+
+  /* ---------- 影（なし〜浮き。墨色ベースで色を付けない） ---------- */
+  --shadow-none: none;
+  --shadow-xs: 0 1px 2px rgba(23, 28, 36, 0.06);
+  --shadow-sm: 0 1px 2px rgba(23, 28, 36, 0.06), 0 1px 3px rgba(23, 28, 36, 0.1);
+  --shadow-md: 0 2px 4px rgba(23, 28, 36, 0.06), 0 4px 12px rgba(23, 28, 36, 0.1);
+  --shadow-lg: 0 4px 8px rgba(23, 28, 36, 0.06), 0 12px 24px rgba(23, 28, 36, 0.12);
+  --shadow-xl: 0 8px 16px rgba(23, 28, 36, 0.08), 0 24px 48px rgba(23, 28, 36, 0.16);
+
+  /* ---------- フォーカス環 ---------- */
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+  --focus-ring: 0 0 0 var(--focus-ring-offset) var(--color-bg),
+    0 0 0 calc(var(--focus-ring-offset) + var(--focus-ring-width)) var(--color-focus);
+
+  /* ---------- 動き ---------- */
+  --duration-instant: 80ms;   /* 押下の反応 */
+  --duration-fast: 120ms;     /* ホバー、色の変化 */
+  --duration-normal: 200ms;   /* 開閉、切り替え */
+  --duration-slow: 320ms;     /* シート、画面遷移 */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);   /* 位置・大きさの変化全般 */
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);        /* 現れる */
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);         /* 消える */
+  --ease-linear: linear;                         /* 進捗、スピナー */
+
+  /* ---------- 重なり順（demo 内で完結。ページ全体を fixed で覆わない） ---------- */
+  --z-base: 0;
+  --z-raised: 1;       /* 浮かせたカード、選択中の要素 */
+  --z-sticky: 10;      /* 固定ヘッダー、表の見出し */
+  --z-dropdown: 20;    /* メニュー、セレクト */
+  --z-overlay: 30;     /* 幕（スクリム） */
+  --z-modal: 40;       /* ダイアログ、シート */
+  --z-toast: 50;       /* トースト、スナックバー */
+  --z-tooltip: 60;     /* ツールチップ */
+}
+
+/* 動きを減らす設定では、時間トークンごと実質ゼロにする */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-instant: 1ms;
+    --duration-fast: 1ms;
+    --duration-normal: 1ms;
+    --duration-slow: 1ms;
+  }
+}
+
+/* ---------- 共通リセット ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-normal);
+  font-kerning: normal;
+  line-break: strict;
+  overflow-wrap: anywhere;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: var(--font-mono);
+  letter-spacing: 0;
+}
+
+::placeholder {
+  color: var(--color-text-placeholder);
+  opacity: 1;
+}
+
+/* ---------- フォーカス環（キーボード操作時のみ表示） ---------- */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: var(--focus-ring-width) solid transparent; /* 強制カラーモードではこの輪郭線が見える */
+  outline-offset: var(--focus-ring-offset);
+  box-shadow: var(--focus-ring);
+}
+
+/* ---------- 無効状態 ---------- */
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled,
+[aria-disabled="true"] {
+  background-color: var(--color-disabled-bg);
+  border-color: var(--color-disabled-border);
+  color: var(--color-disabled-text);
+  box-shadow: var(--shadow-none);
+  cursor: not-allowed;
+}
